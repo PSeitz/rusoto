@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `sns` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, sns">
+
+    <title>rusoto::sns - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'sns', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>sns</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/sns.rs.html#1-4' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Simple Notification Service</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.SnsClient.html">SnsClient</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddPermissionInput.html'
+                                  title='rusoto::sns::AddPermissionInput'>AddPermissionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CheckIfPhoneNumberIsOptedOutInput.html'
+                                  title='rusoto::sns::CheckIfPhoneNumberIsOptedOutInput'>CheckIfPhoneNumberIsOptedOutInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <code>CheckIfPhoneNumberIsOptedOut</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CheckIfPhoneNumberIsOptedOutResponse.html'
+                                  title='rusoto::sns::CheckIfPhoneNumberIsOptedOutResponse'>CheckIfPhoneNumberIsOptedOutResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response from the <code>CheckIfPhoneNumberIsOptedOut</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfirmSubscriptionInput.html'
+                                  title='rusoto::sns::ConfirmSubscriptionInput'>ConfirmSubscriptionInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for ConfirmSubscription action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfirmSubscriptionResponse.html'
+                                  title='rusoto::sns::ConfirmSubscriptionResponse'>ConfirmSubscriptionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for ConfirmSubscriptions action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateEndpointResponse.html'
+                                  title='rusoto::sns::CreateEndpointResponse'>CreateEndpointResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response from CreateEndpoint action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePlatformApplicationInput.html'
+                                  title='rusoto::sns::CreatePlatformApplicationInput'>CreatePlatformApplicationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for CreatePlatformApplication action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePlatformApplicationResponse.html'
+                                  title='rusoto::sns::CreatePlatformApplicationResponse'>CreatePlatformApplicationResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response from CreatePlatformApplication action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePlatformEndpointInput.html'
+                                  title='rusoto::sns::CreatePlatformEndpointInput'>CreatePlatformEndpointInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for CreatePlatformEndpoint action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTopicInput.html'
+                                  title='rusoto::sns::CreateTopicInput'>CreateTopicInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for CreateTopic action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTopicResponse.html'
+                                  title='rusoto::sns::CreateTopicResponse'>CreateTopicResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response from CreateTopic action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteEndpointInput.html'
+                                  title='rusoto::sns::DeleteEndpointInput'>DeleteEndpointInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for DeleteEndpoint action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePlatformApplicationInput.html'
+                                  title='rusoto::sns::DeletePlatformApplicationInput'>DeletePlatformApplicationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for DeletePlatformApplication action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTopicInput.html'
+                                  title='rusoto::sns::DeleteTopicInput'>DeleteTopicInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetEndpointAttributesInput.html'
+                                  title='rusoto::sns::GetEndpointAttributesInput'>GetEndpointAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for GetEndpointAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetEndpointAttributesResponse.html'
+                                  title='rusoto::sns::GetEndpointAttributesResponse'>GetEndpointAttributesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response from GetEndpointAttributes of the EndpointArn.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPlatformApplicationAttributesInput.html'
+                                  title='rusoto::sns::GetPlatformApplicationAttributesInput'>GetPlatformApplicationAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for GetPlatformApplicationAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPlatformApplicationAttributesResponse.html'
+                                  title='rusoto::sns::GetPlatformApplicationAttributesResponse'>GetPlatformApplicationAttributesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for GetPlatformApplicationAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSMSAttributesInput.html'
+                                  title='rusoto::sns::GetSMSAttributesInput'>GetSMSAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <code>GetSMSAttributes</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSMSAttributesResponse.html'
+                                  title='rusoto::sns::GetSMSAttributesResponse'>GetSMSAttributesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response from the <code>GetSMSAttributes</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSubscriptionAttributesInput.html'
+                                  title='rusoto::sns::GetSubscriptionAttributesInput'>GetSubscriptionAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for GetSubscriptionAttributes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSubscriptionAttributesResponse.html'
+                                  title='rusoto::sns::GetSubscriptionAttributesResponse'>GetSubscriptionAttributesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for GetSubscriptionAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTopicAttributesInput.html'
+                                  title='rusoto::sns::GetTopicAttributesInput'>GetTopicAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for GetTopicAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTopicAttributesResponse.html'
+                                  title='rusoto::sns::GetTopicAttributesResponse'>GetTopicAttributesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for GetTopicAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListEndpointsByPlatformApplicationInput.html'
+                                  title='rusoto::sns::ListEndpointsByPlatformApplicationInput'>ListEndpointsByPlatformApplicationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for ListEndpointsByPlatformApplication action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListEndpointsByPlatformApplicationResponse.html'
+                                  title='rusoto::sns::ListEndpointsByPlatformApplicationResponse'>ListEndpointsByPlatformApplicationResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for ListEndpointsByPlatformApplication action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPhoneNumbersOptedOutInput.html'
+                                  title='rusoto::sns::ListPhoneNumbersOptedOutInput'>ListPhoneNumbersOptedOutInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <code>ListPhoneNumbersOptedOut</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPhoneNumbersOptedOutResponse.html'
+                                  title='rusoto::sns::ListPhoneNumbersOptedOutResponse'>ListPhoneNumbersOptedOutResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response from the <code>ListPhoneNumbersOptedOut</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPlatformApplicationsInput.html'
+                                  title='rusoto::sns::ListPlatformApplicationsInput'>ListPlatformApplicationsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for ListPlatformApplications action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPlatformApplicationsResponse.html'
+                                  title='rusoto::sns::ListPlatformApplicationsResponse'>ListPlatformApplicationsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for ListPlatformApplications action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSubscriptionsByTopicInput.html'
+                                  title='rusoto::sns::ListSubscriptionsByTopicInput'>ListSubscriptionsByTopicInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for ListSubscriptionsByTopic action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSubscriptionsByTopicResponse.html'
+                                  title='rusoto::sns::ListSubscriptionsByTopicResponse'>ListSubscriptionsByTopicResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for ListSubscriptionsByTopic action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSubscriptionsInput.html'
+                                  title='rusoto::sns::ListSubscriptionsInput'>ListSubscriptionsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for ListSubscriptions action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSubscriptionsResponse.html'
+                                  title='rusoto::sns::ListSubscriptionsResponse'>ListSubscriptionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for ListSubscriptions action</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTopicsInput.html'
+                                  title='rusoto::sns::ListTopicsInput'>ListTopicsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTopicsResponse.html'
+                                  title='rusoto::sns::ListTopicsResponse'>ListTopicsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for ListTopics action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MessageAttributeValue.html'
+                                  title='rusoto::sns::MessageAttributeValue'>MessageAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                <p>The user-specified message attribute value. For string data types, the value attribute has the same restrictions on the content as the message body. For more information, see <a href="http://docs.aws.amazon.com/sns/latest/api/API_Publish.html">Publish</a>.</p> <p>Name, type, and value must not be empty or null. In addition, the message body should not be empty or null. All parts of the message attribute, including name, type, and value, are included in the message size restriction, which is currently 256 KB (262,144 bytes). For more information, see <a href="http://docs.aws.amazon.com/sns/latest/dg/SNSMessageAttributes.html">Using Amazon SNS Message Attributes</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OptInPhoneNumberInput.html'
+                                  title='rusoto::sns::OptInPhoneNumberInput'>OptInPhoneNumberInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for the OptInPhoneNumber action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OptInPhoneNumberResponse.html'
+                                  title='rusoto::sns::OptInPhoneNumberResponse'>OptInPhoneNumberResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response for the OptInPhoneNumber action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PlatformApplication.html'
+                                  title='rusoto::sns::PlatformApplication'>PlatformApplication</a></td>
+                           <td class='docblock-short'>
+                                <p>Platform application object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublishInput.html'
+                                  title='rusoto::sns::PublishInput'>PublishInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for Publish action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublishResponse.html'
+                                  title='rusoto::sns::PublishResponse'>PublishResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for Publish action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemovePermissionInput.html'
+                                  title='rusoto::sns::RemovePermissionInput'>RemovePermissionInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for RemovePermission action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetEndpointAttributesInput.html'
+                                  title='rusoto::sns::SetEndpointAttributesInput'>SetEndpointAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for SetEndpointAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetPlatformApplicationAttributesInput.html'
+                                  title='rusoto::sns::SetPlatformApplicationAttributesInput'>SetPlatformApplicationAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for SetPlatformApplicationAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetSMSAttributesInput.html'
+                                  title='rusoto::sns::SetSMSAttributesInput'>SetSMSAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the SetSMSAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetSMSAttributesResponse.html'
+                                  title='rusoto::sns::SetSMSAttributesResponse'>SetSMSAttributesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response for the SetSMSAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetSubscriptionAttributesInput.html'
+                                  title='rusoto::sns::SetSubscriptionAttributesInput'>SetSubscriptionAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for SetSubscriptionAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetTopicAttributesInput.html'
+                                  title='rusoto::sns::SetTopicAttributesInput'>SetTopicAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for SetTopicAttributes action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SnsClient.html'
+                                  title='rusoto::sns::SnsClient'>SnsClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon SNS API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SubscribeInput.html'
+                                  title='rusoto::sns::SubscribeInput'>SubscribeInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for Subscribe action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SubscribeResponse.html'
+                                  title='rusoto::sns::SubscribeResponse'>SubscribeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Response for Subscribe action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Subscription.html'
+                                  title='rusoto::sns::Subscription'>Subscription</a></td>
+                           <td class='docblock-short'>
+                                <p>A wrapper type for the attributes of an Amazon SNS subscription.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Topic.html'
+                                  title='rusoto::sns::Topic'>Topic</a></td>
+                           <td class='docblock-short'>
+                                <p>A wrapper type for the topic's Amazon Resource Name (ARN). To retrieve a topic's attributes, use <code>GetTopicAttributes</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnsubscribeInput.html'
+                                  title='rusoto::sns::UnsubscribeInput'>UnsubscribeInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for Unsubscribe action.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddPermissionError.html'
+                                  title='rusoto::sns::AddPermissionError'>AddPermissionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AddPermission</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CheckIfPhoneNumberIsOptedOutError.html'
+                                  title='rusoto::sns::CheckIfPhoneNumberIsOptedOutError'>CheckIfPhoneNumberIsOptedOutError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CheckIfPhoneNumberIsOptedOut</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ConfirmSubscriptionError.html'
+                                  title='rusoto::sns::ConfirmSubscriptionError'>ConfirmSubscriptionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ConfirmSubscription</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreatePlatformApplicationError.html'
+                                  title='rusoto::sns::CreatePlatformApplicationError'>CreatePlatformApplicationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreatePlatformApplication</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreatePlatformEndpointError.html'
+                                  title='rusoto::sns::CreatePlatformEndpointError'>CreatePlatformEndpointError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreatePlatformEndpoint</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTopicError.html'
+                                  title='rusoto::sns::CreateTopicError'>CreateTopicError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateTopic</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteEndpointError.html'
+                                  title='rusoto::sns::DeleteEndpointError'>DeleteEndpointError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteEndpoint</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeletePlatformApplicationError.html'
+                                  title='rusoto::sns::DeletePlatformApplicationError'>DeletePlatformApplicationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeletePlatformApplication</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTopicError.html'
+                                  title='rusoto::sns::DeleteTopicError'>DeleteTopicError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteTopic</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetEndpointAttributesError.html'
+                                  title='rusoto::sns::GetEndpointAttributesError'>GetEndpointAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetEndpointAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetPlatformApplicationAttributesError.html'
+                                  title='rusoto::sns::GetPlatformApplicationAttributesError'>GetPlatformApplicationAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetPlatformApplicationAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetSMSAttributesError.html'
+                                  title='rusoto::sns::GetSMSAttributesError'>GetSMSAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetSMSAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetSubscriptionAttributesError.html'
+                                  title='rusoto::sns::GetSubscriptionAttributesError'>GetSubscriptionAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetSubscriptionAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetTopicAttributesError.html'
+                                  title='rusoto::sns::GetTopicAttributesError'>GetTopicAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetTopicAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListEndpointsByPlatformApplicationError.html'
+                                  title='rusoto::sns::ListEndpointsByPlatformApplicationError'>ListEndpointsByPlatformApplicationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListEndpointsByPlatformApplication</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPhoneNumbersOptedOutError.html'
+                                  title='rusoto::sns::ListPhoneNumbersOptedOutError'>ListPhoneNumbersOptedOutError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListPhoneNumbersOptedOut</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPlatformApplicationsError.html'
+                                  title='rusoto::sns::ListPlatformApplicationsError'>ListPlatformApplicationsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListPlatformApplications</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListSubscriptionsByTopicError.html'
+                                  title='rusoto::sns::ListSubscriptionsByTopicError'>ListSubscriptionsByTopicError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListSubscriptionsByTopic</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListSubscriptionsError.html'
+                                  title='rusoto::sns::ListSubscriptionsError'>ListSubscriptionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListSubscriptions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTopicsError.html'
+                                  title='rusoto::sns::ListTopicsError'>ListTopicsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListTopics</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.OptInPhoneNumberError.html'
+                                  title='rusoto::sns::OptInPhoneNumberError'>OptInPhoneNumberError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by OptInPhoneNumber</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PublishError.html'
+                                  title='rusoto::sns::PublishError'>PublishError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by Publish</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemovePermissionError.html'
+                                  title='rusoto::sns::RemovePermissionError'>RemovePermissionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RemovePermission</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetEndpointAttributesError.html'
+                                  title='rusoto::sns::SetEndpointAttributesError'>SetEndpointAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SetEndpointAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetPlatformApplicationAttributesError.html'
+                                  title='rusoto::sns::SetPlatformApplicationAttributesError'>SetPlatformApplicationAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SetPlatformApplicationAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetSMSAttributesError.html'
+                                  title='rusoto::sns::SetSMSAttributesError'>SetSMSAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SetSMSAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetSubscriptionAttributesError.html'
+                                  title='rusoto::sns::SetSubscriptionAttributesError'>SetSubscriptionAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SetSubscriptionAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetTopicAttributesError.html'
+                                  title='rusoto::sns::SetTopicAttributesError'>SetTopicAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SetTopicAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SubscribeError.html'
+                                  title='rusoto::sns::SubscribeError'>SubscribeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by Subscribe</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UnsubscribeError.html'
+                                  title='rusoto::sns::UnsubscribeError'>UnsubscribeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by Unsubscribe</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Account.html'
+                                  title='rusoto::sns::Account'>Account</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Action.html'
+                                  title='rusoto::sns::Action'>Action</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActionsList.html'
+                                  title='rusoto::sns::ActionsList'>ActionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeName.html'
+                                  title='rusoto::sns::AttributeName'>AttributeName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeValue.html'
+                                  title='rusoto::sns::AttributeValue'>AttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AuthenticateOnUnsubscribe.html'
+                                  title='rusoto::sns::AuthenticateOnUnsubscribe'>AuthenticateOnUnsubscribe</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Binary.html'
+                                  title='rusoto::sns::Binary'>Binary</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::sns::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Delegate.html'
+                                  title='rusoto::sns::Delegate'>Delegate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DelegatesList.html'
+                                  title='rusoto::sns::DelegatesList'>DelegatesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Endpoint.html'
+                                  title='rusoto::sns::Endpoint'>Endpoint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Label.html'
+                                  title='rusoto::sns::Label'>Label</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListOfEndpoints.html'
+                                  title='rusoto::sns::ListOfEndpoints'>ListOfEndpoints</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListOfPlatformApplications.html'
+                                  title='rusoto::sns::ListOfPlatformApplications'>ListOfPlatformApplications</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListString.html'
+                                  title='rusoto::sns::ListString'>ListString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MapStringToString.html'
+                                  title='rusoto::sns::MapStringToString'>MapStringToString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Message.html'
+                                  title='rusoto::sns::Message'>Message</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MessageAttributeMap.html'
+                                  title='rusoto::sns::MessageAttributeMap'>MessageAttributeMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MessageId.html'
+                                  title='rusoto::sns::MessageId'>MessageId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MessageStructure.html'
+                                  title='rusoto::sns::MessageStructure'>MessageStructure</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::sns::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PhoneNumber.html'
+                                  title='rusoto::sns::PhoneNumber'>PhoneNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PhoneNumberList.html'
+                                  title='rusoto::sns::PhoneNumberList'>PhoneNumberList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Protocol.html'
+                                  title='rusoto::sns::Protocol'>Protocol</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Subject.html'
+                                  title='rusoto::sns::Subject'>Subject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubscriptionARN.html'
+                                  title='rusoto::sns::SubscriptionARN'>SubscriptionARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubscriptionAttributesMap.html'
+                                  title='rusoto::sns::SubscriptionAttributesMap'>SubscriptionAttributesMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubscriptionsList.html'
+                                  title='rusoto::sns::SubscriptionsList'>SubscriptionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Token.html'
+                                  title='rusoto::sns::Token'>Token</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicARN.html'
+                                  title='rusoto::sns::TopicARN'>TopicARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicAttributesMap.html'
+                                  title='rusoto::sns::TopicAttributesMap'>TopicAttributesMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicName.html'
+                                  title='rusoto::sns::TopicName'>TopicName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicsList.html'
+                                  title='rusoto::sns::TopicsList'>TopicsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

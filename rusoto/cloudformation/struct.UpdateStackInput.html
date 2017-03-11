@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `UpdateStackInput` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, UpdateStackInput">
+
+    <title>rusoto::cloudformation::UpdateStackInput - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudformation</a></p><script>window.sidebarCurrent = {name: 'UpdateStackInput', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudformation</a>::<wbr><a class='struct' href=''>UpdateStackInput</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/cloudformation.rs.html#4890-4919' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UpdateStackInput {
+    pub capabilities: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.Capabilities.html' title='rusoto::cloudformation::Capabilities'>Capabilities</a>&gt;,
+    pub notification_ar_ns: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.NotificationARNs.html' title='rusoto::cloudformation::NotificationARNs'>NotificationARNs</a>&gt;,
+    pub parameters: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.Parameters.html' title='rusoto::cloudformation::Parameters'>Parameters</a>&gt;,
+    pub resource_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.ResourceTypes.html' title='rusoto::cloudformation::ResourceTypes'>ResourceTypes</a>&gt;,
+    pub role_arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.RoleARN.html' title='rusoto::cloudformation::RoleARN'>RoleARN</a>&gt;,
+    pub stack_name: <a class='type' href='../../rusoto/cloudformation/type.StackName.html' title='rusoto::cloudformation::StackName'>StackName</a>,
+    pub stack_policy_body: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyBody.html' title='rusoto::cloudformation::StackPolicyBody'>StackPolicyBody</a>&gt;,
+    pub stack_policy_during_update_body: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyDuringUpdateBody.html' title='rusoto::cloudformation::StackPolicyDuringUpdateBody'>StackPolicyDuringUpdateBody</a>&gt;,
+    pub stack_policy_during_update_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyDuringUpdateURL.html' title='rusoto::cloudformation::StackPolicyDuringUpdateURL'>StackPolicyDuringUpdateURL</a>&gt;,
+    pub stack_policy_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyURL.html' title='rusoto::cloudformation::StackPolicyURL'>StackPolicyURL</a>&gt;,
+    pub tags: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.Tags.html' title='rusoto::cloudformation::Tags'>Tags</a>&gt;,
+    pub template_body: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.TemplateBody.html' title='rusoto::cloudformation::TemplateBody'>TemplateBody</a>&gt;,
+    pub template_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.TemplateURL.html' title='rusoto::cloudformation::TemplateURL'>TemplateURL</a>&gt;,
+    pub use_previous_template: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.UsePreviousTemplate.html' title='rusoto::cloudformation::UsePreviousTemplate'>UsePreviousTemplate</a>&gt;,
+}</pre><div class='docblock'><p>The input for an <a>UpdateStack</a> action.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.capabilities' class='structfield'>
+                           <span id='capabilities.v' class='invisible'>
+                           <code>capabilities: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.Capabilities.html' title='rusoto::cloudformation::Capabilities'>Capabilities</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A list of values that you must specify before AWS CloudFormation can update certain stacks. Some stack templates might include resources that can affect permissions in your AWS account, for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge their capabilities by specifying this parameter.</p> <p>The only valid values are <code>CAPABILITY_IAM</code> and <code>CAPABILITY_NAMED_IAM</code>. The following resources require you to specify this parameter: <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html"> AWS::IAM::AccessKey</a>, <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html"> AWS::IAM::Group</a>, <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html"> AWS::IAM::InstanceProfile</a>, <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html"> AWS::IAM::Policy</a>, <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html"> AWS::IAM::Role</a>, <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html"> AWS::IAM::User</a>, and <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html"> AWS::IAM::UserToGroupAddition</a>. If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary.</p> <p>If you have IAM resources, you can specify either capability. If you have IAM resources with custom names, you must specify <code>CAPABILITY_NAMED_IAM</code>. If you don't specify this parameter, this action returns an <code>InsufficientCapabilities</code> error.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#capabilities">Acknowledging IAM Resources in AWS CloudFormation Templates</a>.</p>
+</div><span id='structfield.notification_ar_ns' class='structfield'>
+                           <span id='notification_ar_ns.v' class='invisible'>
+                           <code>notification_ar_ns: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.NotificationARNs.html' title='rusoto::cloudformation::NotificationARNs'>NotificationARNs</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Amazon Simple Notification Service topic Amazon Resource Names (ARNs) that AWS CloudFormation associates with the stack. Specify an empty list to remove all notification topics.</p>
+</div><span id='structfield.parameters' class='structfield'>
+                           <span id='parameters.v' class='invisible'>
+                           <code>parameters: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.Parameters.html' title='rusoto::cloudformation::Parameters'>Parameters</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A list of <code>Parameter</code> structures that specify input parameters for the stack. For more information, see the <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html">Parameter</a> data type.</p>
+</div><span id='structfield.resource_types' class='structfield'>
+                           <span id='resource_types.v' class='invisible'>
+                           <code>resource_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.ResourceTypes.html' title='rusoto::cloudformation::ResourceTypes'>ResourceTypes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The template resource types that you have permissions to work with for this update stack action, such as <code>AWS::EC2::Instance</code>, <code>AWS::EC2::*</code>, or <code>Custom::MyCustomInstance</code>.</p> <p>If the list of resource types doesn't include a resource that you're updating, the stack update fails. By default, AWS CloudFormation grants permissions to all resource types. AWS Identity and Access Management (IAM) uses this parameter for AWS CloudFormation-specific condition keys in IAM policies. For more information, see <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html">Controlling Access with AWS Identity and Access Management</a>.</p>
+</div><span id='structfield.role_arn' class='structfield'>
+                           <span id='role_arn.v' class='invisible'>
+                           <code>role_arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.RoleARN.html' title='rusoto::cloudformation::RoleARN'>RoleARN</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that AWS CloudFormation assumes to update the stack. AWS CloudFormation uses the role's credentials to make calls on your behalf. AWS CloudFormation always uses this role for all future operations on the stack. As long as users have permission to operate on the stack, AWS CloudFormation uses this role even if the users don't have permission to pass it. Ensure that the role grants least privilege.</p> <p>If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack. If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.</p>
+</div><span id='structfield.stack_name' class='structfield'>
+                           <span id='stack_name.v' class='invisible'>
+                           <code>stack_name: <a class='type' href='../../rusoto/cloudformation/type.StackName.html' title='rusoto::cloudformation::StackName'>StackName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name or unique stack ID of the stack to update.</p>
+</div><span id='structfield.stack_policy_body' class='structfield'>
+                           <span id='stack_policy_body.v' class='invisible'>
+                           <code>stack_policy_body: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyBody.html' title='rusoto::cloudformation::StackPolicyBody'>StackPolicyBody</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Structure containing a new stack policy body. You can specify either the <code>StackPolicyBody</code> or the <code>StackPolicyURL</code> parameter, but not both.</p> <p>You might update the stack policy, for example, in order to protect a new resource that you created during a stack update. If you do not specify a stack policy, the current policy that is associated with the stack is unchanged.</p>
+</div><span id='structfield.stack_policy_during_update_body' class='structfield'>
+                           <span id='stack_policy_during_update_body.v' class='invisible'>
+                           <code>stack_policy_during_update_body: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyDuringUpdateBody.html' title='rusoto::cloudformation::StackPolicyDuringUpdateBody'>StackPolicyDuringUpdateBody</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Structure containing the temporary overriding stack policy body. You can specify either the <code>StackPolicyDuringUpdateBody</code> or the <code>StackPolicyDuringUpdateURL</code> parameter, but not both.</p> <p>If you want to update protected resources, specify a temporary overriding stack policy during this update. If you do not specify a stack policy, the current policy that is associated with the stack will be used.</p>
+</div><span id='structfield.stack_policy_during_update_url' class='structfield'>
+                           <span id='stack_policy_during_update_url.v' class='invisible'>
+                           <code>stack_policy_during_update_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyDuringUpdateURL.html' title='rusoto::cloudformation::StackPolicyDuringUpdateURL'>StackPolicyDuringUpdateURL</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Location of a file containing the temporary overriding stack policy. The URL must point to a policy (max size: 16KB) located in an S3 bucket in the same region as the stack. You can specify either the <code>StackPolicyDuringUpdateBody</code> or the <code>StackPolicyDuringUpdateURL</code> parameter, but not both.</p> <p>If you want to update protected resources, specify a temporary overriding stack policy during this update. If you do not specify a stack policy, the current policy that is associated with the stack will be used.</p>
+</div><span id='structfield.stack_policy_url' class='structfield'>
+                           <span id='stack_policy_url.v' class='invisible'>
+                           <code>stack_policy_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.StackPolicyURL.html' title='rusoto::cloudformation::StackPolicyURL'>StackPolicyURL</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Location of a file containing the updated stack policy. The URL must point to a policy (max size: 16KB) located in an S3 bucket in the same region as the stack. You can specify either the <code>StackPolicyBody</code> or the <code>StackPolicyURL</code> parameter, but not both.</p> <p>You might update the stack policy, for example, in order to protect a new resource that you created during a stack update. If you do not specify a stack policy, the current policy that is associated with the stack is unchanged.</p>
+</div><span id='structfield.tags' class='structfield'>
+                           <span id='tags.v' class='invisible'>
+                           <code>tags: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.Tags.html' title='rusoto::cloudformation::Tags'>Tags</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Key-value pairs to associate with this stack. AWS CloudFormation also propagates these tags to supported resources in the stack. You can specify a maximum number of 10 tags.</p> <p>If you don't specify this parameter, AWS CloudFormation doesn't modify the stack's tags. If you specify an empty value, AWS CloudFormation removes all associated tags.</p>
+</div><span id='structfield.template_body' class='structfield'>
+                           <span id='template_body.v' class='invisible'>
+                           <code>template_body: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.TemplateBody.html' title='rusoto::cloudformation::TemplateBody'>TemplateBody</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Structure containing the template body with a minimum length of 1 byte and a maximum length of 51,200 bytes. (For more information, go to <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html">Template Anatomy</a> in the AWS CloudFormation User Guide.)</p> <p>Conditional: You must specify either the <code>TemplateBody</code> or the <code>TemplateURL</code> parameter, but not both.</p>
+</div><span id='structfield.template_url' class='structfield'>
+                           <span id='template_url.v' class='invisible'>
+                           <code>template_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.TemplateURL.html' title='rusoto::cloudformation::TemplateURL'>TemplateURL</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Location of file containing the template body. The URL must point to a template that is located in an Amazon S3 bucket. For more information, go to <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html">Template Anatomy</a> in the AWS CloudFormation User Guide.</p> <p>Conditional: You must specify either the <code>TemplateBody</code> or the <code>TemplateURL</code> parameter, but not both.</p>
+</div><span id='structfield.use_previous_template' class='structfield'>
+                           <span id='use_previous_template.v' class='invisible'>
+                           <code>use_previous_template: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudformation/type.UsePreviousTemplate.html' title='rusoto::cloudformation::UsePreviousTemplate'>UsePreviousTemplate</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Reuse the existing template that is associated with the stack that you are updating.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/cloudformation/struct.UpdateStackInput.html' title='rusoto::cloudformation::UpdateStackInput'>UpdateStackInput</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/cloudformation.rs.html#4889' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/cloudformation/struct.UpdateStackInput.html' title='rusoto::cloudformation::UpdateStackInput'>UpdateStackInput</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

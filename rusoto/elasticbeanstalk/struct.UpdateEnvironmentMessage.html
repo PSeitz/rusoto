@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `UpdateEnvironmentMessage` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, UpdateEnvironmentMessage">
+
+    <title>rusoto::elasticbeanstalk::UpdateEnvironmentMessage - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>elasticbeanstalk</a></p><script>window.sidebarCurrent = {name: 'UpdateEnvironmentMessage', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>elasticbeanstalk</a>::<wbr><a class='struct' href=''>UpdateEnvironmentMessage</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/elasticbeanstalk.rs.html#6897-6920' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UpdateEnvironmentMessage {
+    pub application_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.ApplicationName.html' title='rusoto::elasticbeanstalk::ApplicationName'>ApplicationName</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.Description.html' title='rusoto::elasticbeanstalk::Description'>Description</a>&gt;,
+    pub environment_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.EnvironmentId.html' title='rusoto::elasticbeanstalk::EnvironmentId'>EnvironmentId</a>&gt;,
+    pub environment_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.EnvironmentName.html' title='rusoto::elasticbeanstalk::EnvironmentName'>EnvironmentName</a>&gt;,
+    pub group_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.GroupName.html' title='rusoto::elasticbeanstalk::GroupName'>GroupName</a>&gt;,
+    pub option_settings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.ConfigurationOptionSettingsList.html' title='rusoto::elasticbeanstalk::ConfigurationOptionSettingsList'>ConfigurationOptionSettingsList</a>&gt;,
+    pub options_to_remove: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.OptionsSpecifierList.html' title='rusoto::elasticbeanstalk::OptionsSpecifierList'>OptionsSpecifierList</a>&gt;,
+    pub solution_stack_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.SolutionStackName.html' title='rusoto::elasticbeanstalk::SolutionStackName'>SolutionStackName</a>&gt;,
+    pub template_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.ConfigurationTemplateName.html' title='rusoto::elasticbeanstalk::ConfigurationTemplateName'>ConfigurationTemplateName</a>&gt;,
+    pub tier: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/elasticbeanstalk/struct.EnvironmentTier.html' title='rusoto::elasticbeanstalk::EnvironmentTier'>EnvironmentTier</a>&gt;,
+    pub version_label: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.VersionLabel.html' title='rusoto::elasticbeanstalk::VersionLabel'>VersionLabel</a>&gt;,
+}</pre><div class='docblock'><p>Request to update an environment.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.application_name' class='structfield'>
+                           <span id='application_name.v' class='invisible'>
+                           <code>application_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.ApplicationName.html' title='rusoto::elasticbeanstalk::ApplicationName'>ApplicationName</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the application with which the environment is associated.</p>
+</div><span id='structfield.description' class='structfield'>
+                           <span id='description.v' class='invisible'>
+                           <code>description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.Description.html' title='rusoto::elasticbeanstalk::Description'>Description</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>If this parameter is specified, AWS Elastic Beanstalk updates the description of this environment.</p>
+</div><span id='structfield.environment_id' class='structfield'>
+                           <span id='environment_id.v' class='invisible'>
+                           <code>environment_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.EnvironmentId.html' title='rusoto::elasticbeanstalk::EnvironmentId'>EnvironmentId</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The ID of the environment to update.</p> <p>If no environment with this ID exists, AWS Elastic Beanstalk returns an <code>InvalidParameterValue</code> error.</p> <p>Condition: You must specify either this or an EnvironmentName, or both. If you do not specify either, AWS Elastic Beanstalk returns <code>MissingRequiredParameter</code> error. </p>
+</div><span id='structfield.environment_name' class='structfield'>
+                           <span id='environment_name.v' class='invisible'>
+                           <code>environment_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.EnvironmentName.html' title='rusoto::elasticbeanstalk::EnvironmentName'>EnvironmentName</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the environment to update. If no environment with this name exists, AWS Elastic Beanstalk returns an <code>InvalidParameterValue</code> error. </p> <p>Condition: You must specify either this or an EnvironmentId, or both. If you do not specify either, AWS Elastic Beanstalk returns <code>MissingRequiredParameter</code> error. </p>
+</div><span id='structfield.group_name' class='structfield'>
+                           <span id='group_name.v' class='invisible'>
+                           <code>group_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.GroupName.html' title='rusoto::elasticbeanstalk::GroupName'>GroupName</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the group to which the target environment belongs. Specify a group name only if the environment's name is specified in an environment manifest and not with the environment name or environment ID parameters. See <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-cfg-manifest.html">Environment Manifest (env.yaml)</a> for details.</p>
+</div><span id='structfield.option_settings' class='structfield'>
+                           <span id='option_settings.v' class='invisible'>
+                           <code>option_settings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.ConfigurationOptionSettingsList.html' title='rusoto::elasticbeanstalk::ConfigurationOptionSettingsList'>ConfigurationOptionSettingsList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>If specified, AWS Elastic Beanstalk updates the configuration set associated with the running environment and sets the specified configuration options to the requested value.</p>
+</div><span id='structfield.options_to_remove' class='structfield'>
+                           <span id='options_to_remove.v' class='invisible'>
+                           <code>options_to_remove: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.OptionsSpecifierList.html' title='rusoto::elasticbeanstalk::OptionsSpecifierList'>OptionsSpecifierList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A list of custom user-defined configuration options to remove from the configuration set for this environment.</p>
+</div><span id='structfield.solution_stack_name' class='structfield'>
+                           <span id='solution_stack_name.v' class='invisible'>
+                           <code>solution_stack_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.SolutionStackName.html' title='rusoto::elasticbeanstalk::SolutionStackName'>SolutionStackName</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>This specifies the platform version that the environment will run after the environment is updated.</p>
+</div><span id='structfield.template_name' class='structfield'>
+                           <span id='template_name.v' class='invisible'>
+                           <code>template_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.ConfigurationTemplateName.html' title='rusoto::elasticbeanstalk::ConfigurationTemplateName'>ConfigurationTemplateName</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>If this parameter is specified, AWS Elastic Beanstalk deploys this configuration template to the environment. If no such configuration template is found, AWS Elastic Beanstalk returns an <code>InvalidParameterValue</code> error. </p>
+</div><span id='structfield.tier' class='structfield'>
+                           <span id='tier.v' class='invisible'>
+                           <code>tier: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/elasticbeanstalk/struct.EnvironmentTier.html' title='rusoto::elasticbeanstalk::EnvironmentTier'>EnvironmentTier</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>This specifies the tier to use to update the environment.</p> <p>Condition: At this time, if you change the tier version, name, or type, AWS Elastic Beanstalk returns <code>InvalidParameterValue</code> error. </p>
+</div><span id='structfield.version_label' class='structfield'>
+                           <span id='version_label.v' class='invisible'>
+                           <code>version_label: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/elasticbeanstalk/type.VersionLabel.html' title='rusoto::elasticbeanstalk::VersionLabel'>VersionLabel</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>If this parameter is specified, AWS Elastic Beanstalk deploys the named application version to the environment. If no such application version is found, returns an <code>InvalidParameterValue</code> error. </p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/elasticbeanstalk/struct.UpdateEnvironmentMessage.html' title='rusoto::elasticbeanstalk::UpdateEnvironmentMessage'>UpdateEnvironmentMessage</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/elasticbeanstalk.rs.html#6896' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/elasticbeanstalk/struct.UpdateEnvironmentMessage.html' title='rusoto::elasticbeanstalk::UpdateEnvironmentMessage'>UpdateEnvironmentMessage</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CreateMaintenanceWindowRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CreateMaintenanceWindowRequest">
+
+    <title>rusoto::ssm::CreateMaintenanceWindowRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ssm</a></p><script>window.sidebarCurrent = {name: 'CreateMaintenanceWindowRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ssm</a>::<wbr><a class='struct' href=''>CreateMaintenanceWindowRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/ssm.rs.html#617-636' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CreateMaintenanceWindowRequest {
+    pub allow_unassociated_targets: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowAllowUnassociatedTargets.html' title='rusoto::ssm::MaintenanceWindowAllowUnassociatedTargets'>MaintenanceWindowAllowUnassociatedTargets</a>,
+    pub client_token: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.ClientToken.html' title='rusoto::ssm::ClientToken'>ClientToken</a>&gt;,
+    pub cutoff: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowCutoff.html' title='rusoto::ssm::MaintenanceWindowCutoff'>MaintenanceWindowCutoff</a>,
+    pub duration: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowDurationHours.html' title='rusoto::ssm::MaintenanceWindowDurationHours'>MaintenanceWindowDurationHours</a>,
+    pub name: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowName.html' title='rusoto::ssm::MaintenanceWindowName'>MaintenanceWindowName</a>,
+    pub schedule: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowSchedule.html' title='rusoto::ssm::MaintenanceWindowSchedule'>MaintenanceWindowSchedule</a>,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.allow_unassociated_targets' class='structfield'>
+                           <span id='allow_unassociated_targets.v' class='invisible'>
+                           <code>allow_unassociated_targets: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowAllowUnassociatedTargets.html' title='rusoto::ssm::MaintenanceWindowAllowUnassociatedTargets'>MaintenanceWindowAllowUnassociatedTargets</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Whether targets must be registered with the Maintenance Window before tasks can be defined for those targets.</p>
+</div><span id='structfield.client_token' class='structfield'>
+                           <span id='client_token.v' class='invisible'>
+                           <code>client_token: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.ClientToken.html' title='rusoto::ssm::ClientToken'>ClientToken</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>User-provided idempotency token.</p>
+</div><span id='structfield.cutoff' class='structfield'>
+                           <span id='cutoff.v' class='invisible'>
+                           <code>cutoff: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowCutoff.html' title='rusoto::ssm::MaintenanceWindowCutoff'>MaintenanceWindowCutoff</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.</p>
+</div><span id='structfield.duration' class='structfield'>
+                           <span id='duration.v' class='invisible'>
+                           <code>duration: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowDurationHours.html' title='rusoto::ssm::MaintenanceWindowDurationHours'>MaintenanceWindowDurationHours</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The duration of the Maintenance Window in hours.</p>
+</div><span id='structfield.name' class='structfield'>
+                           <span id='name.v' class='invisible'>
+                           <code>name: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowName.html' title='rusoto::ssm::MaintenanceWindowName'>MaintenanceWindowName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the Maintenance Window.</p>
+</div><span id='structfield.schedule' class='structfield'>
+                           <span id='schedule.v' class='invisible'>
+                           <code>schedule: <a class='type' href='../../rusoto/ssm/type.MaintenanceWindowSchedule.html' title='rusoto::ssm::MaintenanceWindowSchedule'>MaintenanceWindowSchedule</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The schedule of the Maintenance Window in the form of a cron or rate expression.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/ssm/struct.CreateMaintenanceWindowRequest.html' title='rusoto::ssm::CreateMaintenanceWindowRequest'>CreateMaintenanceWindowRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/ssm.rs.html#616' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/ssm/struct.CreateMaintenanceWindowRequest.html' title='rusoto::ssm::CreateMaintenanceWindowRequest'>CreateMaintenanceWindowRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

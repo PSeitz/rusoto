@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cloudsearch` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cloudsearch">
+
+    <title>rusoto::cloudsearch - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'cloudsearch', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>cloudsearch</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/cloudsearch.rs.html#1-4' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon CloudSearch</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.CloudSearchClient.html">CloudSearchClient</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccessPoliciesStatus.html'
+                                  title='rusoto::cloudsearch::AccessPoliciesStatus'>AccessPoliciesStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The configured access rules for the domain's document and search endpoints, and the current status of those rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnalysisOptions.html'
+                                  title='rusoto::cloudsearch::AnalysisOptions'>AnalysisOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Synonyms, stopwords, and stemming options for an analysis scheme. Includes tokenization dictionary for Japanese.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnalysisScheme.html'
+                                  title='rusoto::cloudsearch::AnalysisScheme'>AnalysisScheme</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration information for an analysis scheme. Each analysis scheme has a unique name and specifies the language of the text to be processed. The following options can be configured for an analysis scheme: <code>Synonyms</code>, <code>Stopwords</code>, <code>StemmingDictionary</code>, <code>JapaneseTokenizationDictionary</code> and <code>AlgorithmicStemming</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnalysisSchemeStatus.html'
+                                  title='rusoto::cloudsearch::AnalysisSchemeStatus'>AnalysisSchemeStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The status and configuration of an <code>AnalysisScheme</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AvailabilityOptionsStatus.html'
+                                  title='rusoto::cloudsearch::AvailabilityOptionsStatus'>AvailabilityOptionsStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The status and configuration of the domain's availability options.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BuildSuggestersRequest.html'
+                                  title='rusoto::cloudsearch::BuildSuggestersRequest'>BuildSuggestersRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>BuildSuggester</a></code> operation. Specifies the name of the domain you want to update.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BuildSuggestersResponse.html'
+                                  title='rusoto::cloudsearch::BuildSuggestersResponse'>BuildSuggestersResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>BuildSuggester</code> request. Contains a list of the fields used for suggestions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudSearchClient.html'
+                                  title='rusoto::cloudsearch::CloudSearchClient'>CloudSearchClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon CloudSearch API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateDomainRequest.html'
+                                  title='rusoto::cloudsearch::CreateDomainRequest'>CreateDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>CreateDomain</a></code> operation. Specifies a name for the new search domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateDomainResponse.html'
+                                  title='rusoto::cloudsearch::CreateDomainResponse'>CreateDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>CreateDomainRequest</code>. Contains the status of a newly created domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DateArrayOptions.html'
+                                  title='rusoto::cloudsearch::DateArrayOptions'>DateArrayOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a field that contains an array of dates. Present if <code>IndexFieldType</code> specifies the field is of type <code>date-array</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DateOptions.html'
+                                  title='rusoto::cloudsearch::DateOptions'>DateOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a date field. Dates and times are specified in UTC (Coordinated Universal Time) according to IETF RFC3339: yyyy-mm-ddT00:00:00Z. Present if <code>IndexFieldType</code> specifies the field is of type <code>date</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineAnalysisSchemeRequest.html'
+                                  title='rusoto::cloudsearch::DefineAnalysisSchemeRequest'>DefineAnalysisSchemeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DefineAnalysisScheme</a></code> operation. Specifies the name of the domain you want to update and the analysis scheme configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineAnalysisSchemeResponse.html'
+                                  title='rusoto::cloudsearch::DefineAnalysisSchemeResponse'>DefineAnalysisSchemeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code><a>DefineAnalysisScheme</a></code> request. Contains the status of the newly-configured analysis scheme.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineExpressionRequest.html'
+                                  title='rusoto::cloudsearch::DefineExpressionRequest'>DefineExpressionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DefineExpression</a></code> operation. Specifies the name of the domain you want to update and the expression you want to configure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineExpressionResponse.html'
+                                  title='rusoto::cloudsearch::DefineExpressionResponse'>DefineExpressionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DefineExpression</code> request. Contains the status of the newly-configured expression.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineIndexFieldRequest.html'
+                                  title='rusoto::cloudsearch::DefineIndexFieldRequest'>DefineIndexFieldRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DefineIndexField</a></code> operation. Specifies the name of the domain you want to update and the index field configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineIndexFieldResponse.html'
+                                  title='rusoto::cloudsearch::DefineIndexFieldResponse'>DefineIndexFieldResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code><a>DefineIndexField</a></code> request. Contains the status of the newly-configured index field.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineSuggesterRequest.html'
+                                  title='rusoto::cloudsearch::DefineSuggesterRequest'>DefineSuggesterRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DefineSuggester</a></code> operation. Specifies the name of the domain you want to update and the suggester configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefineSuggesterResponse.html'
+                                  title='rusoto::cloudsearch::DefineSuggesterResponse'>DefineSuggesterResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DefineSuggester</code> request. Contains the status of the newly-configured suggester.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAnalysisSchemeRequest.html'
+                                  title='rusoto::cloudsearch::DeleteAnalysisSchemeRequest'>DeleteAnalysisSchemeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DeleteAnalysisScheme</a></code> operation. Specifies the name of the domain you want to update and the analysis scheme you want to delete. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAnalysisSchemeResponse.html'
+                                  title='rusoto::cloudsearch::DeleteAnalysisSchemeResponse'>DeleteAnalysisSchemeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DeleteAnalysisScheme</code> request. Contains the status of the deleted analysis scheme.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteDomainRequest.html'
+                                  title='rusoto::cloudsearch::DeleteDomainRequest'>DeleteDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DeleteDomain</a></code> operation. Specifies the name of the domain you want to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteDomainResponse.html'
+                                  title='rusoto::cloudsearch::DeleteDomainResponse'>DeleteDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DeleteDomain</code> request. Contains the status of a newly deleted domain, or no status if the domain has already been completely deleted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteExpressionRequest.html'
+                                  title='rusoto::cloudsearch::DeleteExpressionRequest'>DeleteExpressionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DeleteExpression</a></code> operation. Specifies the name of the domain you want to update and the name of the expression you want to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteExpressionResponse.html'
+                                  title='rusoto::cloudsearch::DeleteExpressionResponse'>DeleteExpressionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code><a>DeleteExpression</a></code> request. Specifies the expression being deleted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIndexFieldRequest.html'
+                                  title='rusoto::cloudsearch::DeleteIndexFieldRequest'>DeleteIndexFieldRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DeleteIndexField</a></code> operation. Specifies the name of the domain you want to update and the name of the index field you want to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIndexFieldResponse.html'
+                                  title='rusoto::cloudsearch::DeleteIndexFieldResponse'>DeleteIndexFieldResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code><a>DeleteIndexField</a></code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSuggesterRequest.html'
+                                  title='rusoto::cloudsearch::DeleteSuggesterRequest'>DeleteSuggesterRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DeleteSuggester</a></code> operation. Specifies the name of the domain you want to update and name of the suggester you want to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSuggesterResponse.html'
+                                  title='rusoto::cloudsearch::DeleteSuggesterResponse'>DeleteSuggesterResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DeleteSuggester</code> request. Contains the status of the deleted suggester.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAnalysisSchemesRequest.html'
+                                  title='rusoto::cloudsearch::DescribeAnalysisSchemesRequest'>DescribeAnalysisSchemesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeAnalysisSchemes</a></code> operation. Specifies the name of the domain you want to describe. To limit the response to particular analysis schemes, specify the names of the analysis schemes you want to describe. To show the active configuration and exclude any pending changes, set the <code>Deployed</code> option to <code>true</code>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAnalysisSchemesResponse.html'
+                                  title='rusoto::cloudsearch::DescribeAnalysisSchemesResponse'>DescribeAnalysisSchemesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeAnalysisSchemes</code> request. Contains the analysis schemes configured for the domain specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAvailabilityOptionsRequest.html'
+                                  title='rusoto::cloudsearch::DescribeAvailabilityOptionsRequest'>DescribeAvailabilityOptionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeAvailabilityOptions</a></code> operation. Specifies the name of the domain you want to describe. To show the active configuration and exclude any pending changes, set the Deployed option to <code>true</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAvailabilityOptionsResponse.html'
+                                  title='rusoto::cloudsearch::DescribeAvailabilityOptionsResponse'>DescribeAvailabilityOptionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeAvailabilityOptions</code> request. Indicates whether or not the Multi-AZ option is enabled for the domain specified in the request. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDomainsRequest.html'
+                                  title='rusoto::cloudsearch::DescribeDomainsRequest'>DescribeDomainsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeDomains</a></code> operation. By default shows the status of all domains. To restrict the response to particular domains, specify the names of the domains you want to describe.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDomainsResponse.html'
+                                  title='rusoto::cloudsearch::DescribeDomainsResponse'>DescribeDomainsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeDomains</code> request. Contains the status of the domains specified in the request or all domains owned by the account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeExpressionsRequest.html'
+                                  title='rusoto::cloudsearch::DescribeExpressionsRequest'>DescribeExpressionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeDomains</a></code> operation. Specifies the name of the domain you want to describe. To restrict the response to particular expressions, specify the names of the expressions you want to describe. To show the active configuration and exclude any pending changes, set the <code>Deployed</code> option to <code>true</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeExpressionsResponse.html'
+                                  title='rusoto::cloudsearch::DescribeExpressionsResponse'>DescribeExpressionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeExpressions</code> request. Contains the expressions configured for the domain specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeIndexFieldsRequest.html'
+                                  title='rusoto::cloudsearch::DescribeIndexFieldsRequest'>DescribeIndexFieldsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeIndexFields</a></code> operation. Specifies the name of the domain you want to describe. To restrict the response to particular index fields, specify the names of the index fields you want to describe. To show the active configuration and exclude any pending changes, set the <code>Deployed</code> option to <code>true</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeIndexFieldsResponse.html'
+                                  title='rusoto::cloudsearch::DescribeIndexFieldsResponse'>DescribeIndexFieldsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeIndexFields</code> request. Contains the index fields configured for the domain specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeScalingParametersRequest.html'
+                                  title='rusoto::cloudsearch::DescribeScalingParametersRequest'>DescribeScalingParametersRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeScalingParameters</a></code> operation. Specifies the name of the domain you want to describe. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeScalingParametersResponse.html'
+                                  title='rusoto::cloudsearch::DescribeScalingParametersResponse'>DescribeScalingParametersResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeScalingParameters</code> request. Contains the scaling parameters configured for the domain specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeServiceAccessPoliciesRequest.html'
+                                  title='rusoto::cloudsearch::DescribeServiceAccessPoliciesRequest'>DescribeServiceAccessPoliciesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeServiceAccessPolicies</a></code> operation. Specifies the name of the domain you want to describe. To show the active configuration and exclude any pending changes, set the <code>Deployed</code> option to <code>true</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeServiceAccessPoliciesResponse.html'
+                                  title='rusoto::cloudsearch::DescribeServiceAccessPoliciesResponse'>DescribeServiceAccessPoliciesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeServiceAccessPolicies</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSuggestersRequest.html'
+                                  title='rusoto::cloudsearch::DescribeSuggestersRequest'>DescribeSuggestersRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>DescribeSuggester</a></code> operation. Specifies the name of the domain you want to describe. To restrict the response to particular suggesters, specify the names of the suggesters you want to describe. To show the active configuration and exclude any pending changes, set the <code>Deployed</code> option to <code>true</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSuggestersResponse.html'
+                                  title='rusoto::cloudsearch::DescribeSuggestersResponse'>DescribeSuggestersResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>DescribeSuggesters</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DocumentSuggesterOptions.html'
+                                  title='rusoto::cloudsearch::DocumentSuggesterOptions'>DocumentSuggesterOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a search suggester.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainStatus.html'
+                                  title='rusoto::cloudsearch::DomainStatus'>DomainStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The current status of the search domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DoubleArrayOptions.html'
+                                  title='rusoto::cloudsearch::DoubleArrayOptions'>DoubleArrayOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a field that contains an array of double-precision 64-bit floating point values. Present if <code>IndexFieldType</code> specifies the field is of type <code>double-array</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DoubleOptions.html'
+                                  title='rusoto::cloudsearch::DoubleOptions'>DoubleOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a double-precision 64-bit floating point field. Present if <code>IndexFieldType</code> specifies the field is of type <code>double</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Expression.html'
+                                  title='rusoto::cloudsearch::Expression'>Expression</a></td>
+                           <td class='docblock-short'>
+                                <p>A named expression that can be evaluated at search time. Can be used to sort the search results, define other expressions, or return computed information in the search results. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExpressionStatus.html'
+                                  title='rusoto::cloudsearch::ExpressionStatus'>ExpressionStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The value of an <code>Expression</code> and its current status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IndexDocumentsRequest.html'
+                                  title='rusoto::cloudsearch::IndexDocumentsRequest'>IndexDocumentsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>IndexDocuments</a></code> operation. Specifies the name of the domain you want to re-index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IndexDocumentsResponse.html'
+                                  title='rusoto::cloudsearch::IndexDocumentsResponse'>IndexDocumentsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of an <code>IndexDocuments</code> request. Contains the status of the indexing operation, including the fields being indexed.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IndexField.html'
+                                  title='rusoto::cloudsearch::IndexField'>IndexField</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration information for a field in the index, including its name, type, and options. The supported options depend on the <code><a>IndexFieldType</a></code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IndexFieldStatus.html'
+                                  title='rusoto::cloudsearch::IndexFieldStatus'>IndexFieldStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The value of an <code>IndexField</code> and its current status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IntArrayOptions.html'
+                                  title='rusoto::cloudsearch::IntArrayOptions'>IntArrayOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a field that contains an array of 64-bit signed integers. Present if <code>IndexFieldType</code> specifies the field is of type <code>int-array</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IntOptions.html'
+                                  title='rusoto::cloudsearch::IntOptions'>IntOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a 64-bit signed integer field. Present if <code>IndexFieldType</code> specifies the field is of type <code>int</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LatLonOptions.html'
+                                  title='rusoto::cloudsearch::LatLonOptions'>LatLonOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a latlon field. A latlon field contains a location stored as a latitude and longitude value pair. Present if <code>IndexFieldType</code> specifies the field is of type <code>latlon</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Limits.html'
+                                  title='rusoto::cloudsearch::Limits'>Limits</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDomainNamesResponse.html'
+                                  title='rusoto::cloudsearch::ListDomainNamesResponse'>ListDomainNamesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>ListDomainNames</code> request. Contains a list of the domains owned by an account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiteralArrayOptions.html'
+                                  title='rusoto::cloudsearch::LiteralArrayOptions'>LiteralArrayOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a field that contains an array of literal strings. Present if <code>IndexFieldType</code> specifies the field is of type <code>literal-array</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiteralOptions.html'
+                                  title='rusoto::cloudsearch::LiteralOptions'>LiteralOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for literal field. Present if <code>IndexFieldType</code> specifies the field is of type <code>literal</code>. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OptionStatus.html'
+                                  title='rusoto::cloudsearch::OptionStatus'>OptionStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The status of domain configuration option.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScalingParameters.html'
+                                  title='rusoto::cloudsearch::ScalingParameters'>ScalingParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>The desired instance type and desired number of replicas of each index partition.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScalingParametersStatus.html'
+                                  title='rusoto::cloudsearch::ScalingParametersStatus'>ScalingParametersStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The status and configuration of a search domain's scaling parameters. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceEndpoint.html'
+                                  title='rusoto::cloudsearch::ServiceEndpoint'>ServiceEndpoint</a></td>
+                           <td class='docblock-short'>
+                                <p>The endpoint to which service requests can be submitted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Suggester.html'
+                                  title='rusoto::cloudsearch::Suggester'>Suggester</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration information for a search suggester. Each suggester has a unique name and specifies the text field you want to use for suggestions. The following options can be configured for a suggester: <code>FuzzyMatching</code>, <code>SortExpression</code>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SuggesterStatus.html'
+                                  title='rusoto::cloudsearch::SuggesterStatus'>SuggesterStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The value of a <code>Suggester</code> and its current status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TextArrayOptions.html'
+                                  title='rusoto::cloudsearch::TextArrayOptions'>TextArrayOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for a field that contains an array of text strings. Present if <code>IndexFieldType</code> specifies the field is of type <code>text-array</code>. A <code>text-array</code> field is always searchable. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TextOptions.html'
+                                  title='rusoto::cloudsearch::TextOptions'>TextOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options for text field. Present if <code>IndexFieldType</code> specifies the field is of type <code>text</code>. A <code>text</code> field is always searchable. All options are enabled by default.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAvailabilityOptionsRequest.html'
+                                  title='rusoto::cloudsearch::UpdateAvailabilityOptionsRequest'>UpdateAvailabilityOptionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>UpdateAvailabilityOptions</a></code> operation. Specifies the name of the domain you want to update and the Multi-AZ availability option.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAvailabilityOptionsResponse.html'
+                                  title='rusoto::cloudsearch::UpdateAvailabilityOptionsResponse'>UpdateAvailabilityOptionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>UpdateAvailabilityOptions</code> request. Contains the status of the domain's availability options. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateScalingParametersRequest.html'
+                                  title='rusoto::cloudsearch::UpdateScalingParametersRequest'>UpdateScalingParametersRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>UpdateScalingParameters</a></code> operation. Specifies the name of the domain you want to update and the scaling parameters you want to configure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateScalingParametersResponse.html'
+                                  title='rusoto::cloudsearch::UpdateScalingParametersResponse'>UpdateScalingParametersResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a <code>UpdateScalingParameters</code> request. Contains the status of the newly-configured scaling parameters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateServiceAccessPoliciesRequest.html'
+                                  title='rusoto::cloudsearch::UpdateServiceAccessPoliciesRequest'>UpdateServiceAccessPoliciesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the parameters to the <code><a>UpdateServiceAccessPolicies</a></code> operation. Specifies the name of the domain you want to update and the access rules you want to configure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateServiceAccessPoliciesResponse.html'
+                                  title='rusoto::cloudsearch::UpdateServiceAccessPoliciesResponse'>UpdateServiceAccessPoliciesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of an <code>UpdateServiceAccessPolicies</code> request. Contains the new access policies.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BuildSuggestersError.html'
+                                  title='rusoto::cloudsearch::BuildSuggestersError'>BuildSuggestersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by BuildSuggesters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateDomainError.html'
+                                  title='rusoto::cloudsearch::CreateDomainError'>CreateDomainError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateDomain</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DefineAnalysisSchemeError.html'
+                                  title='rusoto::cloudsearch::DefineAnalysisSchemeError'>DefineAnalysisSchemeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DefineAnalysisScheme</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DefineExpressionError.html'
+                                  title='rusoto::cloudsearch::DefineExpressionError'>DefineExpressionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DefineExpression</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DefineIndexFieldError.html'
+                                  title='rusoto::cloudsearch::DefineIndexFieldError'>DefineIndexFieldError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DefineIndexField</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DefineSuggesterError.html'
+                                  title='rusoto::cloudsearch::DefineSuggesterError'>DefineSuggesterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DefineSuggester</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteAnalysisSchemeError.html'
+                                  title='rusoto::cloudsearch::DeleteAnalysisSchemeError'>DeleteAnalysisSchemeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteAnalysisScheme</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteDomainError.html'
+                                  title='rusoto::cloudsearch::DeleteDomainError'>DeleteDomainError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteDomain</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteExpressionError.html'
+                                  title='rusoto::cloudsearch::DeleteExpressionError'>DeleteExpressionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteExpression</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteIndexFieldError.html'
+                                  title='rusoto::cloudsearch::DeleteIndexFieldError'>DeleteIndexFieldError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteIndexField</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSuggesterError.html'
+                                  title='rusoto::cloudsearch::DeleteSuggesterError'>DeleteSuggesterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteSuggester</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeAnalysisSchemesError.html'
+                                  title='rusoto::cloudsearch::DescribeAnalysisSchemesError'>DescribeAnalysisSchemesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeAnalysisSchemes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeAvailabilityOptionsError.html'
+                                  title='rusoto::cloudsearch::DescribeAvailabilityOptionsError'>DescribeAvailabilityOptionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeAvailabilityOptions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDomainsError.html'
+                                  title='rusoto::cloudsearch::DescribeDomainsError'>DescribeDomainsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeDomains</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeExpressionsError.html'
+                                  title='rusoto::cloudsearch::DescribeExpressionsError'>DescribeExpressionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeExpressions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeIndexFieldsError.html'
+                                  title='rusoto::cloudsearch::DescribeIndexFieldsError'>DescribeIndexFieldsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeIndexFields</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeScalingParametersError.html'
+                                  title='rusoto::cloudsearch::DescribeScalingParametersError'>DescribeScalingParametersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeScalingParameters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeServiceAccessPoliciesError.html'
+                                  title='rusoto::cloudsearch::DescribeServiceAccessPoliciesError'>DescribeServiceAccessPoliciesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeServiceAccessPolicies</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeSuggestersError.html'
+                                  title='rusoto::cloudsearch::DescribeSuggestersError'>DescribeSuggestersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeSuggesters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.IndexDocumentsError.html'
+                                  title='rusoto::cloudsearch::IndexDocumentsError'>IndexDocumentsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by IndexDocuments</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListDomainNamesError.html'
+                                  title='rusoto::cloudsearch::ListDomainNamesError'>ListDomainNamesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListDomainNames</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateAvailabilityOptionsError.html'
+                                  title='rusoto::cloudsearch::UpdateAvailabilityOptionsError'>UpdateAvailabilityOptionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateAvailabilityOptions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateScalingParametersError.html'
+                                  title='rusoto::cloudsearch::UpdateScalingParametersError'>UpdateScalingParametersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateScalingParameters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateServiceAccessPoliciesError.html'
+                                  title='rusoto::cloudsearch::UpdateServiceAccessPoliciesError'>UpdateServiceAccessPoliciesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateServiceAccessPolicies</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.APIVersion.html'
+                                  title='rusoto::cloudsearch::APIVersion'>APIVersion</a></td>
+                           <td class='docblock-short'>
+                                <p>The Amazon CloudSearch API version for a domain: 2011-02-01 or 2013-01-01.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ARN.html'
+                                  title='rusoto::cloudsearch::ARN'>ARN</a></td>
+                           <td class='docblock-short'>
+                                <p>The Amazon Resource Name (ARN) of the search domain. See <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/index.html?Using_Identifiers.html" target="_blank">Identifiers for IAM Entities</a> in <i>Using AWS Identity and Access Management</i> for more information.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AlgorithmicStemming.html'
+                                  title='rusoto::cloudsearch::AlgorithmicStemming'>AlgorithmicStemming</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AnalysisSchemeLanguage.html'
+                                  title='rusoto::cloudsearch::AnalysisSchemeLanguage'>AnalysisSchemeLanguage</a></td>
+                           <td class='docblock-short'>
+                                <p>An <a href="http://tools.ietf.org/html/rfc4646" target="_blank">IETF RFC 4646</a> language code or <code>mul</code> for multiple languages.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AnalysisSchemeStatusList.html'
+                                  title='rusoto::cloudsearch::AnalysisSchemeStatusList'>AnalysisSchemeStatusList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of the analysis schemes configured for a domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::cloudsearch::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainId.html'
+                                  title='rusoto::cloudsearch::DomainId'>DomainId</a></td>
+                           <td class='docblock-short'>
+                                <p>An internally generated unique identifier for a domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainName.html'
+                                  title='rusoto::cloudsearch::DomainName'>DomainName</a></td>
+                           <td class='docblock-short'>
+                                <p>A string that represents the name of a domain. Domain names are unique across the domains owned by an account within an AWS region. Domain names start with a letter or number and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainNameList.html'
+                                  title='rusoto::cloudsearch::DomainNameList'>DomainNameList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of domain names.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainNameMap.html'
+                                  title='rusoto::cloudsearch::DomainNameMap'>DomainNameMap</a></td>
+                           <td class='docblock-short'>
+                                <p>A collection of domain names.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainStatusList.html'
+                                  title='rusoto::cloudsearch::DomainStatusList'>DomainStatusList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list that contains the status of each requested domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Double.html'
+                                  title='rusoto::cloudsearch::Double'>Double</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DynamicFieldName.html'
+                                  title='rusoto::cloudsearch::DynamicFieldName'>DynamicFieldName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DynamicFieldNameList.html'
+                                  title='rusoto::cloudsearch::DynamicFieldNameList'>DynamicFieldNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorCode.html'
+                                  title='rusoto::cloudsearch::ErrorCode'>ErrorCode</a></td>
+                           <td class='docblock-short'>
+                                <p>A machine-parsable string error or warning code.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::cloudsearch::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>A human-readable string error or warning message.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpressionStatusList.html'
+                                  title='rusoto::cloudsearch::ExpressionStatusList'>ExpressionStatusList</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the status of multiple expressions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpressionValue.html'
+                                  title='rusoto::cloudsearch::ExpressionValue'>ExpressionValue</a></td>
+                           <td class='docblock-short'>
+                                <p>The expression to evaluate for sorting while processing a search request. The <code>Expression</code> syntax is based on JavaScript expressions. For more information, see <a href="http://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-expressions.html" target="_blank">Configuring Expressions</a> in the <i>Amazon CloudSearch Developer Guide</i>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FieldName.html'
+                                  title='rusoto::cloudsearch::FieldName'>FieldName</a></td>
+                           <td class='docblock-short'>
+                                <p>A string that represents the name of an index field. CloudSearch supports regular index fields as well as dynamic fields. A dynamic field's name defines a pattern that begins or ends with a wildcard. Any document fields that don't map to a regular index field but do match a dynamic field's pattern are configured with the dynamic field's indexing options. </p> <p>Regular field names begin with a letter and can contain the following characters: a-z (lowercase), 0-9, and _ (underscore). Dynamic field names must begin or end with a wildcard (*). The wildcard can also be the only character in a dynamic field name. Multiple wildcards, and wildcards embedded within a string are not supported. </p> <p>The name <code>score</code> is reserved and cannot be used as a field name. To reference a document's ID, you can use the name <code>_id</code>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FieldNameCommaList.html'
+                                  title='rusoto::cloudsearch::FieldNameCommaList'>FieldNameCommaList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FieldNameList.html'
+                                  title='rusoto::cloudsearch::FieldNameList'>FieldNameList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of field names.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FieldValue.html'
+                                  title='rusoto::cloudsearch::FieldValue'>FieldValue</a></td>
+                           <td class='docblock-short'>
+                                <p>The value of a field attribute.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IndexFieldStatusList.html'
+                                  title='rusoto::cloudsearch::IndexFieldStatusList'>IndexFieldStatusList</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the status of multiple index fields.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IndexFieldType.html'
+                                  title='rusoto::cloudsearch::IndexFieldType'>IndexFieldType</a></td>
+                           <td class='docblock-short'>
+                                <p>The type of field. The valid options for a field depend on the field type. For more information about the supported field types, see <a href="http://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-index-fields.html" target="_blank">Configuring Index Fields</a> in the <i>Amazon CloudSearch Developer Guide</i>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceCount.html'
+                                  title='rusoto::cloudsearch::InstanceCount'>InstanceCount</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Long.html'
+                                  title='rusoto::cloudsearch::Long'>Long</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaximumPartitionCount.html'
+                                  title='rusoto::cloudsearch::MaximumPartitionCount'>MaximumPartitionCount</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaximumReplicationCount.html'
+                                  title='rusoto::cloudsearch::MaximumReplicationCount'>MaximumReplicationCount</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MultiAZ.html'
+                                  title='rusoto::cloudsearch::MultiAZ'>MultiAZ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionState.html'
+                                  title='rusoto::cloudsearch::OptionState'>OptionState</a></td>
+                           <td class='docblock-short'>
+                                <p><p>The state of processing a change to an option. One of:</p> <ul> <li>RequiresIndexDocuments: The option&#39;s latest value will not be deployed until <a>IndexDocuments</a> has been called and indexing is complete.</li> <li>Processing: The option&#39;s latest value is in the process of being activated.</li> <li>Active: The option&#39;s latest value is fully deployed. </li> <li>FailedToValidate: The option value is not compatible with the domain&#39;s data and cannot be used to index the data. You must either modify the option value or update or remove the incompatible documents.</li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionCount.html'
+                                  title='rusoto::cloudsearch::PartitionCount'>PartitionCount</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of partitions used to hold the domain's index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionInstanceType.html'
+                                  title='rusoto::cloudsearch::PartitionInstanceType'>PartitionInstanceType</a></td>
+                           <td class='docblock-short'>
+                                <p>The instance type (such as <code>search.m1.small</code>) on which an index partition is hosted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PolicyDocument.html'
+                                  title='rusoto::cloudsearch::PolicyDocument'>PolicyDocument</a></td>
+                           <td class='docblock-short'>
+                                <p>Access rules for a domain's document or search service endpoints. For more information, see <a href="http://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-access.html" target="_blank">Configuring Access for a Search Domain</a> in the <i>Amazon CloudSearch Developer Guide</i>. The maximum size of a policy document is 100 KB.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SearchInstanceType.html'
+                                  title='rusoto::cloudsearch::SearchInstanceType'>SearchInstanceType</a></td>
+                           <td class='docblock-short'>
+                                <p>The instance type (such as <code>search.m1.small</code>) that is being used to process search requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ServiceUrl.html'
+                                  title='rusoto::cloudsearch::ServiceUrl'>ServiceUrl</a></td>
+                           <td class='docblock-short'>
+                                <p>The endpoint to which service requests can be submitted. For example, <code>search-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.cloudsearch.amazonaws.com</code> or <code>doc-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.cloudsearch.amazonaws.com</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StandardName.html'
+                                  title='rusoto::cloudsearch::StandardName'>StandardName</a></td>
+                           <td class='docblock-short'>
+                                <p>Names must begin with a letter and can contain the following characters: a-z (lowercase), 0-9, and _ (underscore).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StandardNameList.html'
+                                  title='rusoto::cloudsearch::StandardNameList'>StandardNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SuggesterFuzzyMatching.html'
+                                  title='rusoto::cloudsearch::SuggesterFuzzyMatching'>SuggesterFuzzyMatching</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SuggesterStatusList.html'
+                                  title='rusoto::cloudsearch::SuggesterStatusList'>SuggesterStatusList</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the status of multiple suggesters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UIntValue.html'
+                                  title='rusoto::cloudsearch::UIntValue'>UIntValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UpdateTimestamp.html'
+                                  title='rusoto::cloudsearch::UpdateTimestamp'>UpdateTimestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Word.html'
+                                  title='rusoto::cloudsearch::Word'>Word</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

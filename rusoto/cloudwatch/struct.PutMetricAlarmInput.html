@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `PutMetricAlarmInput` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, PutMetricAlarmInput">
+
+    <title>rusoto::cloudwatch::PutMetricAlarmInput - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudwatch</a></p><script>window.sidebarCurrent = {name: 'PutMetricAlarmInput', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudwatch</a>::<wbr><a class='struct' href=''>PutMetricAlarmInput</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/cloudwatch.rs.html#1611-1644' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PutMetricAlarmInput {
+    pub actions_enabled: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ActionsEnabled.html' title='rusoto::cloudwatch::ActionsEnabled'>ActionsEnabled</a>&gt;,
+    pub alarm_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ResourceList.html' title='rusoto::cloudwatch::ResourceList'>ResourceList</a>&gt;,
+    pub alarm_description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.AlarmDescription.html' title='rusoto::cloudwatch::AlarmDescription'>AlarmDescription</a>&gt;,
+    pub alarm_name: <a class='type' href='../../rusoto/cloudwatch/type.AlarmName.html' title='rusoto::cloudwatch::AlarmName'>AlarmName</a>,
+    pub comparison_operator: <a class='type' href='../../rusoto/cloudwatch/type.ComparisonOperator.html' title='rusoto::cloudwatch::ComparisonOperator'>ComparisonOperator</a>,
+    pub dimensions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.Dimensions.html' title='rusoto::cloudwatch::Dimensions'>Dimensions</a>&gt;,
+    pub evaluation_periods: <a class='type' href='../../rusoto/cloudwatch/type.EvaluationPeriods.html' title='rusoto::cloudwatch::EvaluationPeriods'>EvaluationPeriods</a>,
+    pub extended_statistic: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ExtendedStatistic.html' title='rusoto::cloudwatch::ExtendedStatistic'>ExtendedStatistic</a>&gt;,
+    pub insufficient_data_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ResourceList.html' title='rusoto::cloudwatch::ResourceList'>ResourceList</a>&gt;,
+    pub metric_name: <a class='type' href='../../rusoto/cloudwatch/type.MetricName.html' title='rusoto::cloudwatch::MetricName'>MetricName</a>,
+    pub namespace: <a class='type' href='../../rusoto/cloudwatch/type.Namespace.html' title='rusoto::cloudwatch::Namespace'>Namespace</a>,
+    pub ok_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ResourceList.html' title='rusoto::cloudwatch::ResourceList'>ResourceList</a>&gt;,
+    pub period: <a class='type' href='../../rusoto/cloudwatch/type.Period.html' title='rusoto::cloudwatch::Period'>Period</a>,
+    pub statistic: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.Statistic.html' title='rusoto::cloudwatch::Statistic'>Statistic</a>&gt;,
+    pub threshold: <a class='type' href='../../rusoto/cloudwatch/type.Threshold.html' title='rusoto::cloudwatch::Threshold'>Threshold</a>,
+    pub unit: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.StandardUnit.html' title='rusoto::cloudwatch::StandardUnit'>StandardUnit</a>&gt;,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.actions_enabled' class='structfield'>
+                           <span id='actions_enabled.v' class='invisible'>
+                           <code>actions_enabled: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ActionsEnabled.html' title='rusoto::cloudwatch::ActionsEnabled'>ActionsEnabled</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Indicates whether actions should be executed during any changes to the alarm state.</p>
+</div><span id='structfield.alarm_actions' class='structfield'>
+                           <span id='alarm_actions.v' class='invisible'>
+                           <code>alarm_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ResourceList.html' title='rusoto::cloudwatch::ResourceList'>ResourceList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The actions to execute when this alarm transitions to the <code>ALARM</code> state from any other state. Each action is specified as an Amazon Resource Name (ARN).</p> <p>Valid Values: arn:aws:automate:<i>region</i>:ec2:stop | arn:aws:automate:<i>region</i>:ec2:terminate | arn:aws:automate:<i>region</i>:ec2:recover</p> <p>Valid Values (for use with IAM roles): arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Stop/1.0 | arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Terminate/1.0 | arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Reboot/1.0</p>
+</div><span id='structfield.alarm_description' class='structfield'>
+                           <span id='alarm_description.v' class='invisible'>
+                           <code>alarm_description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.AlarmDescription.html' title='rusoto::cloudwatch::AlarmDescription'>AlarmDescription</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The description for the alarm.</p>
+</div><span id='structfield.alarm_name' class='structfield'>
+                           <span id='alarm_name.v' class='invisible'>
+                           <code>alarm_name: <a class='type' href='../../rusoto/cloudwatch/type.AlarmName.html' title='rusoto::cloudwatch::AlarmName'>AlarmName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name for the alarm. This name must be unique within the AWS account.</p>
+</div><span id='structfield.comparison_operator' class='structfield'>
+                           <span id='comparison_operator.v' class='invisible'>
+                           <code>comparison_operator: <a class='type' href='../../rusoto/cloudwatch/type.ComparisonOperator.html' title='rusoto::cloudwatch::ComparisonOperator'>ComparisonOperator</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p> The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand.</p>
+</div><span id='structfield.dimensions' class='structfield'>
+                           <span id='dimensions.v' class='invisible'>
+                           <code>dimensions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.Dimensions.html' title='rusoto::cloudwatch::Dimensions'>Dimensions</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The dimensions for the metric associated with the alarm.</p>
+</div><span id='structfield.evaluation_periods' class='structfield'>
+                           <span id='evaluation_periods.v' class='invisible'>
+                           <code>evaluation_periods: <a class='type' href='../../rusoto/cloudwatch/type.EvaluationPeriods.html' title='rusoto::cloudwatch::EvaluationPeriods'>EvaluationPeriods</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of periods over which data is compared to the specified threshold.</p>
+</div><span id='structfield.extended_statistic' class='structfield'>
+                           <span id='extended_statistic.v' class='invisible'>
+                           <code>extended_statistic: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ExtendedStatistic.html' title='rusoto::cloudwatch::ExtendedStatistic'>ExtendedStatistic</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.</p>
+</div><span id='structfield.insufficient_data_actions' class='structfield'>
+                           <span id='insufficient_data_actions.v' class='invisible'>
+                           <code>insufficient_data_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ResourceList.html' title='rusoto::cloudwatch::ResourceList'>ResourceList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The actions to execute when this alarm transitions to the <code>INSUFFICIENT_DATA</code> state from any other state. Each action is specified as an Amazon Resource Name (ARN).</p> <p>Valid Values: arn:aws:automate:<i>region</i>:ec2:stop | arn:aws:automate:<i>region</i>:ec2:terminate | arn:aws:automate:<i>region</i>:ec2:recover</p> <p>Valid Values (for use with IAM roles): arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Stop/1.0 | arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Terminate/1.0 | arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Reboot/1.0</p>
+</div><span id='structfield.metric_name' class='structfield'>
+                           <span id='metric_name.v' class='invisible'>
+                           <code>metric_name: <a class='type' href='../../rusoto/cloudwatch/type.MetricName.html' title='rusoto::cloudwatch::MetricName'>MetricName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name for the metric associated with the alarm.</p>
+</div><span id='structfield.namespace' class='structfield'>
+                           <span id='namespace.v' class='invisible'>
+                           <code>namespace: <a class='type' href='../../rusoto/cloudwatch/type.Namespace.html' title='rusoto::cloudwatch::Namespace'>Namespace</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The namespace for the metric associated with the alarm.</p>
+</div><span id='structfield.ok_actions' class='structfield'>
+                           <span id='ok_actions.v' class='invisible'>
+                           <code>ok_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.ResourceList.html' title='rusoto::cloudwatch::ResourceList'>ResourceList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The actions to execute when this alarm transitions to an <code>OK</code> state from any other state. Each action is specified as an Amazon Resource Name (ARN).</p> <p>Valid Values: arn:aws:automate:<i>region</i>:ec2:stop | arn:aws:automate:<i>region</i>:ec2:terminate | arn:aws:automate:<i>region</i>:ec2:recover</p> <p>Valid Values (for use with IAM roles): arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Stop/1.0 | arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Terminate/1.0 | arn:aws:swf:us-east-1:{<i>customer-account</i>}:action/actions/AWS_EC2.InstanceId.Reboot/1.0</p>
+</div><span id='structfield.period' class='structfield'>
+                           <span id='period.v' class='invisible'>
+                           <code>period: <a class='type' href='../../rusoto/cloudwatch/type.Period.html' title='rusoto::cloudwatch::Period'>Period</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The period, in seconds, over which the specified statistic is applied.</p>
+</div><span id='structfield.statistic' class='structfield'>
+                           <span id='statistic.v' class='invisible'>
+                           <code>statistic: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.Statistic.html' title='rusoto::cloudwatch::Statistic'>Statistic</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The statistic for the metric associated with the alarm, other than percentile. For percentile statistics, use <code>ExtendedStatistic</code>.</p>
+</div><span id='structfield.threshold' class='structfield'>
+                           <span id='threshold.v' class='invisible'>
+                           <code>threshold: <a class='type' href='../../rusoto/cloudwatch/type.Threshold.html' title='rusoto::cloudwatch::Threshold'>Threshold</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The value against which the specified statistic is compared.</p>
+</div><span id='structfield.unit' class='structfield'>
+                           <span id='unit.v' class='invisible'>
+                           <code>unit: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/cloudwatch/type.StandardUnit.html' title='rusoto::cloudwatch::StandardUnit'>StandardUnit</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The unit of measure for the statistic. For example, the units for the Amazon EC2 NetworkIn metric are Bytes because NetworkIn tracks the number of bytes that an instance receives on all network interfaces. You can also specify a unit when you create a custom metric. Units help provide conceptual meaning to your data. Metric data points that specify a unit of measure, such as Percent, are aggregated separately.</p> <p>If you specify a unit, you must use a unit that is appropriate for the metric. Otherwise, the Amazon CloudWatch alarm can get stuck in the <code>INSUFFICIENT DATA</code> state. </p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/cloudwatch/struct.PutMetricAlarmInput.html' title='rusoto::cloudwatch::PutMetricAlarmInput'>PutMetricAlarmInput</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/cloudwatch.rs.html#1610' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/cloudwatch/struct.PutMetricAlarmInput.html' title='rusoto::cloudwatch::PutMetricAlarmInput'>PutMetricAlarmInput</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

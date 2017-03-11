@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `SignalResourceInput` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, SignalResourceInput">
+
+    <title>rusoto::cloudformation::SignalResourceInput - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudformation</a></p><script>window.sidebarCurrent = {name: 'SignalResourceInput', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudformation</a>::<wbr><a class='struct' href=''>SignalResourceInput</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/cloudformation.rs.html#3665-3674' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct SignalResourceInput {
+    pub logical_resource_id: <a class='type' href='../../rusoto/cloudformation/type.LogicalResourceId.html' title='rusoto::cloudformation::LogicalResourceId'>LogicalResourceId</a>,
+    pub stack_name: <a class='type' href='../../rusoto/cloudformation/type.StackNameOrId.html' title='rusoto::cloudformation::StackNameOrId'>StackNameOrId</a>,
+    pub status: <a class='type' href='../../rusoto/cloudformation/type.ResourceSignalStatus.html' title='rusoto::cloudformation::ResourceSignalStatus'>ResourceSignalStatus</a>,
+    pub unique_id: <a class='type' href='../../rusoto/cloudformation/type.ResourceSignalUniqueId.html' title='rusoto::cloudformation::ResourceSignalUniqueId'>ResourceSignalUniqueId</a>,
+}</pre><div class='docblock'><p>The input for the <a>SignalResource</a> action.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.logical_resource_id' class='structfield'>
+                           <span id='logical_resource_id.v' class='invisible'>
+                           <code>logical_resource_id: <a class='type' href='../../rusoto/cloudformation/type.LogicalResourceId.html' title='rusoto::cloudformation::LogicalResourceId'>LogicalResourceId</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The logical ID of the resource that you want to signal. The logical ID is the name of the resource that given in the template.</p>
+</div><span id='structfield.stack_name' class='structfield'>
+                           <span id='stack_name.v' class='invisible'>
+                           <code>stack_name: <a class='type' href='../../rusoto/cloudformation/type.StackNameOrId.html' title='rusoto::cloudformation::StackNameOrId'>StackNameOrId</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The stack name or unique stack ID that includes the resource that you want to signal.</p>
+</div><span id='structfield.status' class='structfield'>
+                           <span id='status.v' class='invisible'>
+                           <code>status: <a class='type' href='../../rusoto/cloudformation/type.ResourceSignalStatus.html' title='rusoto::cloudformation::ResourceSignalStatus'>ResourceSignalStatus</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The status of the signal, which is either success or failure. A failure signal causes AWS CloudFormation to immediately fail the stack creation or update.</p>
+</div><span id='structfield.unique_id' class='structfield'>
+                           <span id='unique_id.v' class='invisible'>
+                           <code>unique_id: <a class='type' href='../../rusoto/cloudformation/type.ResourceSignalUniqueId.html' title='rusoto::cloudformation::ResourceSignalUniqueId'>ResourceSignalUniqueId</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A unique ID of the signal. When you signal Amazon EC2 instances or Auto Scaling groups, specify the instance ID that you are signaling as the unique ID. If you send multiple signals to a single resource (such as signaling a wait condition), each signal requires a different unique ID.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/cloudformation/struct.SignalResourceInput.html' title='rusoto::cloudformation::SignalResourceInput'>SignalResourceInput</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-ca90cff2aff60a63/out/cloudformation.rs.html#3664' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/cloudformation/struct.SignalResourceInput.html' title='rusoto::cloudformation::SignalResourceInput'>SignalResourceInput</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

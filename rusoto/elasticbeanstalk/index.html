@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `elasticbeanstalk` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, elasticbeanstalk">
+
+    <title>rusoto::elasticbeanstalk - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'elasticbeanstalk', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>elasticbeanstalk</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/elasticbeanstalk.rs.html#1-4' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Elastic Beanstalk</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.ElasticBeanstalkClient.html">ElasticBeanstalkClient</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AbortEnvironmentUpdateMessage.html'
+                                  title='rusoto::elasticbeanstalk::AbortEnvironmentUpdateMessage'>AbortEnvironmentUpdateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationDescription.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationDescription'>ApplicationDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the properties of an application.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationDescriptionMessage.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationDescriptionMessage'>ApplicationDescriptionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containing a single description of an application.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationDescriptionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationDescriptionsMessage'>ApplicationDescriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containing a list of application descriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationMetrics.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationMetrics'>ApplicationMetrics</a></td>
+                           <td class='docblock-short'>
+                                <p>Application request metrics for an AWS Elastic Beanstalk environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationResourceLifecycleConfig.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationResourceLifecycleConfig'>ApplicationResourceLifecycleConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>The resource lifecycle configuration for an application. Defines lifecycle settings for resources that belong to the application, and the service role that Elastic Beanstalk assumes in order to apply lifecycle settings. The version lifecycle configuration defines lifecycle settings for application versions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationResourceLifecycleDescriptionMessage.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationResourceLifecycleDescriptionMessage'>ApplicationResourceLifecycleDescriptionMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationVersionDescription.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionDescription'>ApplicationVersionDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the properties of an application version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationVersionDescriptionMessage.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionDescriptionMessage'>ApplicationVersionDescriptionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message wrapping a single description of an application version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationVersionDescriptionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionDescriptionsMessage'>ApplicationVersionDescriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message wrapping a list of application version descriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationVersionLifecycleConfig.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionLifecycleConfig'>ApplicationVersionLifecycleConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>The application version lifecycle settings for an application. Defines the rules that Elastic Beanstalk applies to an application's versions in order to avoid hitting the per-region limit for application versions.</p> <p>When Elastic Beanstalk deletes an application version from its database, you can no longer deploy that version to an environment. The source bundle remains in S3 unless you configure the rule to delete it.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplyEnvironmentManagedActionRequest.html'
+                                  title='rusoto::elasticbeanstalk::ApplyEnvironmentManagedActionRequest'>ApplyEnvironmentManagedActionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to execute a scheduled managed action immediately.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplyEnvironmentManagedActionResult.html'
+                                  title='rusoto::elasticbeanstalk::ApplyEnvironmentManagedActionResult'>ApplyEnvironmentManagedActionResult</a></td>
+                           <td class='docblock-short'>
+                                <p>The result message containing information about the managed action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AutoScalingGroup.html'
+                                  title='rusoto::elasticbeanstalk::AutoScalingGroup'>AutoScalingGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an Auto Scaling launch configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BuildConfiguration.html'
+                                  title='rusoto::elasticbeanstalk::BuildConfiguration'>BuildConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Settings for an AWS CodeBuild build.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CPUUtilization.html'
+                                  title='rusoto::elasticbeanstalk::CPUUtilization'>CPUUtilization</a></td>
+                           <td class='docblock-short'>
+                                <p>CPU utilization metrics for an instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CheckDNSAvailabilityMessage.html'
+                                  title='rusoto::elasticbeanstalk::CheckDNSAvailabilityMessage'>CheckDNSAvailabilityMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Results message indicating whether a CNAME is available.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CheckDNSAvailabilityResultMessage.html'
+                                  title='rusoto::elasticbeanstalk::CheckDNSAvailabilityResultMessage'>CheckDNSAvailabilityResultMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Indicates if the specified CNAME is available.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComposeEnvironmentsMessage.html'
+                                  title='rusoto::elasticbeanstalk::ComposeEnvironmentsMessage'>ComposeEnvironmentsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to create or update a group of environments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationOptionDescription.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionDescription'>ConfigurationOptionDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the possible values for a configuration option.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationOptionSetting.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionSetting'>ConfigurationOptionSetting</a></td>
+                           <td class='docblock-short'>
+                                <p> A specification identifying an individual configuration option along with its current value. For a list of possible option values, go to <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html">Option Values</a> in the <i>AWS Elastic Beanstalk Developer Guide</i>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationOptionsDescription.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionsDescription'>ConfigurationOptionsDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the settings for a specified configuration set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationSettingsDescription.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationSettingsDescription'>ConfigurationSettingsDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the settings for a configuration set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationSettingsDescriptions.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationSettingsDescriptions'>ConfigurationSettingsDescriptions</a></td>
+                           <td class='docblock-short'>
+                                <p>The results from a request to change the configuration settings of an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationSettingsValidationMessages.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationSettingsValidationMessages'>ConfigurationSettingsValidationMessages</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides a list of validation messages.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateApplicationMessage.html'
+                                  title='rusoto::elasticbeanstalk::CreateApplicationMessage'>CreateApplicationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to create an application.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateApplicationVersionMessage.html'
+                                  title='rusoto::elasticbeanstalk::CreateApplicationVersionMessage'>CreateApplicationVersionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateConfigurationTemplateMessage.html'
+                                  title='rusoto::elasticbeanstalk::CreateConfigurationTemplateMessage'>CreateConfigurationTemplateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to create a configuration template.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateEnvironmentMessage.html'
+                                  title='rusoto::elasticbeanstalk::CreateEnvironmentMessage'>CreateEnvironmentMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateStorageLocationResultMessage.html'
+                                  title='rusoto::elasticbeanstalk::CreateStorageLocationResultMessage'>CreateStorageLocationResultMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Results of a <a>CreateStorageLocationResult</a> call.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteApplicationMessage.html'
+                                  title='rusoto::elasticbeanstalk::DeleteApplicationMessage'>DeleteApplicationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to delete an application.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteApplicationVersionMessage.html'
+                                  title='rusoto::elasticbeanstalk::DeleteApplicationVersionMessage'>DeleteApplicationVersionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to delete an application version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteConfigurationTemplateMessage.html'
+                                  title='rusoto::elasticbeanstalk::DeleteConfigurationTemplateMessage'>DeleteConfigurationTemplateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to delete a configuration template.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteEnvironmentConfigurationMessage.html'
+                                  title='rusoto::elasticbeanstalk::DeleteEnvironmentConfigurationMessage'>DeleteEnvironmentConfigurationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to delete a draft environment configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Deployment.html'
+                                  title='rusoto::elasticbeanstalk::Deployment'>Deployment</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about an application version deployment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeApplicationVersionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeApplicationVersionsMessage'>DescribeApplicationVersionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to describe application versions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeApplicationsMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeApplicationsMessage'>DescribeApplicationsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to describe one or more applications.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigurationOptionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeConfigurationOptionsMessage'>DescribeConfigurationOptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containig a list of application version descriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigurationSettingsMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeConfigurationSettingsMessage'>DescribeConfigurationSettingsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containing all of the configuration settings for a specified solution stack or configuration template.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentHealthRequest.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentHealthRequest'>DescribeEnvironmentHealthRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>See the example below to learn how to create a request body.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentHealthResult.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentHealthResult'>DescribeEnvironmentHealthResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Health details for an AWS Elastic Beanstalk environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentManagedActionHistoryRequest.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentManagedActionHistoryRequest'>DescribeEnvironmentManagedActionHistoryRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to list completed and failed managed actions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentManagedActionHistoryResult.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentManagedActionHistoryResult'>DescribeEnvironmentManagedActionHistoryResult</a></td>
+                           <td class='docblock-short'>
+                                <p>A result message containing a list of completed and failed managed actions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentManagedActionsRequest.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentManagedActionsRequest'>DescribeEnvironmentManagedActionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to list an environment's upcoming and in-progress managed actions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentManagedActionsResult.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentManagedActionsResult'>DescribeEnvironmentManagedActionsResult</a></td>
+                           <td class='docblock-short'>
+                                <p>The result message containing a list of managed actions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentResourcesMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentResourcesMessage'>DescribeEnvironmentResourcesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to describe the resources in an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEnvironmentsMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentsMessage'>DescribeEnvironmentsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to describe one or more environments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEventsMessage.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEventsMessage'>DescribeEventsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to retrieve a list of events for an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeInstancesHealthRequest.html'
+                                  title='rusoto::elasticbeanstalk::DescribeInstancesHealthRequest'>DescribeInstancesHealthRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Parameters for a call to <code>DescribeInstancesHealth</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeInstancesHealthResult.html'
+                                  title='rusoto::elasticbeanstalk::DescribeInstancesHealthResult'>DescribeInstancesHealthResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Detailed health information about the Amazon EC2 instances in an AWS Elastic Beanstalk environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ElasticBeanstalkClient.html'
+                                  title='rusoto::elasticbeanstalk::ElasticBeanstalkClient'>ElasticBeanstalkClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Elastic Beanstalk API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentDescription.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentDescription'>EnvironmentDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the properties of an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentDescriptionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentDescriptionsMessage'>EnvironmentDescriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containing a list of environment descriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentInfoDescription.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentInfoDescription'>EnvironmentInfoDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>The information retrieved from the Amazon EC2 instances.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentLink.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentLink'>EnvironmentLink</a></td>
+                           <td class='docblock-short'>
+                                <p>A link to another environment, defined in the environment's manifest. Links provide connection information in system properties that can be used to connect to another environment in the same group. See <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-cfg-manifest.html">Environment Manifest (env.yaml)</a> for details.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentResourceDescription.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentResourceDescription'>EnvironmentResourceDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the AWS resources in use by this environment. This data is live.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentResourceDescriptionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentResourceDescriptionsMessage'>EnvironmentResourceDescriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containing a list of environment resource descriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentResourcesDescription.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentResourcesDescription'>EnvironmentResourcesDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the AWS resources in use by this environment. This data is not live data.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentTier.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentTier'>EnvironmentTier</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the properties of an environment tier</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventDescription.html'
+                                  title='rusoto::elasticbeanstalk::EventDescription'>EventDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventDescriptionsMessage.html'
+                                  title='rusoto::elasticbeanstalk::EventDescriptionsMessage'>EventDescriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message wrapping a list of event descriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Instance.html'
+                                  title='rusoto::elasticbeanstalk::Instance'>Instance</a></td>
+                           <td class='docblock-short'>
+                                <p>The description of an Amazon EC2 instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceHealthSummary.html'
+                                  title='rusoto::elasticbeanstalk::InstanceHealthSummary'>InstanceHealthSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents summary information about the health of an instance. For more information, see <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanced-status.html">Health Colors and Statuses</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Latency.html'
+                                  title='rusoto::elasticbeanstalk::Latency'>Latency</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the average latency for the slowest X percent of requests over the last 10 seconds.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LaunchConfiguration.html'
+                                  title='rusoto::elasticbeanstalk::LaunchConfiguration'>LaunchConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an Auto Scaling launch configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAvailableSolutionStacksResultMessage.html'
+                                  title='rusoto::elasticbeanstalk::ListAvailableSolutionStacksResultMessage'>ListAvailableSolutionStacksResultMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of available AWS Elastic Beanstalk solution stacks.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Listener.html'
+                                  title='rusoto::elasticbeanstalk::Listener'>Listener</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the properties of a Listener for the LoadBalancer.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LoadBalancer.html'
+                                  title='rusoto::elasticbeanstalk::LoadBalancer'>LoadBalancer</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a LoadBalancer.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LoadBalancerDescription.html'
+                                  title='rusoto::elasticbeanstalk::LoadBalancerDescription'>LoadBalancerDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the details of a LoadBalancer.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedAction.html'
+                                  title='rusoto::elasticbeanstalk::ManagedAction'>ManagedAction</a></td>
+                           <td class='docblock-short'>
+                                <p>The record of an upcoming or in-progress managed action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedActionHistoryItem.html'
+                                  title='rusoto::elasticbeanstalk::ManagedActionHistoryItem'>ManagedActionHistoryItem</a></td>
+                           <td class='docblock-short'>
+                                <p>The record of a completed or failed managed action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MaxAgeRule.html'
+                                  title='rusoto::elasticbeanstalk::MaxAgeRule'>MaxAgeRule</a></td>
+                           <td class='docblock-short'>
+                                <p>A lifecycle rule that deletes application versions after the specified number of days.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MaxCountRule.html'
+                                  title='rusoto::elasticbeanstalk::MaxCountRule'>MaxCountRule</a></td>
+                           <td class='docblock-short'>
+                                <p>A lifecycle rule that deletes the oldest application version when the maximum count is exceeded.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OptionRestrictionRegex.html'
+                                  title='rusoto::elasticbeanstalk::OptionRestrictionRegex'>OptionRestrictionRegex</a></td>
+                           <td class='docblock-short'>
+                                <p>A regular expression representing a restriction on a string configuration option value.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OptionSpecification.html'
+                                  title='rusoto::elasticbeanstalk::OptionSpecification'>OptionSpecification</a></td>
+                           <td class='docblock-short'>
+                                <p>A specification identifying an individual configuration option.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Queue.html'
+                                  title='rusoto::elasticbeanstalk::Queue'>Queue</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a queue.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebuildEnvironmentMessage.html'
+                                  title='rusoto::elasticbeanstalk::RebuildEnvironmentMessage'>RebuildEnvironmentMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestEnvironmentInfoMessage.html'
+                                  title='rusoto::elasticbeanstalk::RequestEnvironmentInfoMessage'>RequestEnvironmentInfoMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to retrieve logs from an environment and store them in your Elastic Beanstalk storage bucket.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestartAppServerMessage.html'
+                                  title='rusoto::elasticbeanstalk::RestartAppServerMessage'>RestartAppServerMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveEnvironmentInfoMessage.html'
+                                  title='rusoto::elasticbeanstalk::RetrieveEnvironmentInfoMessage'>RetrieveEnvironmentInfoMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to download logs retrieved with <a>RequestEnvironmentInfo</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveEnvironmentInfoResultMessage.html'
+                                  title='rusoto::elasticbeanstalk::RetrieveEnvironmentInfoResultMessage'>RetrieveEnvironmentInfoResultMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Result message containing a description of the requested environment info.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.S3Location.html'
+                                  title='rusoto::elasticbeanstalk::S3Location'>S3Location</a></td>
+                           <td class='docblock-short'>
+                                <p>The bucket and key of an item stored in Amazon S3.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SingleInstanceHealth.html'
+                                  title='rusoto::elasticbeanstalk::SingleInstanceHealth'>SingleInstanceHealth</a></td>
+                           <td class='docblock-short'>
+                                <p>Detailed health information about an Amazon EC2 instance in your Elastic Beanstalk environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SolutionStackDescription.html'
+                                  title='rusoto::elasticbeanstalk::SolutionStackDescription'>SolutionStackDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the solution stack.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SourceBuildInformation.html'
+                                  title='rusoto::elasticbeanstalk::SourceBuildInformation'>SourceBuildInformation</a></td>
+                           <td class='docblock-short'>
+                                <p>Location of the source code for an application version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SourceConfiguration.html'
+                                  title='rusoto::elasticbeanstalk::SourceConfiguration'>SourceConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>A specification for an environment configuration</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StatusCodes.html'
+                                  title='rusoto::elasticbeanstalk::StatusCodes'>StatusCodes</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the percentage of requests over the last 10 seconds that resulted in each type of status code response. For more information, see <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">Status Code Definitions</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SwapEnvironmentCNAMEsMessage.html'
+                                  title='rusoto::elasticbeanstalk::SwapEnvironmentCNAMEsMessage'>SwapEnvironmentCNAMEsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Swaps the CNAMEs of two environments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SystemStatus.html'
+                                  title='rusoto::elasticbeanstalk::SystemStatus'>SystemStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>CPU utilization and load average metrics for an Amazon EC2 instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::elasticbeanstalk::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a tag applied to a resource in an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TerminateEnvironmentMessage.html'
+                                  title='rusoto::elasticbeanstalk::TerminateEnvironmentMessage'>TerminateEnvironmentMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to terminate an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Trigger.html'
+                                  title='rusoto::elasticbeanstalk::Trigger'>Trigger</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a trigger.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateApplicationMessage.html'
+                                  title='rusoto::elasticbeanstalk::UpdateApplicationMessage'>UpdateApplicationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to update an application.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateApplicationResourceLifecycleMessage.html'
+                                  title='rusoto::elasticbeanstalk::UpdateApplicationResourceLifecycleMessage'>UpdateApplicationResourceLifecycleMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateApplicationVersionMessage.html'
+                                  title='rusoto::elasticbeanstalk::UpdateApplicationVersionMessage'>UpdateApplicationVersionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateConfigurationTemplateMessage.html'
+                                  title='rusoto::elasticbeanstalk::UpdateConfigurationTemplateMessage'>UpdateConfigurationTemplateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The result message containing the options for the specified solution stack.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateEnvironmentMessage.html'
+                                  title='rusoto::elasticbeanstalk::UpdateEnvironmentMessage'>UpdateEnvironmentMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Request to update an environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ValidateConfigurationSettingsMessage.html'
+                                  title='rusoto::elasticbeanstalk::ValidateConfigurationSettingsMessage'>ValidateConfigurationSettingsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of validation messages for a specified configuration template.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ValidationMessage.html'
+                                  title='rusoto::elasticbeanstalk::ValidationMessage'>ValidationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>An error or warning for a desired configuration option value.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AbortEnvironmentUpdateError.html'
+                                  title='rusoto::elasticbeanstalk::AbortEnvironmentUpdateError'>AbortEnvironmentUpdateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AbortEnvironmentUpdate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ApplyEnvironmentManagedActionError.html'
+                                  title='rusoto::elasticbeanstalk::ApplyEnvironmentManagedActionError'>ApplyEnvironmentManagedActionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ApplyEnvironmentManagedAction</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CheckDNSAvailabilityError.html'
+                                  title='rusoto::elasticbeanstalk::CheckDNSAvailabilityError'>CheckDNSAvailabilityError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CheckDNSAvailability</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ComposeEnvironmentsError.html'
+                                  title='rusoto::elasticbeanstalk::ComposeEnvironmentsError'>ComposeEnvironmentsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ComposeEnvironments</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateApplicationError.html'
+                                  title='rusoto::elasticbeanstalk::CreateApplicationError'>CreateApplicationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateApplication</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateApplicationVersionError.html'
+                                  title='rusoto::elasticbeanstalk::CreateApplicationVersionError'>CreateApplicationVersionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateApplicationVersion</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateConfigurationTemplateError.html'
+                                  title='rusoto::elasticbeanstalk::CreateConfigurationTemplateError'>CreateConfigurationTemplateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateConfigurationTemplate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateEnvironmentError.html'
+                                  title='rusoto::elasticbeanstalk::CreateEnvironmentError'>CreateEnvironmentError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateEnvironment</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateStorageLocationError.html'
+                                  title='rusoto::elasticbeanstalk::CreateStorageLocationError'>CreateStorageLocationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateStorageLocation</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteApplicationError.html'
+                                  title='rusoto::elasticbeanstalk::DeleteApplicationError'>DeleteApplicationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteApplication</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteApplicationVersionError.html'
+                                  title='rusoto::elasticbeanstalk::DeleteApplicationVersionError'>DeleteApplicationVersionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteApplicationVersion</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteConfigurationTemplateError.html'
+                                  title='rusoto::elasticbeanstalk::DeleteConfigurationTemplateError'>DeleteConfigurationTemplateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteConfigurationTemplate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteEnvironmentConfigurationError.html'
+                                  title='rusoto::elasticbeanstalk::DeleteEnvironmentConfigurationError'>DeleteEnvironmentConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteEnvironmentConfiguration</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeApplicationVersionsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeApplicationVersionsError'>DescribeApplicationVersionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeApplicationVersions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeApplicationsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeApplicationsError'>DescribeApplicationsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeApplications</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeConfigurationOptionsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeConfigurationOptionsError'>DescribeConfigurationOptionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeConfigurationOptions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeConfigurationSettingsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeConfigurationSettingsError'>DescribeConfigurationSettingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeConfigurationSettings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEnvironmentHealthError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentHealthError'>DescribeEnvironmentHealthError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEnvironmentHealth</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEnvironmentManagedActionHistoryError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentManagedActionHistoryError'>DescribeEnvironmentManagedActionHistoryError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEnvironmentManagedActionHistory</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEnvironmentManagedActionsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentManagedActionsError'>DescribeEnvironmentManagedActionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEnvironmentManagedActions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEnvironmentResourcesError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentResourcesError'>DescribeEnvironmentResourcesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEnvironmentResources</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEnvironmentsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEnvironmentsError'>DescribeEnvironmentsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEnvironments</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEventsError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeEventsError'>DescribeEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEvents</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeInstancesHealthError.html'
+                                  title='rusoto::elasticbeanstalk::DescribeInstancesHealthError'>DescribeInstancesHealthError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeInstancesHealth</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAvailableSolutionStacksError.html'
+                                  title='rusoto::elasticbeanstalk::ListAvailableSolutionStacksError'>ListAvailableSolutionStacksError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListAvailableSolutionStacks</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RebuildEnvironmentError.html'
+                                  title='rusoto::elasticbeanstalk::RebuildEnvironmentError'>RebuildEnvironmentError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RebuildEnvironment</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RequestEnvironmentInfoError.html'
+                                  title='rusoto::elasticbeanstalk::RequestEnvironmentInfoError'>RequestEnvironmentInfoError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RequestEnvironmentInfo</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RestartAppServerError.html'
+                                  title='rusoto::elasticbeanstalk::RestartAppServerError'>RestartAppServerError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RestartAppServer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RetrieveEnvironmentInfoError.html'
+                                  title='rusoto::elasticbeanstalk::RetrieveEnvironmentInfoError'>RetrieveEnvironmentInfoError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RetrieveEnvironmentInfo</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SwapEnvironmentCNAMEsError.html'
+                                  title='rusoto::elasticbeanstalk::SwapEnvironmentCNAMEsError'>SwapEnvironmentCNAMEsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SwapEnvironmentCNAMEs</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TerminateEnvironmentError.html'
+                                  title='rusoto::elasticbeanstalk::TerminateEnvironmentError'>TerminateEnvironmentError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by TerminateEnvironment</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateApplicationError.html'
+                                  title='rusoto::elasticbeanstalk::UpdateApplicationError'>UpdateApplicationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateApplication</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateApplicationResourceLifecycleError.html'
+                                  title='rusoto::elasticbeanstalk::UpdateApplicationResourceLifecycleError'>UpdateApplicationResourceLifecycleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateApplicationResourceLifecycle</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateApplicationVersionError.html'
+                                  title='rusoto::elasticbeanstalk::UpdateApplicationVersionError'>UpdateApplicationVersionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateApplicationVersion</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateConfigurationTemplateError.html'
+                                  title='rusoto::elasticbeanstalk::UpdateConfigurationTemplateError'>UpdateConfigurationTemplateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateConfigurationTemplate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateEnvironmentError.html'
+                                  title='rusoto::elasticbeanstalk::UpdateEnvironmentError'>UpdateEnvironmentError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateEnvironment</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ValidateConfigurationSettingsError.html'
+                                  title='rusoto::elasticbeanstalk::ValidateConfigurationSettingsError'>ValidateConfigurationSettingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ValidateConfigurationSettings</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AbortableOperationInProgress.html'
+                                  title='rusoto::elasticbeanstalk::AbortableOperationInProgress'>AbortableOperationInProgress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActionHistoryStatus.html'
+                                  title='rusoto::elasticbeanstalk::ActionHistoryStatus'>ActionHistoryStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActionStatus.html'
+                                  title='rusoto::elasticbeanstalk::ActionStatus'>ActionStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActionType.html'
+                                  title='rusoto::elasticbeanstalk::ActionType'>ActionType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationDescriptionList.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationDescriptionList'>ApplicationDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationName.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationName'>ApplicationName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationNamesList.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationNamesList'>ApplicationNamesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationVersionDescriptionList.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionDescriptionList'>ApplicationVersionDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationVersionProccess.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionProccess'>ApplicationVersionProccess</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationVersionStatus.html'
+                                  title='rusoto::elasticbeanstalk::ApplicationVersionStatus'>ApplicationVersionStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AutoCreateApplication.html'
+                                  title='rusoto::elasticbeanstalk::AutoCreateApplication'>AutoCreateApplication</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AutoScalingGroupList.html'
+                                  title='rusoto::elasticbeanstalk::AutoScalingGroupList'>AutoScalingGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AvailableSolutionStackDetailsList.html'
+                                  title='rusoto::elasticbeanstalk::AvailableSolutionStackDetailsList'>AvailableSolutionStackDetailsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AvailableSolutionStackNamesList.html'
+                                  title='rusoto::elasticbeanstalk::AvailableSolutionStackNamesList'>AvailableSolutionStackNamesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BoxedBoolean.html'
+                                  title='rusoto::elasticbeanstalk::BoxedBoolean'>BoxedBoolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BoxedInt.html'
+                                  title='rusoto::elasticbeanstalk::BoxedInt'>BoxedInt</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Cause.html'
+                                  title='rusoto::elasticbeanstalk::Cause'>Cause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Causes.html'
+                                  title='rusoto::elasticbeanstalk::Causes'>Causes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CnameAvailability.html'
+                                  title='rusoto::elasticbeanstalk::CnameAvailability'>CnameAvailability</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComputeType.html'
+                                  title='rusoto::elasticbeanstalk::ComputeType'>ComputeType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationDeploymentStatus.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationDeploymentStatus'>ConfigurationDeploymentStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionDefaultValue.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionDefaultValue'>ConfigurationOptionDefaultValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionDescriptionsList.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionDescriptionsList'>ConfigurationOptionDescriptionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionName.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionName'>ConfigurationOptionName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionPossibleValue.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionPossibleValue'>ConfigurationOptionPossibleValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionPossibleValues.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionPossibleValues'>ConfigurationOptionPossibleValues</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionSettingsList.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionSettingsList'>ConfigurationOptionSettingsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionSeverity.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionSeverity'>ConfigurationOptionSeverity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionValue.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionValue'>ConfigurationOptionValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationOptionValueType.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationOptionValueType'>ConfigurationOptionValueType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationSettingsDescriptionList.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationSettingsDescriptionList'>ConfigurationSettingsDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationTemplateName.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationTemplateName'>ConfigurationTemplateName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationTemplateNamesList.html'
+                                  title='rusoto::elasticbeanstalk::ConfigurationTemplateNamesList'>ConfigurationTemplateNamesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreationDate.html'
+                                  title='rusoto::elasticbeanstalk::CreationDate'>CreationDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DNSCname.html'
+                                  title='rusoto::elasticbeanstalk::DNSCname'>DNSCname</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DNSCnamePrefix.html'
+                                  title='rusoto::elasticbeanstalk::DNSCnamePrefix'>DNSCnamePrefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeleteSourceBundle.html'
+                                  title='rusoto::elasticbeanstalk::DeleteSourceBundle'>DeleteSourceBundle</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeploymentTimestamp.html'
+                                  title='rusoto::elasticbeanstalk::DeploymentTimestamp'>DeploymentTimestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::elasticbeanstalk::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Ec2InstanceId.html'
+                                  title='rusoto::elasticbeanstalk::Ec2InstanceId'>Ec2InstanceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EndpointURL.html'
+                                  title='rusoto::elasticbeanstalk::EndpointURL'>EndpointURL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentDescriptionsList.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentDescriptionsList'>EnvironmentDescriptionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentHealth.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentHealth'>EnvironmentHealth</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentHealthAttribute.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentHealthAttribute'>EnvironmentHealthAttribute</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentHealthAttributes.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentHealthAttributes'>EnvironmentHealthAttributes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentHealthStatus.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentHealthStatus'>EnvironmentHealthStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentId.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentId'>EnvironmentId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentIdList.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentIdList'>EnvironmentIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentInfoDescriptionList.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentInfoDescriptionList'>EnvironmentInfoDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentInfoType.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentInfoType'>EnvironmentInfoType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentLinks.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentLinks'>EnvironmentLinks</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentName.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentName'>EnvironmentName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentNamesList.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentNamesList'>EnvironmentNamesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentStatus.html'
+                                  title='rusoto::elasticbeanstalk::EnvironmentStatus'>EnvironmentStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventDate.html'
+                                  title='rusoto::elasticbeanstalk::EventDate'>EventDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventDescriptionList.html'
+                                  title='rusoto::elasticbeanstalk::EventDescriptionList'>EventDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventMessage.html'
+                                  title='rusoto::elasticbeanstalk::EventMessage'>EventMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSeverity.html'
+                                  title='rusoto::elasticbeanstalk::EventSeverity'>EventSeverity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExceptionMessage.html'
+                                  title='rusoto::elasticbeanstalk::ExceptionMessage'>ExceptionMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailureType.html'
+                                  title='rusoto::elasticbeanstalk::FailureType'>FailureType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FileTypeExtension.html'
+                                  title='rusoto::elasticbeanstalk::FileTypeExtension'>FileTypeExtension</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ForceTerminate.html'
+                                  title='rusoto::elasticbeanstalk::ForceTerminate'>ForceTerminate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GroupName.html'
+                                  title='rusoto::elasticbeanstalk::GroupName'>GroupName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IncludeDeleted.html'
+                                  title='rusoto::elasticbeanstalk::IncludeDeleted'>IncludeDeleted</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IncludeDeletedBackTo.html'
+                                  title='rusoto::elasticbeanstalk::IncludeDeletedBackTo'>IncludeDeletedBackTo</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceHealthList.html'
+                                  title='rusoto::elasticbeanstalk::InstanceHealthList'>InstanceHealthList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceId.html'
+                                  title='rusoto::elasticbeanstalk::InstanceId'>InstanceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceList.html'
+                                  title='rusoto::elasticbeanstalk::InstanceList'>InstanceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstancesHealthAttribute.html'
+                                  title='rusoto::elasticbeanstalk::InstancesHealthAttribute'>InstancesHealthAttribute</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstancesHealthAttributes.html'
+                                  title='rusoto::elasticbeanstalk::InstancesHealthAttributes'>InstancesHealthAttributes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::elasticbeanstalk::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LaunchConfigurationList.html'
+                                  title='rusoto::elasticbeanstalk::LaunchConfigurationList'>LaunchConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LaunchedAt.html'
+                                  title='rusoto::elasticbeanstalk::LaunchedAt'>LaunchedAt</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LoadAverage.html'
+                                  title='rusoto::elasticbeanstalk::LoadAverage'>LoadAverage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LoadAverageValue.html'
+                                  title='rusoto::elasticbeanstalk::LoadAverageValue'>LoadAverageValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LoadBalancerList.html'
+                                  title='rusoto::elasticbeanstalk::LoadBalancerList'>LoadBalancerList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LoadBalancerListenersDescription.html'
+                                  title='rusoto::elasticbeanstalk::LoadBalancerListenersDescription'>LoadBalancerListenersDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ManagedActionHistoryItems.html'
+                                  title='rusoto::elasticbeanstalk::ManagedActionHistoryItems'>ManagedActionHistoryItems</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ManagedActions.html'
+                                  title='rusoto::elasticbeanstalk::ManagedActions'>ManagedActions</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxRecords.html'
+                                  title='rusoto::elasticbeanstalk::MaxRecords'>MaxRecords</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Message.html'
+                                  title='rusoto::elasticbeanstalk::Message'>Message</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::elasticbeanstalk::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NonEmptyString.html'
+                                  title='rusoto::elasticbeanstalk::NonEmptyString'>NonEmptyString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NullableDouble.html'
+                                  title='rusoto::elasticbeanstalk::NullableDouble'>NullableDouble</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NullableInteger.html'
+                                  title='rusoto::elasticbeanstalk::NullableInteger'>NullableInteger</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NullableLong.html'
+                                  title='rusoto::elasticbeanstalk::NullableLong'>NullableLong</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionNamespace.html'
+                                  title='rusoto::elasticbeanstalk::OptionNamespace'>OptionNamespace</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionRestrictionMaxLength.html'
+                                  title='rusoto::elasticbeanstalk::OptionRestrictionMaxLength'>OptionRestrictionMaxLength</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionRestrictionMaxValue.html'
+                                  title='rusoto::elasticbeanstalk::OptionRestrictionMaxValue'>OptionRestrictionMaxValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionRestrictionMinValue.html'
+                                  title='rusoto::elasticbeanstalk::OptionRestrictionMinValue'>OptionRestrictionMinValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionsSpecifierList.html'
+                                  title='rusoto::elasticbeanstalk::OptionsSpecifierList'>OptionsSpecifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.QueueList.html'
+                                  title='rusoto::elasticbeanstalk::QueueList'>QueueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RefreshedAt.html'
+                                  title='rusoto::elasticbeanstalk::RefreshedAt'>RefreshedAt</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegexLabel.html'
+                                  title='rusoto::elasticbeanstalk::RegexLabel'>RegexLabel</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegexPattern.html'
+                                  title='rusoto::elasticbeanstalk::RegexPattern'>RegexPattern</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RequestCount.html'
+                                  title='rusoto::elasticbeanstalk::RequestCount'>RequestCount</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RequestId.html'
+                                  title='rusoto::elasticbeanstalk::RequestId'>RequestId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceId.html'
+                                  title='rusoto::elasticbeanstalk::ResourceId'>ResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceName.html'
+                                  title='rusoto::elasticbeanstalk::ResourceName'>ResourceName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3Bucket.html'
+                                  title='rusoto::elasticbeanstalk::S3Bucket'>S3Bucket</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3Key.html'
+                                  title='rusoto::elasticbeanstalk::S3Key'>S3Key</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SampleTimestamp.html'
+                                  title='rusoto::elasticbeanstalk::SampleTimestamp'>SampleTimestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SolutionStackFileTypeList.html'
+                                  title='rusoto::elasticbeanstalk::SolutionStackFileTypeList'>SolutionStackFileTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SolutionStackName.html'
+                                  title='rusoto::elasticbeanstalk::SolutionStackName'>SolutionStackName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceLocation.html'
+                                  title='rusoto::elasticbeanstalk::SourceLocation'>SourceLocation</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceRepository.html'
+                                  title='rusoto::elasticbeanstalk::SourceRepository'>SourceRepository</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceType.html'
+                                  title='rusoto::elasticbeanstalk::SourceType'>SourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::elasticbeanstalk::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::elasticbeanstalk::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Tags.html'
+                                  title='rusoto::elasticbeanstalk::Tags'>Tags</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TerminateEnvForce.html'
+                                  title='rusoto::elasticbeanstalk::TerminateEnvForce'>TerminateEnvForce</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TerminateEnvironmentResources.html'
+                                  title='rusoto::elasticbeanstalk::TerminateEnvironmentResources'>TerminateEnvironmentResources</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TimeFilterEnd.html'
+                                  title='rusoto::elasticbeanstalk::TimeFilterEnd'>TimeFilterEnd</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TimeFilterStart.html'
+                                  title='rusoto::elasticbeanstalk::TimeFilterStart'>TimeFilterStart</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::elasticbeanstalk::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Token.html'
+                                  title='rusoto::elasticbeanstalk::Token'>Token</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TriggerList.html'
+                                  title='rusoto::elasticbeanstalk::TriggerList'>TriggerList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UpdateDate.html'
+                                  title='rusoto::elasticbeanstalk::UpdateDate'>UpdateDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UserDefinedOption.html'
+                                  title='rusoto::elasticbeanstalk::UserDefinedOption'>UserDefinedOption</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ValidationMessageString.html'
+                                  title='rusoto::elasticbeanstalk::ValidationMessageString'>ValidationMessageString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ValidationMessagesList.html'
+                                  title='rusoto::elasticbeanstalk::ValidationMessagesList'>ValidationMessagesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ValidationSeverity.html'
+                                  title='rusoto::elasticbeanstalk::ValidationSeverity'>ValidationSeverity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VersionLabel.html'
+                                  title='rusoto::elasticbeanstalk::VersionLabel'>VersionLabel</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VersionLabels.html'
+                                  title='rusoto::elasticbeanstalk::VersionLabels'>VersionLabels</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VersionLabelsList.html'
+                                  title='rusoto::elasticbeanstalk::VersionLabelsList'>VersionLabelsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `lambda` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, lambda">
+
+    <title>rusoto::lambda - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'lambda', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>lambda</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/lambda.rs.html#1-4' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Lambda</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.LambdaClient.html">LambdaClient</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountLimit.html'
+                                  title='rusoto::lambda::AccountLimit'>AccountLimit</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides limits of code size and concurrency associated with the current account and region.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountUsage.html'
+                                  title='rusoto::lambda::AccountUsage'>AccountUsage</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides code size usage and function count associated with the current account and region.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddPermissionRequest.html'
+                                  title='rusoto::lambda::AddPermissionRequest'>AddPermissionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddPermissionResponse.html'
+                                  title='rusoto::lambda::AddPermissionResponse'>AddPermissionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AliasConfiguration.html'
+                                  title='rusoto::lambda::AliasConfiguration'>AliasConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides configuration information about a Lambda function version alias.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAliasRequest.html'
+                                  title='rusoto::lambda::CreateAliasRequest'>CreateAliasRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateEventSourceMappingRequest.html'
+                                  title='rusoto::lambda::CreateEventSourceMappingRequest'>CreateEventSourceMappingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateFunctionRequest.html'
+                                  title='rusoto::lambda::CreateFunctionRequest'>CreateFunctionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeadLetterConfig.html'
+                                  title='rusoto::lambda::DeadLetterConfig'>DeadLetterConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>The parent object that contains the target Amazon Resource Name (ARN) of an Amazon SQS queue or Amazon SNS topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAliasRequest.html'
+                                  title='rusoto::lambda::DeleteAliasRequest'>DeleteAliasRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteEventSourceMappingRequest.html'
+                                  title='rusoto::lambda::DeleteEventSourceMappingRequest'>DeleteEventSourceMappingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteFunctionRequest.html'
+                                  title='rusoto::lambda::DeleteFunctionRequest'>DeleteFunctionRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Environment.html'
+                                  title='rusoto::lambda::Environment'>Environment</a></td>
+                           <td class='docblock-short'>
+                                <p>The parent object that contains your environment's configuration settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentError.html'
+                                  title='rusoto::lambda::EnvironmentError'>EnvironmentError</a></td>
+                           <td class='docblock-short'>
+                                <p>The parent object that contains error information associated with your configuration settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnvironmentResponse.html'
+                                  title='rusoto::lambda::EnvironmentResponse'>EnvironmentResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The parent object returned that contains your environment's configuration settings or any error information associated with your configuration settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventSourceMappingConfiguration.html'
+                                  title='rusoto::lambda::EventSourceMappingConfiguration'>EventSourceMappingConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes mapping between an Amazon Kinesis stream and a Lambda function.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FunctionCode.html'
+                                  title='rusoto::lambda::FunctionCode'>FunctionCode</a></td>
+                           <td class='docblock-short'>
+                                <p>The code for the Lambda function.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FunctionCodeLocation.html'
+                                  title='rusoto::lambda::FunctionCodeLocation'>FunctionCodeLocation</a></td>
+                           <td class='docblock-short'>
+                                <p>The object for the Lambda function location.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FunctionConfiguration.html'
+                                  title='rusoto::lambda::FunctionConfiguration'>FunctionConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>A complex type that describes function metadata.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAccountSettingsRequest.html'
+                                  title='rusoto::lambda::GetAccountSettingsRequest'>GetAccountSettingsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAccountSettingsResponse.html'
+                                  title='rusoto::lambda::GetAccountSettingsResponse'>GetAccountSettingsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAliasRequest.html'
+                                  title='rusoto::lambda::GetAliasRequest'>GetAliasRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetEventSourceMappingRequest.html'
+                                  title='rusoto::lambda::GetEventSourceMappingRequest'>GetEventSourceMappingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetFunctionConfigurationRequest.html'
+                                  title='rusoto::lambda::GetFunctionConfigurationRequest'>GetFunctionConfigurationRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetFunctionRequest.html'
+                                  title='rusoto::lambda::GetFunctionRequest'>GetFunctionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetFunctionResponse.html'
+                                  title='rusoto::lambda::GetFunctionResponse'>GetFunctionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>This response contains the object for the Lambda function location (see <a>FunctionCodeLocation</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPolicyRequest.html'
+                                  title='rusoto::lambda::GetPolicyRequest'>GetPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPolicyResponse.html'
+                                  title='rusoto::lambda::GetPolicyResponse'>GetPolicyResponse</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InvocationRequest.html'
+                                  title='rusoto::lambda::InvocationRequest'>InvocationRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InvocationResponse.html'
+                                  title='rusoto::lambda::InvocationResponse'>InvocationResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Upon success, returns an empty response. Otherwise, throws an exception.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InvokeAsyncRequest.html'
+                                  title='rusoto::lambda::InvokeAsyncRequest'>InvokeAsyncRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InvokeAsyncResponse.html'
+                                  title='rusoto::lambda::InvokeAsyncResponse'>InvokeAsyncResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Upon success, it returns empty response. Otherwise, throws an exception.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaClient.html'
+                                  title='rusoto::lambda::LambdaClient'>LambdaClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the AWS Lambda API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAliasesRequest.html'
+                                  title='rusoto::lambda::ListAliasesRequest'>ListAliasesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAliasesResponse.html'
+                                  title='rusoto::lambda::ListAliasesResponse'>ListAliasesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListEventSourceMappingsRequest.html'
+                                  title='rusoto::lambda::ListEventSourceMappingsRequest'>ListEventSourceMappingsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListEventSourceMappingsResponse.html'
+                                  title='rusoto::lambda::ListEventSourceMappingsResponse'>ListEventSourceMappingsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a list of event sources (see <a>EventSourceMappingConfiguration</a>)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListFunctionsRequest.html'
+                                  title='rusoto::lambda::ListFunctionsRequest'>ListFunctionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListFunctionsResponse.html'
+                                  title='rusoto::lambda::ListFunctionsResponse'>ListFunctionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a list of AWS Lambda function configurations (see <a>FunctionConfiguration</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVersionsByFunctionRequest.html'
+                                  title='rusoto::lambda::ListVersionsByFunctionRequest'>ListVersionsByFunctionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVersionsByFunctionResponse.html'
+                                  title='rusoto::lambda::ListVersionsByFunctionResponse'>ListVersionsByFunctionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublishVersionRequest.html'
+                                  title='rusoto::lambda::PublishVersionRequest'>PublishVersionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemovePermissionRequest.html'
+                                  title='rusoto::lambda::RemovePermissionRequest'>RemovePermissionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAliasRequest.html'
+                                  title='rusoto::lambda::UpdateAliasRequest'>UpdateAliasRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateEventSourceMappingRequest.html'
+                                  title='rusoto::lambda::UpdateEventSourceMappingRequest'>UpdateEventSourceMappingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateFunctionCodeRequest.html'
+                                  title='rusoto::lambda::UpdateFunctionCodeRequest'>UpdateFunctionCodeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateFunctionConfigurationRequest.html'
+                                  title='rusoto::lambda::UpdateFunctionConfigurationRequest'>UpdateFunctionConfigurationRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VpcConfig.html'
+                                  title='rusoto::lambda::VpcConfig'>VpcConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>If your Lambda function accesses resources in a VPC, you provide this parameter identifying the list of security group IDs and subnet IDs. These must belong to the same VPC. You must provide at least one security group and one subnet ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VpcConfigResponse.html'
+                                  title='rusoto::lambda::VpcConfigResponse'>VpcConfigResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>VPC configuration associated with your Lambda function.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddPermissionError.html'
+                                  title='rusoto::lambda::AddPermissionError'>AddPermissionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AddPermission</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateAliasError.html'
+                                  title='rusoto::lambda::CreateAliasError'>CreateAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateEventSourceMappingError.html'
+                                  title='rusoto::lambda::CreateEventSourceMappingError'>CreateEventSourceMappingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateEventSourceMapping</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateFunctionError.html'
+                                  title='rusoto::lambda::CreateFunctionError'>CreateFunctionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateFunction</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteAliasError.html'
+                                  title='rusoto::lambda::DeleteAliasError'>DeleteAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteEventSourceMappingError.html'
+                                  title='rusoto::lambda::DeleteEventSourceMappingError'>DeleteEventSourceMappingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteEventSourceMapping</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteFunctionError.html'
+                                  title='rusoto::lambda::DeleteFunctionError'>DeleteFunctionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteFunction</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetAccountSettingsError.html'
+                                  title='rusoto::lambda::GetAccountSettingsError'>GetAccountSettingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetAccountSettings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetAliasError.html'
+                                  title='rusoto::lambda::GetAliasError'>GetAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetEventSourceMappingError.html'
+                                  title='rusoto::lambda::GetEventSourceMappingError'>GetEventSourceMappingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetEventSourceMapping</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetFunctionConfigurationError.html'
+                                  title='rusoto::lambda::GetFunctionConfigurationError'>GetFunctionConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetFunctionConfiguration</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetFunctionError.html'
+                                  title='rusoto::lambda::GetFunctionError'>GetFunctionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetFunction</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetPolicyError.html'
+                                  title='rusoto::lambda::GetPolicyError'>GetPolicyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetPolicy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.InvokeAsyncError.html'
+                                  title='rusoto::lambda::InvokeAsyncError'>InvokeAsyncError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by InvokeAsync</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.InvokeError.html'
+                                  title='rusoto::lambda::InvokeError'>InvokeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by Invoke</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAliasesError.html'
+                                  title='rusoto::lambda::ListAliasesError'>ListAliasesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListAliases</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListEventSourceMappingsError.html'
+                                  title='rusoto::lambda::ListEventSourceMappingsError'>ListEventSourceMappingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListEventSourceMappings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListFunctionsError.html'
+                                  title='rusoto::lambda::ListFunctionsError'>ListFunctionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListFunctions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListVersionsByFunctionError.html'
+                                  title='rusoto::lambda::ListVersionsByFunctionError'>ListVersionsByFunctionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListVersionsByFunction</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PublishVersionError.html'
+                                  title='rusoto::lambda::PublishVersionError'>PublishVersionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PublishVersion</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemovePermissionError.html'
+                                  title='rusoto::lambda::RemovePermissionError'>RemovePermissionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RemovePermission</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateAliasError.html'
+                                  title='rusoto::lambda::UpdateAliasError'>UpdateAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateEventSourceMappingError.html'
+                                  title='rusoto::lambda::UpdateEventSourceMappingError'>UpdateEventSourceMappingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateEventSourceMapping</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateFunctionCodeError.html'
+                                  title='rusoto::lambda::UpdateFunctionCodeError'>UpdateFunctionCodeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateFunctionCode</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateFunctionConfigurationError.html'
+                                  title='rusoto::lambda::UpdateFunctionConfigurationError'>UpdateFunctionConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateFunctionConfiguration</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Action.html'
+                                  title='rusoto::lambda::Action'>Action</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Alias.html'
+                                  title='rusoto::lambda::Alias'>Alias</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AliasList.html'
+                                  title='rusoto::lambda::AliasList'>AliasList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::lambda::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchSize.html'
+                                  title='rusoto::lambda::BatchSize'>BatchSize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Blob.html'
+                                  title='rusoto::lambda::Blob'>Blob</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BlobStream.html'
+                                  title='rusoto::lambda::BlobStream'>BlobStream</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::lambda::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::lambda::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::lambda::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Enabled.html'
+                                  title='rusoto::lambda::Enabled'>Enabled</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentVariableName.html'
+                                  title='rusoto::lambda::EnvironmentVariableName'>EnvironmentVariableName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentVariableValue.html'
+                                  title='rusoto::lambda::EnvironmentVariableValue'>EnvironmentVariableValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EnvironmentVariables.html'
+                                  title='rusoto::lambda::EnvironmentVariables'>EnvironmentVariables</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSourceMappingsList.html'
+                                  title='rusoto::lambda::EventSourceMappingsList'>EventSourceMappingsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSourcePosition.html'
+                                  title='rusoto::lambda::EventSourcePosition'>EventSourcePosition</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSourceToken.html'
+                                  title='rusoto::lambda::EventSourceToken'>EventSourceToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionArn.html'
+                                  title='rusoto::lambda::FunctionArn'>FunctionArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionList.html'
+                                  title='rusoto::lambda::FunctionList'>FunctionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionName.html'
+                                  title='rusoto::lambda::FunctionName'>FunctionName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Handler.html'
+                                  title='rusoto::lambda::Handler'>Handler</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HttpStatus.html'
+                                  title='rusoto::lambda::HttpStatus'>HttpStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::lambda::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InvocationType.html'
+                                  title='rusoto::lambda::InvocationType'>InvocationType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KMSKeyArn.html'
+                                  title='rusoto::lambda::KMSKeyArn'>KMSKeyArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogType.html'
+                                  title='rusoto::lambda::LogType'>LogType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Long.html'
+                                  title='rusoto::lambda::Long'>Long</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxListItems.html'
+                                  title='rusoto::lambda::MaxListItems'>MaxListItems</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MemorySize.html'
+                                  title='rusoto::lambda::MemorySize'>MemorySize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Principal.html'
+                                  title='rusoto::lambda::Principal'>Principal</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Qualifier.html'
+                                  title='rusoto::lambda::Qualifier'>Qualifier</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceArn.html'
+                                  title='rusoto::lambda::ResourceArn'>ResourceArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RoleArn.html'
+                                  title='rusoto::lambda::RoleArn'>RoleArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Runtime.html'
+                                  title='rusoto::lambda::Runtime'>Runtime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3Bucket.html'
+                                  title='rusoto::lambda::S3Bucket'>S3Bucket</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3Key.html'
+                                  title='rusoto::lambda::S3Key'>S3Key</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3ObjectVersion.html'
+                                  title='rusoto::lambda::S3ObjectVersion'>S3ObjectVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecurityGroupId.html'
+                                  title='rusoto::lambda::SecurityGroupId'>SecurityGroupId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecurityGroupIds.html'
+                                  title='rusoto::lambda::SecurityGroupIds'>SecurityGroupIds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SensitiveString.html'
+                                  title='rusoto::lambda::SensitiveString'>SensitiveString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceOwner.html'
+                                  title='rusoto::lambda::SourceOwner'>SourceOwner</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StatementId.html'
+                                  title='rusoto::lambda::StatementId'>StatementId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetId.html'
+                                  title='rusoto::lambda::SubnetId'>SubnetId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetIds.html'
+                                  title='rusoto::lambda::SubnetIds'>SubnetIds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThrottleReason.html'
+                                  title='rusoto::lambda::ThrottleReason'>ThrottleReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timeout.html'
+                                  title='rusoto::lambda::Timeout'>Timeout</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::lambda::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Version.html'
+                                  title='rusoto::lambda::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VpcId.html'
+                                  title='rusoto::lambda::VpcId'>VpcId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `redshift` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, redshift">
+
+    <title>rusoto::redshift - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'redshift', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>redshift</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/redshift.rs.html#1-4' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Redshift</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.RedshiftClient.html">RedshiftClient</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountWithRestoreAccess.html'
+                                  title='rusoto::redshift::AccountWithRestoreAccess'>AccountWithRestoreAccess</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an AWS customer account authorized to restore a snapshot.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizeClusterSecurityGroupIngressMessage.html'
+                                  title='rusoto::redshift::AuthorizeClusterSecurityGroupIngressMessage'>AuthorizeClusterSecurityGroupIngressMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizeClusterSecurityGroupIngressResult.html'
+                                  title='rusoto::redshift::AuthorizeClusterSecurityGroupIngressResult'>AuthorizeClusterSecurityGroupIngressResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizeSnapshotAccessMessage.html'
+                                  title='rusoto::redshift::AuthorizeSnapshotAccessMessage'>AuthorizeSnapshotAccessMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizeSnapshotAccessResult.html'
+                                  title='rusoto::redshift::AuthorizeSnapshotAccessResult'>AuthorizeSnapshotAccessResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AvailabilityZone.html'
+                                  title='rusoto::redshift::AvailabilityZone'>AvailabilityZone</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an availability zone.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Cluster.html'
+                                  title='rusoto::redshift::Cluster'>Cluster</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterIamRole.html'
+                                  title='rusoto::redshift::ClusterIamRole'>ClusterIamRole</a></td>
+                           <td class='docblock-short'>
+                                <p>An AWS Identity and Access Management (IAM) role that can be used by the associated Amazon Redshift cluster to access other AWS services.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterNode.html'
+                                  title='rusoto::redshift::ClusterNode'>ClusterNode</a></td>
+                           <td class='docblock-short'>
+                                <p>The identifier of a node in a cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterParameterGroup.html'
+                                  title='rusoto::redshift::ClusterParameterGroup'>ClusterParameterGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a parameter group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterParameterGroupDetails.html'
+                                  title='rusoto::redshift::ClusterParameterGroupDetails'>ClusterParameterGroupDetails</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeClusterParameters</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterParameterGroupNameMessage.html'
+                                  title='rusoto::redshift::ClusterParameterGroupNameMessage'>ClusterParameterGroupNameMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterParameterGroupStatus.html'
+                                  title='rusoto::redshift::ClusterParameterGroupStatus'>ClusterParameterGroupStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of a parameter group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterParameterGroupsMessage.html'
+                                  title='rusoto::redshift::ClusterParameterGroupsMessage'>ClusterParameterGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeClusterParameterGroups</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterParameterStatus.html'
+                                  title='rusoto::redshift::ClusterParameterStatus'>ClusterParameterStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of a parameter group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSecurityGroup.html'
+                                  title='rusoto::redshift::ClusterSecurityGroup'>ClusterSecurityGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a security group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSecurityGroupMembership.html'
+                                  title='rusoto::redshift::ClusterSecurityGroupMembership'>ClusterSecurityGroupMembership</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a cluster security group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSecurityGroupMessage.html'
+                                  title='rusoto::redshift::ClusterSecurityGroupMessage'>ClusterSecurityGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSnapshotCopyStatus.html'
+                                  title='rusoto::redshift::ClusterSnapshotCopyStatus'>ClusterSnapshotCopyStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the destination region and retention period that are configured for cross-region snapshot copy.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSubnetGroup.html'
+                                  title='rusoto::redshift::ClusterSubnetGroup'>ClusterSubnetGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a subnet group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSubnetGroupMessage.html'
+                                  title='rusoto::redshift::ClusterSubnetGroupMessage'>ClusterSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeClusterSubnetGroups</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterVersion.html'
+                                  title='rusoto::redshift::ClusterVersion'>ClusterVersion</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a cluster version, including the parameter group family and description of the version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterVersionsMessage.html'
+                                  title='rusoto::redshift::ClusterVersionsMessage'>ClusterVersionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeClusterVersions</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClustersMessage.html'
+                                  title='rusoto::redshift::ClustersMessage'>ClustersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeClusters</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopyClusterSnapshotMessage.html'
+                                  title='rusoto::redshift::CopyClusterSnapshotMessage'>CopyClusterSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopyClusterSnapshotResult.html'
+                                  title='rusoto::redshift::CopyClusterSnapshotResult'>CopyClusterSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterMessage.html'
+                                  title='rusoto::redshift::CreateClusterMessage'>CreateClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterParameterGroupMessage.html'
+                                  title='rusoto::redshift::CreateClusterParameterGroupMessage'>CreateClusterParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterParameterGroupResult.html'
+                                  title='rusoto::redshift::CreateClusterParameterGroupResult'>CreateClusterParameterGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterResult.html'
+                                  title='rusoto::redshift::CreateClusterResult'>CreateClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterSecurityGroupMessage.html'
+                                  title='rusoto::redshift::CreateClusterSecurityGroupMessage'>CreateClusterSecurityGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterSecurityGroupResult.html'
+                                  title='rusoto::redshift::CreateClusterSecurityGroupResult'>CreateClusterSecurityGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterSnapshotMessage.html'
+                                  title='rusoto::redshift::CreateClusterSnapshotMessage'>CreateClusterSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterSnapshotResult.html'
+                                  title='rusoto::redshift::CreateClusterSnapshotResult'>CreateClusterSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterSubnetGroupMessage.html'
+                                  title='rusoto::redshift::CreateClusterSubnetGroupMessage'>CreateClusterSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateClusterSubnetGroupResult.html'
+                                  title='rusoto::redshift::CreateClusterSubnetGroupResult'>CreateClusterSubnetGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateEventSubscriptionMessage.html'
+                                  title='rusoto::redshift::CreateEventSubscriptionMessage'>CreateEventSubscriptionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateEventSubscriptionResult.html'
+                                  title='rusoto::redshift::CreateEventSubscriptionResult'>CreateEventSubscriptionResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHsmClientCertificateMessage.html'
+                                  title='rusoto::redshift::CreateHsmClientCertificateMessage'>CreateHsmClientCertificateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHsmClientCertificateResult.html'
+                                  title='rusoto::redshift::CreateHsmClientCertificateResult'>CreateHsmClientCertificateResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHsmConfigurationMessage.html'
+                                  title='rusoto::redshift::CreateHsmConfigurationMessage'>CreateHsmConfigurationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHsmConfigurationResult.html'
+                                  title='rusoto::redshift::CreateHsmConfigurationResult'>CreateHsmConfigurationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotCopyGrantMessage.html'
+                                  title='rusoto::redshift::CreateSnapshotCopyGrantMessage'>CreateSnapshotCopyGrantMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of the <code>CreateSnapshotCopyGrant</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotCopyGrantResult.html'
+                                  title='rusoto::redshift::CreateSnapshotCopyGrantResult'>CreateSnapshotCopyGrantResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTagsMessage.html'
+                                  title='rusoto::redshift::CreateTagsMessage'>CreateTagsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <code>CreateTags</code> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultClusterParameters.html'
+                                  title='rusoto::redshift::DefaultClusterParameters'>DefaultClusterParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the default cluster parameters for a parameter group family.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterMessage.html'
+                                  title='rusoto::redshift::DeleteClusterMessage'>DeleteClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterParameterGroupMessage.html'
+                                  title='rusoto::redshift::DeleteClusterParameterGroupMessage'>DeleteClusterParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterResult.html'
+                                  title='rusoto::redshift::DeleteClusterResult'>DeleteClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterSecurityGroupMessage.html'
+                                  title='rusoto::redshift::DeleteClusterSecurityGroupMessage'>DeleteClusterSecurityGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterSnapshotMessage.html'
+                                  title='rusoto::redshift::DeleteClusterSnapshotMessage'>DeleteClusterSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterSnapshotResult.html'
+                                  title='rusoto::redshift::DeleteClusterSnapshotResult'>DeleteClusterSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteClusterSubnetGroupMessage.html'
+                                  title='rusoto::redshift::DeleteClusterSubnetGroupMessage'>DeleteClusterSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteEventSubscriptionMessage.html'
+                                  title='rusoto::redshift::DeleteEventSubscriptionMessage'>DeleteEventSubscriptionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteHsmClientCertificateMessage.html'
+                                  title='rusoto::redshift::DeleteHsmClientCertificateMessage'>DeleteHsmClientCertificateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteHsmConfigurationMessage.html'
+                                  title='rusoto::redshift::DeleteHsmConfigurationMessage'>DeleteHsmConfigurationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSnapshotCopyGrantMessage.html'
+                                  title='rusoto::redshift::DeleteSnapshotCopyGrantMessage'>DeleteSnapshotCopyGrantMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of the <code>DeleteSnapshotCopyGrant</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTagsMessage.html'
+                                  title='rusoto::redshift::DeleteTagsMessage'>DeleteTagsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <code>DeleteTags</code> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterParameterGroupsMessage.html'
+                                  title='rusoto::redshift::DescribeClusterParameterGroupsMessage'>DescribeClusterParameterGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterParametersMessage.html'
+                                  title='rusoto::redshift::DescribeClusterParametersMessage'>DescribeClusterParametersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterSecurityGroupsMessage.html'
+                                  title='rusoto::redshift::DescribeClusterSecurityGroupsMessage'>DescribeClusterSecurityGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterSnapshotsMessage.html'
+                                  title='rusoto::redshift::DescribeClusterSnapshotsMessage'>DescribeClusterSnapshotsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterSubnetGroupsMessage.html'
+                                  title='rusoto::redshift::DescribeClusterSubnetGroupsMessage'>DescribeClusterSubnetGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterVersionsMessage.html'
+                                  title='rusoto::redshift::DescribeClusterVersionsMessage'>DescribeClusterVersionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClustersMessage.html'
+                                  title='rusoto::redshift::DescribeClustersMessage'>DescribeClustersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDefaultClusterParametersMessage.html'
+                                  title='rusoto::redshift::DescribeDefaultClusterParametersMessage'>DescribeDefaultClusterParametersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDefaultClusterParametersResult.html'
+                                  title='rusoto::redshift::DescribeDefaultClusterParametersResult'>DescribeDefaultClusterParametersResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEventCategoriesMessage.html'
+                                  title='rusoto::redshift::DescribeEventCategoriesMessage'>DescribeEventCategoriesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEventSubscriptionsMessage.html'
+                                  title='rusoto::redshift::DescribeEventSubscriptionsMessage'>DescribeEventSubscriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEventsMessage.html'
+                                  title='rusoto::redshift::DescribeEventsMessage'>DescribeEventsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeHsmClientCertificatesMessage.html'
+                                  title='rusoto::redshift::DescribeHsmClientCertificatesMessage'>DescribeHsmClientCertificatesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeHsmConfigurationsMessage.html'
+                                  title='rusoto::redshift::DescribeHsmConfigurationsMessage'>DescribeHsmConfigurationsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLoggingStatusMessage.html'
+                                  title='rusoto::redshift::DescribeLoggingStatusMessage'>DescribeLoggingStatusMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeOrderableClusterOptionsMessage.html'
+                                  title='rusoto::redshift::DescribeOrderableClusterOptionsMessage'>DescribeOrderableClusterOptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeReservedNodeOfferingsMessage.html'
+                                  title='rusoto::redshift::DescribeReservedNodeOfferingsMessage'>DescribeReservedNodeOfferingsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeReservedNodesMessage.html'
+                                  title='rusoto::redshift::DescribeReservedNodesMessage'>DescribeReservedNodesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeResizeMessage.html'
+                                  title='rusoto::redshift::DescribeResizeMessage'>DescribeResizeMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSnapshotCopyGrantsMessage.html'
+                                  title='rusoto::redshift::DescribeSnapshotCopyGrantsMessage'>DescribeSnapshotCopyGrantsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of the <code>DescribeSnapshotCopyGrants</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTableRestoreStatusMessage.html'
+                                  title='rusoto::redshift::DescribeTableRestoreStatusMessage'>DescribeTableRestoreStatusMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTagsMessage.html'
+                                  title='rusoto::redshift::DescribeTagsMessage'>DescribeTagsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableLoggingMessage.html'
+                                  title='rusoto::redshift::DisableLoggingMessage'>DisableLoggingMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableSnapshotCopyMessage.html'
+                                  title='rusoto::redshift::DisableSnapshotCopyMessage'>DisableSnapshotCopyMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableSnapshotCopyResult.html'
+                                  title='rusoto::redshift::DisableSnapshotCopyResult'>DisableSnapshotCopyResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EC2SecurityGroup.html'
+                                  title='rusoto::redshift::EC2SecurityGroup'>EC2SecurityGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an Amazon EC2 security group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ElasticIpStatus.html'
+                                  title='rusoto::redshift::ElasticIpStatus'>ElasticIpStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of the elastic IP (EIP) address.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableLoggingMessage.html'
+                                  title='rusoto::redshift::EnableLoggingMessage'>EnableLoggingMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableSnapshotCopyMessage.html'
+                                  title='rusoto::redshift::EnableSnapshotCopyMessage'>EnableSnapshotCopyMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableSnapshotCopyResult.html'
+                                  title='rusoto::redshift::EnableSnapshotCopyResult'>EnableSnapshotCopyResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Endpoint.html'
+                                  title='rusoto::redshift::Endpoint'>Endpoint</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a connection endpoint.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Event.html'
+                                  title='rusoto::redshift::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventCategoriesMap.html'
+                                  title='rusoto::redshift::EventCategoriesMap'>EventCategoriesMap</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes event categories.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventCategoriesMessage.html'
+                                  title='rusoto::redshift::EventCategoriesMessage'>EventCategoriesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventInfoMap.html'
+                                  title='rusoto::redshift::EventInfoMap'>EventInfoMap</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes event information.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventSubscription.html'
+                                  title='rusoto::redshift::EventSubscription'>EventSubscription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes event subscriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventSubscriptionsMessage.html'
+                                  title='rusoto::redshift::EventSubscriptionsMessage'>EventSubscriptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventsMessage.html'
+                                  title='rusoto::redshift::EventsMessage'>EventsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HsmClientCertificate.html'
+                                  title='rusoto::redshift::HsmClientCertificate'>HsmClientCertificate</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns information about an HSM client certificate. The certificate is stored in a secure Hardware Storage Module (HSM), and used by the Amazon Redshift cluster to encrypt data files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HsmClientCertificateMessage.html'
+                                  title='rusoto::redshift::HsmClientCertificateMessage'>HsmClientCertificateMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HsmConfiguration.html'
+                                  title='rusoto::redshift::HsmConfiguration'>HsmConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns information about an HSM configuration, which is an object that describes to Amazon Redshift clusters the information they require to connect to an HSM where they can store database encryption keys.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HsmConfigurationMessage.html'
+                                  title='rusoto::redshift::HsmConfigurationMessage'>HsmConfigurationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HsmStatus.html'
+                                  title='rusoto::redshift::HsmStatus'>HsmStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of changes to HSM settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IPRange.html'
+                                  title='rusoto::redshift::IPRange'>IPRange</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an IP range used in a security group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LoggingStatus.html'
+                                  title='rusoto::redshift::LoggingStatus'>LoggingStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of logging for a cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterIamRolesMessage.html'
+                                  title='rusoto::redshift::ModifyClusterIamRolesMessage'>ModifyClusterIamRolesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterIamRolesResult.html'
+                                  title='rusoto::redshift::ModifyClusterIamRolesResult'>ModifyClusterIamRolesResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterMessage.html'
+                                  title='rusoto::redshift::ModifyClusterMessage'>ModifyClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterParameterGroupMessage.html'
+                                  title='rusoto::redshift::ModifyClusterParameterGroupMessage'>ModifyClusterParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterResult.html'
+                                  title='rusoto::redshift::ModifyClusterResult'>ModifyClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterSubnetGroupMessage.html'
+                                  title='rusoto::redshift::ModifyClusterSubnetGroupMessage'>ModifyClusterSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyClusterSubnetGroupResult.html'
+                                  title='rusoto::redshift::ModifyClusterSubnetGroupResult'>ModifyClusterSubnetGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyEventSubscriptionMessage.html'
+                                  title='rusoto::redshift::ModifyEventSubscriptionMessage'>ModifyEventSubscriptionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyEventSubscriptionResult.html'
+                                  title='rusoto::redshift::ModifyEventSubscriptionResult'>ModifyEventSubscriptionResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifySnapshotCopyRetentionPeriodMessage.html'
+                                  title='rusoto::redshift::ModifySnapshotCopyRetentionPeriodMessage'>ModifySnapshotCopyRetentionPeriodMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifySnapshotCopyRetentionPeriodResult.html'
+                                  title='rusoto::redshift::ModifySnapshotCopyRetentionPeriodResult'>ModifySnapshotCopyRetentionPeriodResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OrderableClusterOption.html'
+                                  title='rusoto::redshift::OrderableClusterOption'>OrderableClusterOption</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an orderable cluster option.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OrderableClusterOptionsMessage.html'
+                                  title='rusoto::redshift::OrderableClusterOptionsMessage'>OrderableClusterOptionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeOrderableClusterOptions</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Parameter.html'
+                                  title='rusoto::redshift::Parameter'>Parameter</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a parameter in a cluster parameter group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PendingModifiedValues.html'
+                                  title='rusoto::redshift::PendingModifiedValues'>PendingModifiedValues</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes cluster attributes that are in a pending state. A change to one or more the attributes was requested and is in progress or will be applied.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PurchaseReservedNodeOfferingMessage.html'
+                                  title='rusoto::redshift::PurchaseReservedNodeOfferingMessage'>PurchaseReservedNodeOfferingMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PurchaseReservedNodeOfferingResult.html'
+                                  title='rusoto::redshift::PurchaseReservedNodeOfferingResult'>PurchaseReservedNodeOfferingResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootClusterMessage.html'
+                                  title='rusoto::redshift::RebootClusterMessage'>RebootClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootClusterResult.html'
+                                  title='rusoto::redshift::RebootClusterResult'>RebootClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RecurringCharge.html'
+                                  title='rusoto::redshift::RecurringCharge'>RecurringCharge</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a recurring charge.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RedshiftClient.html'
+                                  title='rusoto::redshift::RedshiftClient'>RedshiftClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon Redshift API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedNode.html'
+                                  title='rusoto::redshift::ReservedNode'>ReservedNode</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a reserved node. You can call the <a>DescribeReservedNodeOfferings</a> API to obtain the available reserved node offerings. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedNodeOffering.html'
+                                  title='rusoto::redshift::ReservedNodeOffering'>ReservedNodeOffering</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a reserved node offering.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedNodeOfferingsMessage.html'
+                                  title='rusoto::redshift::ReservedNodeOfferingsMessage'>ReservedNodeOfferingsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedNodesMessage.html'
+                                  title='rusoto::redshift::ReservedNodesMessage'>ReservedNodesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResetClusterParameterGroupMessage.html'
+                                  title='rusoto::redshift::ResetClusterParameterGroupMessage'>ResetClusterParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResizeProgressMessage.html'
+                                  title='rusoto::redshift::ResizeProgressMessage'>ResizeProgressMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the result of a cluster resize operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreFromClusterSnapshotMessage.html'
+                                  title='rusoto::redshift::RestoreFromClusterSnapshotMessage'>RestoreFromClusterSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreFromClusterSnapshotResult.html'
+                                  title='rusoto::redshift::RestoreFromClusterSnapshotResult'>RestoreFromClusterSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreStatus.html'
+                                  title='rusoto::redshift::RestoreStatus'>RestoreStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of a cluster restore action. Returns null if the cluster was not created by restoring a snapshot.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreTableFromClusterSnapshotMessage.html'
+                                  title='rusoto::redshift::RestoreTableFromClusterSnapshotMessage'>RestoreTableFromClusterSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreTableFromClusterSnapshotResult.html'
+                                  title='rusoto::redshift::RestoreTableFromClusterSnapshotResult'>RestoreTableFromClusterSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevokeClusterSecurityGroupIngressMessage.html'
+                                  title='rusoto::redshift::RevokeClusterSecurityGroupIngressMessage'>RevokeClusterSecurityGroupIngressMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevokeClusterSecurityGroupIngressResult.html'
+                                  title='rusoto::redshift::RevokeClusterSecurityGroupIngressResult'>RevokeClusterSecurityGroupIngressResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevokeSnapshotAccessMessage.html'
+                                  title='rusoto::redshift::RevokeSnapshotAccessMessage'>RevokeSnapshotAccessMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevokeSnapshotAccessResult.html'
+                                  title='rusoto::redshift::RevokeSnapshotAccessResult'>RevokeSnapshotAccessResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RotateEncryptionKeyMessage.html'
+                                  title='rusoto::redshift::RotateEncryptionKeyMessage'>RotateEncryptionKeyMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RotateEncryptionKeyResult.html'
+                                  title='rusoto::redshift::RotateEncryptionKeyResult'>RotateEncryptionKeyResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Snapshot.html'
+                                  title='rusoto::redshift::Snapshot'>Snapshot</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a snapshot.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SnapshotCopyGrant.html'
+                                  title='rusoto::redshift::SnapshotCopyGrant'>SnapshotCopyGrant</a></td>
+                           <td class='docblock-short'>
+                                <p>The snapshot copy grant that grants Amazon Redshift permission to encrypt copied snapshots with the specified customer master key (CMK) from AWS KMS in the destination region.</p> <p> For more information about managing snapshot copy grants, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html">Amazon Redshift Database Encryption</a> in the <i>Amazon Redshift Cluster Management Guide</i>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SnapshotCopyGrantMessage.html'
+                                  title='rusoto::redshift::SnapshotCopyGrantMessage'>SnapshotCopyGrantMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SnapshotMessage.html'
+                                  title='rusoto::redshift::SnapshotMessage'>SnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output from the <a>DescribeClusterSnapshots</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Subnet.html'
+                                  title='rusoto::redshift::Subnet'>Subnet</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a subnet.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TableRestoreStatus.html'
+                                  title='rusoto::redshift::TableRestoreStatus'>TableRestoreStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of a <a>RestoreTableFromClusterSnapshot</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TableRestoreStatusMessage.html'
+                                  title='rusoto::redshift::TableRestoreStatusMessage'>TableRestoreStatusMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::redshift::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A tag consisting of a name/value pair for a resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TaggedResource.html'
+                                  title='rusoto::redshift::TaggedResource'>TaggedResource</a></td>
+                           <td class='docblock-short'>
+                                <p>A tag and its associated resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TaggedResourceListMessage.html'
+                                  title='rusoto::redshift::TaggedResourceListMessage'>TaggedResourceListMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VpcSecurityGroupMembership.html'
+                                  title='rusoto::redshift::VpcSecurityGroupMembership'>VpcSecurityGroupMembership</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the members of a VPC security group.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AuthorizeClusterSecurityGroupIngressError.html'
+                                  title='rusoto::redshift::AuthorizeClusterSecurityGroupIngressError'>AuthorizeClusterSecurityGroupIngressError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AuthorizeClusterSecurityGroupIngress</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AuthorizeSnapshotAccessError.html'
+                                  title='rusoto::redshift::AuthorizeSnapshotAccessError'>AuthorizeSnapshotAccessError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AuthorizeSnapshotAccess</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CopyClusterSnapshotError.html'
+                                  title='rusoto::redshift::CopyClusterSnapshotError'>CopyClusterSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CopyClusterSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateClusterError.html'
+                                  title='rusoto::redshift::CreateClusterError'>CreateClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateClusterParameterGroupError.html'
+                                  title='rusoto::redshift::CreateClusterParameterGroupError'>CreateClusterParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateClusterParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateClusterSecurityGroupError.html'
+                                  title='rusoto::redshift::CreateClusterSecurityGroupError'>CreateClusterSecurityGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateClusterSecurityGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateClusterSnapshotError.html'
+                                  title='rusoto::redshift::CreateClusterSnapshotError'>CreateClusterSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateClusterSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateClusterSubnetGroupError.html'
+                                  title='rusoto::redshift::CreateClusterSubnetGroupError'>CreateClusterSubnetGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateClusterSubnetGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateEventSubscriptionError.html'
+                                  title='rusoto::redshift::CreateEventSubscriptionError'>CreateEventSubscriptionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateEventSubscription</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateHsmClientCertificateError.html'
+                                  title='rusoto::redshift::CreateHsmClientCertificateError'>CreateHsmClientCertificateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateHsmClientCertificate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateHsmConfigurationError.html'
+                                  title='rusoto::redshift::CreateHsmConfigurationError'>CreateHsmConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateHsmConfiguration</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateSnapshotCopyGrantError.html'
+                                  title='rusoto::redshift::CreateSnapshotCopyGrantError'>CreateSnapshotCopyGrantError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateSnapshotCopyGrant</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTagsError.html'
+                                  title='rusoto::redshift::CreateTagsError'>CreateTagsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateTags</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteClusterError.html'
+                                  title='rusoto::redshift::DeleteClusterError'>DeleteClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteClusterParameterGroupError.html'
+                                  title='rusoto::redshift::DeleteClusterParameterGroupError'>DeleteClusterParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteClusterParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteClusterSecurityGroupError.html'
+                                  title='rusoto::redshift::DeleteClusterSecurityGroupError'>DeleteClusterSecurityGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteClusterSecurityGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteClusterSnapshotError.html'
+                                  title='rusoto::redshift::DeleteClusterSnapshotError'>DeleteClusterSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteClusterSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteClusterSubnetGroupError.html'
+                                  title='rusoto::redshift::DeleteClusterSubnetGroupError'>DeleteClusterSubnetGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteClusterSubnetGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteEventSubscriptionError.html'
+                                  title='rusoto::redshift::DeleteEventSubscriptionError'>DeleteEventSubscriptionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteEventSubscription</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteHsmClientCertificateError.html'
+                                  title='rusoto::redshift::DeleteHsmClientCertificateError'>DeleteHsmClientCertificateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteHsmClientCertificate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteHsmConfigurationError.html'
+                                  title='rusoto::redshift::DeleteHsmConfigurationError'>DeleteHsmConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteHsmConfiguration</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSnapshotCopyGrantError.html'
+                                  title='rusoto::redshift::DeleteSnapshotCopyGrantError'>DeleteSnapshotCopyGrantError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteSnapshotCopyGrant</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTagsError.html'
+                                  title='rusoto::redshift::DeleteTagsError'>DeleteTagsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteTags</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterParameterGroupsError.html'
+                                  title='rusoto::redshift::DescribeClusterParameterGroupsError'>DescribeClusterParameterGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusterParameterGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterParametersError.html'
+                                  title='rusoto::redshift::DescribeClusterParametersError'>DescribeClusterParametersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusterParameters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterSecurityGroupsError.html'
+                                  title='rusoto::redshift::DescribeClusterSecurityGroupsError'>DescribeClusterSecurityGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusterSecurityGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterSnapshotsError.html'
+                                  title='rusoto::redshift::DescribeClusterSnapshotsError'>DescribeClusterSnapshotsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusterSnapshots</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterSubnetGroupsError.html'
+                                  title='rusoto::redshift::DescribeClusterSubnetGroupsError'>DescribeClusterSubnetGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusterSubnetGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterVersionsError.html'
+                                  title='rusoto::redshift::DescribeClusterVersionsError'>DescribeClusterVersionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusterVersions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClustersError.html'
+                                  title='rusoto::redshift::DescribeClustersError'>DescribeClustersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeClusters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDefaultClusterParametersError.html'
+                                  title='rusoto::redshift::DescribeDefaultClusterParametersError'>DescribeDefaultClusterParametersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeDefaultClusterParameters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEventCategoriesError.html'
+                                  title='rusoto::redshift::DescribeEventCategoriesError'>DescribeEventCategoriesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEventCategories</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEventSubscriptionsError.html'
+                                  title='rusoto::redshift::DescribeEventSubscriptionsError'>DescribeEventSubscriptionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEventSubscriptions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEventsError.html'
+                                  title='rusoto::redshift::DescribeEventsError'>DescribeEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEvents</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeHsmClientCertificatesError.html'
+                                  title='rusoto::redshift::DescribeHsmClientCertificatesError'>DescribeHsmClientCertificatesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeHsmClientCertificates</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeHsmConfigurationsError.html'
+                                  title='rusoto::redshift::DescribeHsmConfigurationsError'>DescribeHsmConfigurationsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeHsmConfigurations</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeLoggingStatusError.html'
+                                  title='rusoto::redshift::DescribeLoggingStatusError'>DescribeLoggingStatusError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeLoggingStatus</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeOrderableClusterOptionsError.html'
+                                  title='rusoto::redshift::DescribeOrderableClusterOptionsError'>DescribeOrderableClusterOptionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeOrderableClusterOptions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeReservedNodeOfferingsError.html'
+                                  title='rusoto::redshift::DescribeReservedNodeOfferingsError'>DescribeReservedNodeOfferingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeReservedNodeOfferings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeReservedNodesError.html'
+                                  title='rusoto::redshift::DescribeReservedNodesError'>DescribeReservedNodesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeReservedNodes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeResizeError.html'
+                                  title='rusoto::redshift::DescribeResizeError'>DescribeResizeError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeResize</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeSnapshotCopyGrantsError.html'
+                                  title='rusoto::redshift::DescribeSnapshotCopyGrantsError'>DescribeSnapshotCopyGrantsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeSnapshotCopyGrants</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTableRestoreStatusError.html'
+                                  title='rusoto::redshift::DescribeTableRestoreStatusError'>DescribeTableRestoreStatusError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeTableRestoreStatus</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTagsError.html'
+                                  title='rusoto::redshift::DescribeTagsError'>DescribeTagsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeTags</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DisableLoggingError.html'
+                                  title='rusoto::redshift::DisableLoggingError'>DisableLoggingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DisableLogging</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DisableSnapshotCopyError.html'
+                                  title='rusoto::redshift::DisableSnapshotCopyError'>DisableSnapshotCopyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DisableSnapshotCopy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.EnableLoggingError.html'
+                                  title='rusoto::redshift::EnableLoggingError'>EnableLoggingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by EnableLogging</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.EnableSnapshotCopyError.html'
+                                  title='rusoto::redshift::EnableSnapshotCopyError'>EnableSnapshotCopyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by EnableSnapshotCopy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyClusterError.html'
+                                  title='rusoto::redshift::ModifyClusterError'>ModifyClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyClusterIamRolesError.html'
+                                  title='rusoto::redshift::ModifyClusterIamRolesError'>ModifyClusterIamRolesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyClusterIamRoles</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyClusterParameterGroupError.html'
+                                  title='rusoto::redshift::ModifyClusterParameterGroupError'>ModifyClusterParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyClusterParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyClusterSubnetGroupError.html'
+                                  title='rusoto::redshift::ModifyClusterSubnetGroupError'>ModifyClusterSubnetGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyClusterSubnetGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyEventSubscriptionError.html'
+                                  title='rusoto::redshift::ModifyEventSubscriptionError'>ModifyEventSubscriptionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyEventSubscription</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifySnapshotCopyRetentionPeriodError.html'
+                                  title='rusoto::redshift::ModifySnapshotCopyRetentionPeriodError'>ModifySnapshotCopyRetentionPeriodError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifySnapshotCopyRetentionPeriod</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PurchaseReservedNodeOfferingError.html'
+                                  title='rusoto::redshift::PurchaseReservedNodeOfferingError'>PurchaseReservedNodeOfferingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PurchaseReservedNodeOffering</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RebootClusterError.html'
+                                  title='rusoto::redshift::RebootClusterError'>RebootClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RebootCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ResetClusterParameterGroupError.html'
+                                  title='rusoto::redshift::ResetClusterParameterGroupError'>ResetClusterParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ResetClusterParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RestoreFromClusterSnapshotError.html'
+                                  title='rusoto::redshift::RestoreFromClusterSnapshotError'>RestoreFromClusterSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RestoreFromClusterSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RestoreTableFromClusterSnapshotError.html'
+                                  title='rusoto::redshift::RestoreTableFromClusterSnapshotError'>RestoreTableFromClusterSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RestoreTableFromClusterSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RevokeClusterSecurityGroupIngressError.html'
+                                  title='rusoto::redshift::RevokeClusterSecurityGroupIngressError'>RevokeClusterSecurityGroupIngressError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RevokeClusterSecurityGroupIngress</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RevokeSnapshotAccessError.html'
+                                  title='rusoto::redshift::RevokeSnapshotAccessError'>RevokeSnapshotAccessError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RevokeSnapshotAccess</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RotateEncryptionKeyError.html'
+                                  title='rusoto::redshift::RotateEncryptionKeyError'>RotateEncryptionKeyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RotateEncryptionKey</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccountsWithRestoreAccessList.html'
+                                  title='rusoto::redshift::AccountsWithRestoreAccessList'>AccountsWithRestoreAccessList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AvailabilityZoneList.html'
+                                  title='rusoto::redshift::AvailabilityZoneList'>AvailabilityZoneList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::redshift::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BooleanOptional.html'
+                                  title='rusoto::redshift::BooleanOptional'>BooleanOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterIamRoleList.html'
+                                  title='rusoto::redshift::ClusterIamRoleList'>ClusterIamRoleList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterList.html'
+                                  title='rusoto::redshift::ClusterList'>ClusterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterNodesList.html'
+                                  title='rusoto::redshift::ClusterNodesList'>ClusterNodesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterParameterGroupStatusList.html'
+                                  title='rusoto::redshift::ClusterParameterGroupStatusList'>ClusterParameterGroupStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterParameterStatusList.html'
+                                  title='rusoto::redshift::ClusterParameterStatusList'>ClusterParameterStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterSecurityGroupMembershipList.html'
+                                  title='rusoto::redshift::ClusterSecurityGroupMembershipList'>ClusterSecurityGroupMembershipList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterSecurityGroupNameList.html'
+                                  title='rusoto::redshift::ClusterSecurityGroupNameList'>ClusterSecurityGroupNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterSecurityGroups.html'
+                                  title='rusoto::redshift::ClusterSecurityGroups'>ClusterSecurityGroups</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterSubnetGroups.html'
+                                  title='rusoto::redshift::ClusterSubnetGroups'>ClusterSubnetGroups</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterVersionList.html'
+                                  title='rusoto::redshift::ClusterVersionList'>ClusterVersionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Double.html'
+                                  title='rusoto::redshift::Double'>Double</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DoubleOptional.html'
+                                  title='rusoto::redshift::DoubleOptional'>DoubleOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EC2SecurityGroupList.html'
+                                  title='rusoto::redshift::EC2SecurityGroupList'>EC2SecurityGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventCategoriesList.html'
+                                  title='rusoto::redshift::EventCategoriesList'>EventCategoriesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventCategoriesMapList.html'
+                                  title='rusoto::redshift::EventCategoriesMapList'>EventCategoriesMapList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventInfoMapList.html'
+                                  title='rusoto::redshift::EventInfoMapList'>EventInfoMapList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventList.html'
+                                  title='rusoto::redshift::EventList'>EventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSubscriptionsList.html'
+                                  title='rusoto::redshift::EventSubscriptionsList'>EventSubscriptionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HsmClientCertificateList.html'
+                                  title='rusoto::redshift::HsmClientCertificateList'>HsmClientCertificateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HsmConfigurationList.html'
+                                  title='rusoto::redshift::HsmConfigurationList'>HsmConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPRangeList.html'
+                                  title='rusoto::redshift::IPRangeList'>IPRangeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IamRoleArnList.html'
+                                  title='rusoto::redshift::IamRoleArnList'>IamRoleArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImportTablesCompleted.html'
+                                  title='rusoto::redshift::ImportTablesCompleted'>ImportTablesCompleted</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImportTablesInProgress.html'
+                                  title='rusoto::redshift::ImportTablesInProgress'>ImportTablesInProgress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImportTablesNotStarted.html'
+                                  title='rusoto::redshift::ImportTablesNotStarted'>ImportTablesNotStarted</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::redshift::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IntegerOptional.html'
+                                  title='rusoto::redshift::IntegerOptional'>IntegerOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Long.html'
+                                  title='rusoto::redshift::Long'>Long</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LongOptional.html'
+                                  title='rusoto::redshift::LongOptional'>LongOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OrderableClusterOptionsList.html'
+                                  title='rusoto::redshift::OrderableClusterOptionsList'>OrderableClusterOptionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterApplyType.html'
+                                  title='rusoto::redshift::ParameterApplyType'>ParameterApplyType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterGroupList.html'
+                                  title='rusoto::redshift::ParameterGroupList'>ParameterGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParametersList.html'
+                                  title='rusoto::redshift::ParametersList'>ParametersList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RecurringChargeList.html'
+                                  title='rusoto::redshift::RecurringChargeList'>RecurringChargeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReservedNodeList.html'
+                                  title='rusoto::redshift::ReservedNodeList'>ReservedNodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReservedNodeOfferingList.html'
+                                  title='rusoto::redshift::ReservedNodeOfferingList'>ReservedNodeOfferingList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RestorableNodeTypeList.html'
+                                  title='rusoto::redshift::RestorableNodeTypeList'>RestorableNodeTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnapshotCopyGrantList.html'
+                                  title='rusoto::redshift::SnapshotCopyGrantList'>SnapshotCopyGrantList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnapshotList.html'
+                                  title='rusoto::redshift::SnapshotList'>SnapshotList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceIdsList.html'
+                                  title='rusoto::redshift::SourceIdsList'>SourceIdsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceType.html'
+                                  title='rusoto::redshift::SourceType'>SourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetIdentifierList.html'
+                                  title='rusoto::redshift::SubnetIdentifierList'>SubnetIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetList.html'
+                                  title='rusoto::redshift::SubnetList'>SubnetList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TStamp.html'
+                                  title='rusoto::redshift::TStamp'>TStamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TableRestoreStatusList.html'
+                                  title='rusoto::redshift::TableRestoreStatusList'>TableRestoreStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TableRestoreStatusType.html'
+                                  title='rusoto::redshift::TableRestoreStatusType'>TableRestoreStatusType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKeyList.html'
+                                  title='rusoto::redshift::TagKeyList'>TagKeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::redshift::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValueList.html'
+                                  title='rusoto::redshift::TagValueList'>TagValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TaggedResourceList.html'
+                                  title='rusoto::redshift::TaggedResourceList'>TaggedResourceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VpcSecurityGroupIdList.html'
+                                  title='rusoto::redshift::VpcSecurityGroupIdList'>VpcSecurityGroupIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VpcSecurityGroupMembershipList.html'
+                                  title='rusoto::redshift::VpcSecurityGroupMembershipList'>VpcSecurityGroupMembershipList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `elasticache` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, elasticache">
+
+    <title>rusoto::elasticache - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'elasticache', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>elasticache</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rusoto/elasticache.rs.html#1-4' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon ElastiCache</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.ElastiCacheClient.html">ElastiCacheClient</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceMessage.html'
+                                  title='rusoto::elasticache::AddTagsToResourceMessage'>AddTagsToResourceMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an AddTagsToResource operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AllowedNodeTypeModificationsMessage.html'
+                                  title='rusoto::elasticache::AllowedNodeTypeModificationsMessage'>AllowedNodeTypeModificationsMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizeCacheSecurityGroupIngressMessage.html'
+                                  title='rusoto::elasticache::AuthorizeCacheSecurityGroupIngressMessage'>AuthorizeCacheSecurityGroupIngressMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an AuthorizeCacheSecurityGroupIngress operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizeCacheSecurityGroupIngressResult.html'
+                                  title='rusoto::elasticache::AuthorizeCacheSecurityGroupIngressResult'>AuthorizeCacheSecurityGroupIngressResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AvailabilityZone.html'
+                                  title='rusoto::elasticache::AvailabilityZone'>AvailabilityZone</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an Availability Zone in which the cache cluster is launched.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheCluster.html'
+                                  title='rusoto::elasticache::CacheCluster'>CacheCluster</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains all of the attributes of a specific cache cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheClusterMessage.html'
+                                  title='rusoto::elasticache::CacheClusterMessage'>CacheClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeCacheClusters</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheEngineVersion.html'
+                                  title='rusoto::elasticache::CacheEngineVersion'>CacheEngineVersion</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides all of the details about a particular cache engine version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheEngineVersionMessage.html'
+                                  title='rusoto::elasticache::CacheEngineVersionMessage'>CacheEngineVersionMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <a>DescribeCacheEngineVersions</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheNode.html'
+                                  title='rusoto::elasticache::CacheNode'>CacheNode</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an individual cache node within a cache cluster. Each cache node runs its own instance of the cluster's protocol-compliant caching software - either Memcached or Redis.</p> <p>Valid node types are as follows:</p> <ul> <li> <p>General purpose:</p> <ul> <li> <p>Current generation: <code>cache.t2.micro</code>, <code>cache.t2.small</code>, <code>cache.t2.medium</code>, <code>cache.m3.medium</code>, <code>cache.m3.large</code>, <code>cache.m3.xlarge</code>, <code>cache.m3.2xlarge</code>, <code>cache.m4.large</code>, <code>cache.m4.xlarge</code>, <code>cache.m4.2xlarge</code>, <code>cache.m4.4xlarge</code>, <code>cache.m4.10xlarge</code> </p> </li> <li> <p>Previous generation: <code>cache.t1.micro</code>, <code>cache.m1.small</code>, <code>cache.m1.medium</code>, <code>cache.m1.large</code>, <code>cache.m1.xlarge</code> </p> </li> </ul> </li> <li> <p>Compute optimized: <code>cache.c1.xlarge</code> </p> </li> <li> <p>Memory optimized:</p> <ul> <li> <p>Current generation: <code>cache.r3.large</code>, <code>cache.r3.xlarge</code>, <code>cache.r3.2xlarge</code>, <code>cache.r3.4xlarge</code>, <code>cache.r3.8xlarge</code> </p> </li> <li> <p>Previous generation: <code>cache.m2.xlarge</code>, <code>cache.m2.2xlarge</code>, <code>cache.m2.4xlarge</code> </p> </li> </ul> </li> </ul> <p> <b>Notes:</b> </p> <ul> <li> <p>All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).</p> </li> <li> <p>Redis backup/restore is not supported for Redis (cluster mode disabled) T1 and T2 instances. Backup/restore is supported on Redis (cluster mode enabled) T2 instances.</p> </li> <li> <p>Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.</p> </li> </ul> <p>For a complete listing of node types and specifications, see <a href="http://aws.amazon.com/elasticache/details">Amazon ElastiCache Product Features and Details</a> and either <a href="http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/CacheParameterGroups.Memcached.html#ParameterGroups.Memcached.NodeSpecific">Cache Node Type-Specific Parameters for Memcached</a> or <a href="http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/CacheParameterGroups.Redis.html#ParameterGroups.Redis.NodeSpecific">Cache Node Type-Specific Parameters for Redis</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheNodeTypeSpecificParameter.html'
+                                  title='rusoto::elasticache::CacheNodeTypeSpecificParameter'>CacheNodeTypeSpecificParameter</a></td>
+                           <td class='docblock-short'>
+                                <p>A parameter that has a different value for each cache node type it is applied to. For example, in a Redis cache cluster, a <code>cache.m1.large</code> cache node type would have a larger <code>maxmemory</code> value than a <code>cache.m1.small</code> type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheNodeTypeSpecificValue.html'
+                                  title='rusoto::elasticache::CacheNodeTypeSpecificValue'>CacheNodeTypeSpecificValue</a></td>
+                           <td class='docblock-short'>
+                                <p>A value that applies only to a certain cache node type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheParameterGroup.html'
+                                  title='rusoto::elasticache::CacheParameterGroup'>CacheParameterGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>CreateCacheParameterGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheParameterGroupDetails.html'
+                                  title='rusoto::elasticache::CacheParameterGroupDetails'>CacheParameterGroupDetails</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeCacheParameters</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheParameterGroupNameMessage.html'
+                                  title='rusoto::elasticache::CacheParameterGroupNameMessage'>CacheParameterGroupNameMessage</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Represents the output of one of the following operations:</p> <ul> <li> <p> <code>ModifyCacheParameterGroup</code> </p> </li> <li> <p> <code>ResetCacheParameterGroup</code> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheParameterGroupStatus.html'
+                                  title='rusoto::elasticache::CacheParameterGroupStatus'>CacheParameterGroupStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Status of the cache parameter group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheParameterGroupsMessage.html'
+                                  title='rusoto::elasticache::CacheParameterGroupsMessage'>CacheParameterGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeCacheParameterGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheSecurityGroup.html'
+                                  title='rusoto::elasticache::CacheSecurityGroup'>CacheSecurityGroup</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Represents the output of one of the following operations:</p> <ul> <li> <p> <code>AuthorizeCacheSecurityGroupIngress</code> </p> </li> <li> <p> <code>CreateCacheSecurityGroup</code> </p> </li> <li> <p> <code>RevokeCacheSecurityGroupIngress</code> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheSecurityGroupMembership.html'
+                                  title='rusoto::elasticache::CacheSecurityGroupMembership'>CacheSecurityGroupMembership</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a cache cluster's status within a particular cache security group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheSecurityGroupMessage.html'
+                                  title='rusoto::elasticache::CacheSecurityGroupMessage'>CacheSecurityGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeCacheSecurityGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheSubnetGroup.html'
+                                  title='rusoto::elasticache::CacheSubnetGroup'>CacheSubnetGroup</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Represents the output of one of the following operations:</p> <ul> <li> <p> <code>CreateCacheSubnetGroup</code> </p> </li> <li> <p> <code>ModifyCacheSubnetGroup</code> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CacheSubnetGroupMessage.html'
+                                  title='rusoto::elasticache::CacheSubnetGroupMessage'>CacheSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeCacheSubnetGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopySnapshotMessage.html'
+                                  title='rusoto::elasticache::CopySnapshotMessage'>CopySnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>CopySnapshotMessage</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopySnapshotResult.html'
+                                  title='rusoto::elasticache::CopySnapshotResult'>CopySnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheClusterMessage.html'
+                                  title='rusoto::elasticache::CreateCacheClusterMessage'>CreateCacheClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a CreateCacheCluster operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheClusterResult.html'
+                                  title='rusoto::elasticache::CreateCacheClusterResult'>CreateCacheClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheParameterGroupMessage.html'
+                                  title='rusoto::elasticache::CreateCacheParameterGroupMessage'>CreateCacheParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>CreateCacheParameterGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheParameterGroupResult.html'
+                                  title='rusoto::elasticache::CreateCacheParameterGroupResult'>CreateCacheParameterGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheSecurityGroupMessage.html'
+                                  title='rusoto::elasticache::CreateCacheSecurityGroupMessage'>CreateCacheSecurityGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>CreateCacheSecurityGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheSecurityGroupResult.html'
+                                  title='rusoto::elasticache::CreateCacheSecurityGroupResult'>CreateCacheSecurityGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheSubnetGroupMessage.html'
+                                  title='rusoto::elasticache::CreateCacheSubnetGroupMessage'>CreateCacheSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>CreateCacheSubnetGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCacheSubnetGroupResult.html'
+                                  title='rusoto::elasticache::CreateCacheSubnetGroupResult'>CreateCacheSubnetGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateReplicationGroupMessage.html'
+                                  title='rusoto::elasticache::CreateReplicationGroupMessage'>CreateReplicationGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>CreateReplicationGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateReplicationGroupResult.html'
+                                  title='rusoto::elasticache::CreateReplicationGroupResult'>CreateReplicationGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotMessage.html'
+                                  title='rusoto::elasticache::CreateSnapshotMessage'>CreateSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>CreateSnapshot</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotResult.html'
+                                  title='rusoto::elasticache::CreateSnapshotResult'>CreateSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCacheClusterMessage.html'
+                                  title='rusoto::elasticache::DeleteCacheClusterMessage'>DeleteCacheClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DeleteCacheCluster</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCacheClusterResult.html'
+                                  title='rusoto::elasticache::DeleteCacheClusterResult'>DeleteCacheClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCacheParameterGroupMessage.html'
+                                  title='rusoto::elasticache::DeleteCacheParameterGroupMessage'>DeleteCacheParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DeleteCacheParameterGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCacheSecurityGroupMessage.html'
+                                  title='rusoto::elasticache::DeleteCacheSecurityGroupMessage'>DeleteCacheSecurityGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DeleteCacheSecurityGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCacheSubnetGroupMessage.html'
+                                  title='rusoto::elasticache::DeleteCacheSubnetGroupMessage'>DeleteCacheSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DeleteCacheSubnetGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteReplicationGroupMessage.html'
+                                  title='rusoto::elasticache::DeleteReplicationGroupMessage'>DeleteReplicationGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DeleteReplicationGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteReplicationGroupResult.html'
+                                  title='rusoto::elasticache::DeleteReplicationGroupResult'>DeleteReplicationGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSnapshotMessage.html'
+                                  title='rusoto::elasticache::DeleteSnapshotMessage'>DeleteSnapshotMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DeleteSnapshot</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSnapshotResult.html'
+                                  title='rusoto::elasticache::DeleteSnapshotResult'>DeleteSnapshotResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheClustersMessage.html'
+                                  title='rusoto::elasticache::DescribeCacheClustersMessage'>DescribeCacheClustersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeCacheClusters</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheEngineVersionsMessage.html'
+                                  title='rusoto::elasticache::DescribeCacheEngineVersionsMessage'>DescribeCacheEngineVersionsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeCacheEngineVersions</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheParameterGroupsMessage.html'
+                                  title='rusoto::elasticache::DescribeCacheParameterGroupsMessage'>DescribeCacheParameterGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeCacheParameterGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheParametersMessage.html'
+                                  title='rusoto::elasticache::DescribeCacheParametersMessage'>DescribeCacheParametersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeCacheParameters</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheSecurityGroupsMessage.html'
+                                  title='rusoto::elasticache::DescribeCacheSecurityGroupsMessage'>DescribeCacheSecurityGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeCacheSecurityGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheSubnetGroupsMessage.html'
+                                  title='rusoto::elasticache::DescribeCacheSubnetGroupsMessage'>DescribeCacheSubnetGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeCacheSubnetGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEngineDefaultParametersMessage.html'
+                                  title='rusoto::elasticache::DescribeEngineDefaultParametersMessage'>DescribeEngineDefaultParametersMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeEngineDefaultParameters</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEngineDefaultParametersResult.html'
+                                  title='rusoto::elasticache::DescribeEngineDefaultParametersResult'>DescribeEngineDefaultParametersResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEventsMessage.html'
+                                  title='rusoto::elasticache::DescribeEventsMessage'>DescribeEventsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeEvents</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeReplicationGroupsMessage.html'
+                                  title='rusoto::elasticache::DescribeReplicationGroupsMessage'>DescribeReplicationGroupsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeReplicationGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeReservedCacheNodesMessage.html'
+                                  title='rusoto::elasticache::DescribeReservedCacheNodesMessage'>DescribeReservedCacheNodesMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeReservedCacheNodes</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeReservedCacheNodesOfferingsMessage.html'
+                                  title='rusoto::elasticache::DescribeReservedCacheNodesOfferingsMessage'>DescribeReservedCacheNodesOfferingsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeReservedCacheNodesOfferings</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSnapshotsListMessage.html'
+                                  title='rusoto::elasticache::DescribeSnapshotsListMessage'>DescribeSnapshotsListMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeSnapshots</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSnapshotsMessage.html'
+                                  title='rusoto::elasticache::DescribeSnapshotsMessage'>DescribeSnapshotsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>DescribeSnapshotsMessage</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EC2SecurityGroup.html'
+                                  title='rusoto::elasticache::EC2SecurityGroup'>EC2SecurityGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides ownership and status information for an Amazon EC2 security group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ElastiCacheClient.html'
+                                  title='rusoto::elasticache::ElastiCacheClient'>ElastiCacheClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon ElastiCache API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Endpoint.html'
+                                  title='rusoto::elasticache::Endpoint'>Endpoint</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the information required for client programs to connect to a cache node.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EngineDefaults.html'
+                                  title='rusoto::elasticache::EngineDefaults'>EngineDefaults</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeEngineDefaultParameters</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Event.html'
+                                  title='rusoto::elasticache::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a single occurrence of something interesting within the system. Some examples of events are creating a cache cluster, adding or removing a cache node, or rebooting a node.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventsMessage.html'
+                                  title='rusoto::elasticache::EventsMessage'>EventsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeEvents</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAllowedNodeTypeModificationsMessage.html'
+                                  title='rusoto::elasticache::ListAllowedNodeTypeModificationsMessage'>ListAllowedNodeTypeModificationsMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The input parameters for the <code>ListAllowedNodeTypeModifications</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceMessage.html'
+                                  title='rusoto::elasticache::ListTagsForResourceMessage'>ListTagsForResourceMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The input parameters for the <code>ListTagsForResource</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyCacheClusterMessage.html'
+                                  title='rusoto::elasticache::ModifyCacheClusterMessage'>ModifyCacheClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>ModifyCacheCluster</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyCacheClusterResult.html'
+                                  title='rusoto::elasticache::ModifyCacheClusterResult'>ModifyCacheClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyCacheParameterGroupMessage.html'
+                                  title='rusoto::elasticache::ModifyCacheParameterGroupMessage'>ModifyCacheParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>ModifyCacheParameterGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyCacheSubnetGroupMessage.html'
+                                  title='rusoto::elasticache::ModifyCacheSubnetGroupMessage'>ModifyCacheSubnetGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>ModifyCacheSubnetGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyCacheSubnetGroupResult.html'
+                                  title='rusoto::elasticache::ModifyCacheSubnetGroupResult'>ModifyCacheSubnetGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyReplicationGroupMessage.html'
+                                  title='rusoto::elasticache::ModifyReplicationGroupMessage'>ModifyReplicationGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>ModifyReplicationGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyReplicationGroupResult.html'
+                                  title='rusoto::elasticache::ModifyReplicationGroupResult'>ModifyReplicationGroupResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NodeGroup.html'
+                                  title='rusoto::elasticache::NodeGroup'>NodeGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a collection of cache nodes in a replication group. One node in the node group is the read/write primary node. All the other nodes are read-only Replica nodes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NodeGroupConfiguration.html'
+                                  title='rusoto::elasticache::NodeGroupConfiguration'>NodeGroupConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>node group (shard) configuration options. Each node group (shard) configuration has the following: <code>Slots</code>, <code>PrimaryAvailabilityZone</code>, <code>ReplicaAvailabilityZones</code>, <code>ReplicaCount</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NodeGroupMember.html'
+                                  title='rusoto::elasticache::NodeGroupMember'>NodeGroupMember</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a single node within a node group (shard).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NodeSnapshot.html'
+                                  title='rusoto::elasticache::NodeSnapshot'>NodeSnapshot</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an individual cache node in a snapshot of a cache cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NotificationConfiguration.html'
+                                  title='rusoto::elasticache::NotificationConfiguration'>NotificationConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a notification topic and its status. Notification topics are used for publishing ElastiCache events to subscribers using Amazon Simple Notification Service (SNS).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Parameter.html'
+                                  title='rusoto::elasticache::Parameter'>Parameter</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an individual setting that controls some aspect of ElastiCache behavior.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParameterNameValue.html'
+                                  title='rusoto::elasticache::ParameterNameValue'>ParameterNameValue</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a name-value pair that is used to update the value of a parameter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PendingModifiedValues.html'
+                                  title='rusoto::elasticache::PendingModifiedValues'>PendingModifiedValues</a></td>
+                           <td class='docblock-short'>
+                                <p>A group of settings that are applied to the cache cluster in the future, or that are currently being applied.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PurchaseReservedCacheNodesOfferingMessage.html'
+                                  title='rusoto::elasticache::PurchaseReservedCacheNodesOfferingMessage'>PurchaseReservedCacheNodesOfferingMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>PurchaseReservedCacheNodesOffering</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PurchaseReservedCacheNodesOfferingResult.html'
+                                  title='rusoto::elasticache::PurchaseReservedCacheNodesOfferingResult'>PurchaseReservedCacheNodesOfferingResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootCacheClusterMessage.html'
+                                  title='rusoto::elasticache::RebootCacheClusterMessage'>RebootCacheClusterMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>RebootCacheCluster</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootCacheClusterResult.html'
+                                  title='rusoto::elasticache::RebootCacheClusterResult'>RebootCacheClusterResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RecurringCharge.html'
+                                  title='rusoto::elasticache::RecurringCharge'>RecurringCharge</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the specific price and frequency of a recurring charges for a reserved cache node, or for a reserved cache node offering.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceMessage.html'
+                                  title='rusoto::elasticache::RemoveTagsFromResourceMessage'>RemoveTagsFromResourceMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>RemoveTagsFromResource</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplicationGroup.html'
+                                  title='rusoto::elasticache::ReplicationGroup'>ReplicationGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains all of the attributes of a specific Redis replication group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplicationGroupMessage.html'
+                                  title='rusoto::elasticache::ReplicationGroupMessage'>ReplicationGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeReplicationGroups</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplicationGroupPendingModifiedValues.html'
+                                  title='rusoto::elasticache::ReplicationGroupPendingModifiedValues'>ReplicationGroupPendingModifiedValues</a></td>
+                           <td class='docblock-short'>
+                                <p>The settings to be applied to the Redis replication group, either immediately or during the next maintenance window.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedCacheNode.html'
+                                  title='rusoto::elasticache::ReservedCacheNode'>ReservedCacheNode</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>PurchaseReservedCacheNodesOffering</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedCacheNodeMessage.html'
+                                  title='rusoto::elasticache::ReservedCacheNodeMessage'>ReservedCacheNodeMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeReservedCacheNodes</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedCacheNodesOffering.html'
+                                  title='rusoto::elasticache::ReservedCacheNodesOffering'>ReservedCacheNodesOffering</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes all of the attributes of a reserved cache node offering.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReservedCacheNodesOfferingMessage.html'
+                                  title='rusoto::elasticache::ReservedCacheNodesOfferingMessage'>ReservedCacheNodesOfferingMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <code>DescribeReservedCacheNodesOfferings</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResetCacheParameterGroupMessage.html'
+                                  title='rusoto::elasticache::ResetCacheParameterGroupMessage'>ResetCacheParameterGroupMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>ResetCacheParameterGroup</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevokeCacheSecurityGroupIngressMessage.html'
+                                  title='rusoto::elasticache::RevokeCacheSecurityGroupIngressMessage'>RevokeCacheSecurityGroupIngressMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <code>RevokeCacheSecurityGroupIngress</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevokeCacheSecurityGroupIngressResult.html'
+                                  title='rusoto::elasticache::RevokeCacheSecurityGroupIngressResult'>RevokeCacheSecurityGroupIngressResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SecurityGroupMembership.html'
+                                  title='rusoto::elasticache::SecurityGroupMembership'>SecurityGroupMembership</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a single cache security group and its status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Snapshot.html'
+                                  title='rusoto::elasticache::Snapshot'>Snapshot</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a copy of an entire Redis cache cluster as of the time when the snapshot was taken.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Subnet.html'
+                                  title='rusoto::elasticache::Subnet'>Subnet</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the subnet associated with a cache cluster. This parameter refers to subnets defined in Amazon Virtual Private Cloud (Amazon VPC) and used with ElastiCache.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::elasticache::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A cost allocation Tag that can be added to an ElastiCache cluster or replication group. Tags are composed of a Key/Value pair. A tag with a null Value is permitted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TagListMessage.html'
+                                  title='rusoto::elasticache::TagListMessage'>TagListMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output from the <code>AddTagsToResource</code>, <code>ListTagsOnResource</code>, and <code>RemoveTagsFromResource</code> operations.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsToResourceError.html'
+                                  title='rusoto::elasticache::AddTagsToResourceError'>AddTagsToResourceError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AddTagsToResource</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AuthorizeCacheSecurityGroupIngressError.html'
+                                  title='rusoto::elasticache::AuthorizeCacheSecurityGroupIngressError'>AuthorizeCacheSecurityGroupIngressError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by AuthorizeCacheSecurityGroupIngress</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CopySnapshotError.html'
+                                  title='rusoto::elasticache::CopySnapshotError'>CopySnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CopySnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateCacheClusterError.html'
+                                  title='rusoto::elasticache::CreateCacheClusterError'>CreateCacheClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateCacheCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateCacheParameterGroupError.html'
+                                  title='rusoto::elasticache::CreateCacheParameterGroupError'>CreateCacheParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateCacheParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateCacheSecurityGroupError.html'
+                                  title='rusoto::elasticache::CreateCacheSecurityGroupError'>CreateCacheSecurityGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateCacheSecurityGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateCacheSubnetGroupError.html'
+                                  title='rusoto::elasticache::CreateCacheSubnetGroupError'>CreateCacheSubnetGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateCacheSubnetGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateReplicationGroupError.html'
+                                  title='rusoto::elasticache::CreateReplicationGroupError'>CreateReplicationGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateReplicationGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateSnapshotError.html'
+                                  title='rusoto::elasticache::CreateSnapshotError'>CreateSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCacheClusterError.html'
+                                  title='rusoto::elasticache::DeleteCacheClusterError'>DeleteCacheClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteCacheCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCacheParameterGroupError.html'
+                                  title='rusoto::elasticache::DeleteCacheParameterGroupError'>DeleteCacheParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteCacheParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCacheSecurityGroupError.html'
+                                  title='rusoto::elasticache::DeleteCacheSecurityGroupError'>DeleteCacheSecurityGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteCacheSecurityGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCacheSubnetGroupError.html'
+                                  title='rusoto::elasticache::DeleteCacheSubnetGroupError'>DeleteCacheSubnetGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteCacheSubnetGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteReplicationGroupError.html'
+                                  title='rusoto::elasticache::DeleteReplicationGroupError'>DeleteReplicationGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteReplicationGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSnapshotError.html'
+                                  title='rusoto::elasticache::DeleteSnapshotError'>DeleteSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteSnapshot</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheClustersError.html'
+                                  title='rusoto::elasticache::DescribeCacheClustersError'>DescribeCacheClustersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeCacheClusters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheEngineVersionsError.html'
+                                  title='rusoto::elasticache::DescribeCacheEngineVersionsError'>DescribeCacheEngineVersionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeCacheEngineVersions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheParameterGroupsError.html'
+                                  title='rusoto::elasticache::DescribeCacheParameterGroupsError'>DescribeCacheParameterGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeCacheParameterGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheParametersError.html'
+                                  title='rusoto::elasticache::DescribeCacheParametersError'>DescribeCacheParametersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeCacheParameters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheSecurityGroupsError.html'
+                                  title='rusoto::elasticache::DescribeCacheSecurityGroupsError'>DescribeCacheSecurityGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeCacheSecurityGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheSubnetGroupsError.html'
+                                  title='rusoto::elasticache::DescribeCacheSubnetGroupsError'>DescribeCacheSubnetGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeCacheSubnetGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEngineDefaultParametersError.html'
+                                  title='rusoto::elasticache::DescribeEngineDefaultParametersError'>DescribeEngineDefaultParametersError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEngineDefaultParameters</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEventsError.html'
+                                  title='rusoto::elasticache::DescribeEventsError'>DescribeEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEvents</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeReplicationGroupsError.html'
+                                  title='rusoto::elasticache::DescribeReplicationGroupsError'>DescribeReplicationGroupsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeReplicationGroups</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeReservedCacheNodesError.html'
+                                  title='rusoto::elasticache::DescribeReservedCacheNodesError'>DescribeReservedCacheNodesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeReservedCacheNodes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeReservedCacheNodesOfferingsError.html'
+                                  title='rusoto::elasticache::DescribeReservedCacheNodesOfferingsError'>DescribeReservedCacheNodesOfferingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeReservedCacheNodesOfferings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeSnapshotsError.html'
+                                  title='rusoto::elasticache::DescribeSnapshotsError'>DescribeSnapshotsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeSnapshots</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAllowedNodeTypeModificationsError.html'
+                                  title='rusoto::elasticache::ListAllowedNodeTypeModificationsError'>ListAllowedNodeTypeModificationsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListAllowedNodeTypeModifications</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForResourceError.html'
+                                  title='rusoto::elasticache::ListTagsForResourceError'>ListTagsForResourceError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListTagsForResource</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyCacheClusterError.html'
+                                  title='rusoto::elasticache::ModifyCacheClusterError'>ModifyCacheClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyCacheCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyCacheParameterGroupError.html'
+                                  title='rusoto::elasticache::ModifyCacheParameterGroupError'>ModifyCacheParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyCacheParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyCacheSubnetGroupError.html'
+                                  title='rusoto::elasticache::ModifyCacheSubnetGroupError'>ModifyCacheSubnetGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyCacheSubnetGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyReplicationGroupError.html'
+                                  title='rusoto::elasticache::ModifyReplicationGroupError'>ModifyReplicationGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ModifyReplicationGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PurchaseReservedCacheNodesOfferingError.html'
+                                  title='rusoto::elasticache::PurchaseReservedCacheNodesOfferingError'>PurchaseReservedCacheNodesOfferingError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PurchaseReservedCacheNodesOffering</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RebootCacheClusterError.html'
+                                  title='rusoto::elasticache::RebootCacheClusterError'>RebootCacheClusterError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RebootCacheCluster</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsFromResourceError.html'
+                                  title='rusoto::elasticache::RemoveTagsFromResourceError'>RemoveTagsFromResourceError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RemoveTagsFromResource</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ResetCacheParameterGroupError.html'
+                                  title='rusoto::elasticache::ResetCacheParameterGroupError'>ResetCacheParameterGroupError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ResetCacheParameterGroup</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RevokeCacheSecurityGroupIngressError.html'
+                                  title='rusoto::elasticache::RevokeCacheSecurityGroupIngressError'>RevokeCacheSecurityGroupIngressError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RevokeCacheSecurityGroupIngress</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AZMode.html'
+                                  title='rusoto::elasticache::AZMode'>AZMode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AutomaticFailoverStatus.html'
+                                  title='rusoto::elasticache::AutomaticFailoverStatus'>AutomaticFailoverStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AvailabilityZonesList.html'
+                                  title='rusoto::elasticache::AvailabilityZonesList'>AvailabilityZonesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AwsQueryErrorMessage.html'
+                                  title='rusoto::elasticache::AwsQueryErrorMessage'>AwsQueryErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::elasticache::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BooleanOptional.html'
+                                  title='rusoto::elasticache::BooleanOptional'>BooleanOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheClusterList.html'
+                                  title='rusoto::elasticache::CacheClusterList'>CacheClusterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheEngineVersionList.html'
+                                  title='rusoto::elasticache::CacheEngineVersionList'>CacheEngineVersionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheNodeIdsList.html'
+                                  title='rusoto::elasticache::CacheNodeIdsList'>CacheNodeIdsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheNodeList.html'
+                                  title='rusoto::elasticache::CacheNodeList'>CacheNodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheNodeTypeSpecificParametersList.html'
+                                  title='rusoto::elasticache::CacheNodeTypeSpecificParametersList'>CacheNodeTypeSpecificParametersList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheNodeTypeSpecificValueList.html'
+                                  title='rusoto::elasticache::CacheNodeTypeSpecificValueList'>CacheNodeTypeSpecificValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheParameterGroupList.html'
+                                  title='rusoto::elasticache::CacheParameterGroupList'>CacheParameterGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheSecurityGroupMembershipList.html'
+                                  title='rusoto::elasticache::CacheSecurityGroupMembershipList'>CacheSecurityGroupMembershipList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheSecurityGroupNameList.html'
+                                  title='rusoto::elasticache::CacheSecurityGroupNameList'>CacheSecurityGroupNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheSecurityGroups.html'
+                                  title='rusoto::elasticache::CacheSecurityGroups'>CacheSecurityGroups</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheSubnetGroups.html'
+                                  title='rusoto::elasticache::CacheSubnetGroups'>CacheSubnetGroups</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChangeType.html'
+                                  title='rusoto::elasticache::ChangeType'>ChangeType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterIdList.html'
+                                  title='rusoto::elasticache::ClusterIdList'>ClusterIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Double.html'
+                                  title='rusoto::elasticache::Double'>Double</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EC2SecurityGroupList.html'
+                                  title='rusoto::elasticache::EC2SecurityGroupList'>EC2SecurityGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventList.html'
+                                  title='rusoto::elasticache::EventList'>EventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::elasticache::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IntegerOptional.html'
+                                  title='rusoto::elasticache::IntegerOptional'>IntegerOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyList.html'
+                                  title='rusoto::elasticache::KeyList'>KeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NodeGroupConfigurationList.html'
+                                  title='rusoto::elasticache::NodeGroupConfigurationList'>NodeGroupConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NodeGroupList.html'
+                                  title='rusoto::elasticache::NodeGroupList'>NodeGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NodeGroupMemberList.html'
+                                  title='rusoto::elasticache::NodeGroupMemberList'>NodeGroupMemberList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NodeSnapshotList.html'
+                                  title='rusoto::elasticache::NodeSnapshotList'>NodeSnapshotList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NodeTypeList.html'
+                                  title='rusoto::elasticache::NodeTypeList'>NodeTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterNameValueList.html'
+                                  title='rusoto::elasticache::ParameterNameValueList'>ParameterNameValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParametersList.html'
+                                  title='rusoto::elasticache::ParametersList'>ParametersList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PendingAutomaticFailoverStatus.html'
+                                  title='rusoto::elasticache::PendingAutomaticFailoverStatus'>PendingAutomaticFailoverStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PreferredAvailabilityZoneList.html'
+                                  title='rusoto::elasticache::PreferredAvailabilityZoneList'>PreferredAvailabilityZoneList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RecurringChargeList.html'
+                                  title='rusoto::elasticache::RecurringChargeList'>RecurringChargeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReplicationGroupList.html'
+                                  title='rusoto::elasticache::ReplicationGroupList'>ReplicationGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReservedCacheNodeList.html'
+                                  title='rusoto::elasticache::ReservedCacheNodeList'>ReservedCacheNodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReservedCacheNodesOfferingList.html'
+                                  title='rusoto::elasticache::ReservedCacheNodesOfferingList'>ReservedCacheNodesOfferingList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecurityGroupIdsList.html'
+                                  title='rusoto::elasticache::SecurityGroupIdsList'>SecurityGroupIdsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecurityGroupMembershipList.html'
+                                  title='rusoto::elasticache::SecurityGroupMembershipList'>SecurityGroupMembershipList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnapshotArnsList.html'
+                                  title='rusoto::elasticache::SnapshotArnsList'>SnapshotArnsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnapshotList.html'
+                                  title='rusoto::elasticache::SnapshotList'>SnapshotList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceType.html'
+                                  title='rusoto::elasticache::SourceType'>SourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetIdentifierList.html'
+                                  title='rusoto::elasticache::SubnetIdentifierList'>SubnetIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetList.html'
+                                  title='rusoto::elasticache::SubnetList'>SubnetList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TStamp.html'
+                                  title='rusoto::elasticache::TStamp'>TStamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::elasticache::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
