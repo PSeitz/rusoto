@@ -364,8 +364,8 @@ fn generate_struct_field_deserializers(service: &Service, shape: &Shape) -> Stri
                                                                           location_name);
             Some(format!(
                 "\"{location_name}\" => {{
-                    trace!(\"field_deserializers field_name: {field_name} \" );
-                    trace!(\"field_deserializers Code: {parse_expression} \" );
+                    trace!(r#\"field_deserializers field_name: {field_name} \"# );
+                    trace!(r#\"field_deserializers Code: {parse_expression} \"# );
                     obj.{field_name} = {parse_expression};
                 }}",
                 field_name = generate_field_name(member_name),
