@@ -44,8 +44,11 @@ impl GenerateProtocol for RestXmlGenerator {
 
                     match response.status {{
                         StatusCode::Ok|StatusCode::NoContent|StatusCode::PartialContent => {{
+                            trace!(\"parse_response_body\");
                             {parse_response_body}
+                            trace!(\"parse_non_payload\");
                             {parse_non_payload}
+                            trace!(\"Ok(result) {}\", result);
                             Ok(result)
                         }},
                         _ => Err({error_type}::from_body(&response.body))

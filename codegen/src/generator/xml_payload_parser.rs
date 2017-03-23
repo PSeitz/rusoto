@@ -94,7 +94,7 @@ fn xml_body_parser(output_shape: &str, result_wrapper: &Option<String>, mutable_
 
     format!("
         {let_result}
-
+        trace!(\"xml_body_parser\");
         if response.body.is_empty() {{
             result = {output_shape}::default();
         }} else {{
@@ -105,6 +105,8 @@ fn xml_body_parser(output_shape: &str, result_wrapper: &Option<String>, mutable_
             let mut stack = XmlResponse::new(reader.into_iter().peekable());
             let _start_document = stack.next();
             let actual_tag_name = try!(peek_at_name(&mut stack));
+            trace!(\"_start_document: {}\", _start_document);
+            trace!(\"actual_tag_name: {}\", actual_tag_name);
             {deserialize}
         }}",
             let_result = let_result,
