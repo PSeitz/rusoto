@@ -304,7 +304,6 @@ fn generate_struct_deserializer(name: &str, service: &Service, shape: &Shape) ->
 
         loop {{
             trace!(\"loop generate_struct_deserializer\");
-            trace!(\"Show stack {{:?}}\", stack);
 
             let next_event = match stack.peek() {{
                 Some(&Ok(XmlEvent::EndElement {{ ref name, .. }})) => {{trace!(\"stack.peek() XmlEvent::EndElement: {{}}\", name); DeserializerNext::Close}},
