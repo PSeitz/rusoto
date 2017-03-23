@@ -48,7 +48,7 @@ impl GenerateProtocol for RestXmlGenerator {
                             {parse_response_body}
                             trace!(\"parse_non_payload\");
                             {parse_non_payload}
-                            trace!(\"Ok(result) {}\", result);
+                            trace!(\"Ok(result) {{}}\", result);
                             Ok(result)
                         }},
                         _ => Err({error_type}::from_body(&response.body))
