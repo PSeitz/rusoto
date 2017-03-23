@@ -280,7 +280,9 @@ fn generate_struct_deserializer(name: &str, service: &Service, shape: &Shape) ->
 
     if !needs_xml_deserializer || shape.members.as_ref().unwrap().is_empty() {
         return format!(
-            "try!(start_element(tag_name, stack));
+            "trace!(\"!needs_xml_deserializer || shape.members.as_ref().unwrap().is_empty()\");
+
+            try!(start_element(tag_name, stack));
 
             stack.next();
 
@@ -301,6 +303,7 @@ fn generate_struct_deserializer(name: &str, service: &Service, shape: &Shape) ->
         let mut obj = {name}::default();
 
         loop {{
+            trace!(\"loop generate_struct_deserializer\");
             let next_event = match stack.peek() {{
                 Some(&Ok(XmlEvent::EndElement {{ ref name, .. }})) => DeserializerNext::Close,
                 Some(&Ok(XmlEvent::StartElement {{ ref name, .. }})) => DeserializerNext::Element(name.local_name.to_owned()),
