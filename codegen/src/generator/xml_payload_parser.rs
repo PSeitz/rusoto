@@ -305,9 +305,9 @@ fn generate_struct_deserializer(name: &str, service: &Service, shape: &Shape) ->
         loop {{
             trace!(\"loop generate_struct_deserializer\");
             let next_event = match stack.peek() {{
-                Some(&Ok(XmlEvent::EndElement {{ ref name, .. }})) => DeserializerNext::Close,
-                Some(&Ok(XmlEvent::StartElement {{ ref name, .. }})) => DeserializerNext::Element(name.local_name.to_owned()),
-                _ => DeserializerNext::Skip,
+                Some(&Ok(XmlEvent::EndElement {{ ref name, .. }})) => {{trace!(\"stack.peek() XmlEvent::EndElement: {{}}\", name); DeserializerNext::Close}},
+                Some(&Ok(XmlEvent::StartElement {{ ref name, .. }})) => {{trace!(\"stack.peek() XmlEvent::StartElement: {{}}\", name); DeserializerNext::Element(name.local_name.to_owned())}},
+                _ => {{trace!(\"stack.peek() DeserializerNext::Skip\"); DeserializerNext::Skip}},
             }};
 
             match next_event {{
@@ -363,13 +363,13 @@ fn generate_struct_field_deserializers(service: &Service, shape: &Shape) -> Stri
                                                                           member,
                                                                           location_name);
             Some(format!(
-            "\"{location_name}\" => {{
-                obj.{field_name} = {parse_expression};
-            }}",
-            field_name = generate_field_name(member_name),
-            parse_expression = parse_expression,
-            location_name = location_name,
-        ))
+                "\"{location_name}\" => {{
+                    obj.{field_name} = {parse_expression};
+                }}",
+                field_name = generate_field_name(member_name),
+                parse_expression = parse_expression,
+                location_name = location_name,
+            ))
 
         })
         .collect::<Vec<String>>()
