@@ -79,10 +79,15 @@ fn xml_body_parser(output_shape: &str, result_wrapper: &Option<String>, mutable_
 
     let deserialize = match result_wrapper {
         &Some(ref tag_name) => {
-            format!("try!(start_element(&actual_tag_name, &mut stack));
+            format!("trace!(\"start_element\");
+                     try!(start_element(&actual_tag_name, &mut stack));
+                     trace!(\"deserialize\");
                      result = try!({output_shape}Deserializer::deserialize(\"{tag_name}\", &mut stack));
+                     trace!(\"skip_tree\");
                      skip_tree(&mut stack);
-                     try!(end_element(&actual_tag_name, &mut stack));",
+                     trace!(\"end_element\");
+                     try!(end_element(&actual_tag_name, &mut stack));
+                     trace!(\"ended_element\");",
                      output_shape = output_shape,
                      tag_name = tag_name)
         },
@@ -108,6 +113,7 @@ fn xml_body_parser(output_shape: &str, result_wrapper: &Option<String>, mutable_
             trace!(\"_start_document: {{:?}}\", _start_document);
             trace!(\"actual_tag_name: {{:?}}\", actual_tag_name);
             {deserialize}
+            trace!(\"deserialized\");
         }}",
             let_result = let_result,
             output_shape = output_shape,
