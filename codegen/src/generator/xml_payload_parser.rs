@@ -147,6 +147,7 @@ fn generate_list_deserializer(shape: &Shape) -> String {
         try!(start_element(tag_name, stack));
 
         loop {{
+            trace!(\"loop generate_list_deserializer\");
             let next_event = match stack.peek() {{
                 Some(&Ok(XmlEvent::EndElement {{ .. }})) => DeserializerNext::Close,
                 Some(&Ok(XmlEvent::StartElement {{ ref name, .. }})) => DeserializerNext::Element(name.local_name.to_owned()),
@@ -180,7 +181,7 @@ fn generate_flat_list_deserializer(shape: &Shape) -> String {
         let mut obj = vec![];
 
         loop {{
-
+            trace!(\"loop generate_flat_list_deserializer\");
             let consume_next_tag = match stack.peek() {{
                 Some(&Ok(XmlEvent::StartElement {{ ref name, .. }})) => name.local_name == tag_name,
                 _ => false
@@ -213,6 +214,7 @@ fn generate_map_deserializer(shape: &Shape) -> String {
         let mut obj = ::std::collections::HashMap::new();
 
         while try!(peek_at_name(stack)) == \"{entry_location}\" {{
+            trace!(\"while generate_map_deserializer\");
             try!(start_element(\"{entry_location}\", stack));
             let key = try!({key_type_name}Deserializer::deserialize(\"{key_tag_name}\", stack));
             let value = try!({value_type_name}Deserializer::deserialize(\"{value_tag_name}\", stack));
