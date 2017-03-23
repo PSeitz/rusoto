@@ -312,13 +312,14 @@ fn generate_struct_deserializer(name: &str, service: &Service, shape: &Shape) ->
 
             match next_event {{
                 DeserializerNext::Element(name) => {{
+                    trace!(\"DeserializerNext::Element(name): {{:?}}\", name);
                     match &name[..] {{
                         {struct_field_deserializers}
-                        _ => skip_tree(stack),
+                        _ => {{trace!(\"Match Fallback skip_tree\"); skip_tree(stack)}},
                     }}
                 }},
-                DeserializerNext::Close => break,
-                DeserializerNext::Skip => {{ stack.next(); }},
+                DeserializerNext::Close => {{trace!(\"DeserializerNext::Close\"); break}},
+                DeserializerNext::Skip => {{ trace!(\"DeserializerNext::Skip\"); stack.next(); }},
             }}
         }}
 
