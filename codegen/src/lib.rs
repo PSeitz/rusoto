@@ -60,10 +60,28 @@ fn botocore_generate(input_path: &Path, output_path: &Path) {
 
     let service_data_as_reader = BufReader::new(input_file);
 
-    let service: BotocoreService = serde_json::from_reader(service_data_as_reader).expect(&format!(
+    let mut service: BotocoreService = serde_json::from_reader(service_data_as_reader).expect(&format!(
         "Could not convert JSON in {:?} to Service",
         input_path,
     ));
+
+    let service2: BotocoreService = serde_json::from_reader(BufReader::new(File::open(input_path).unwrap())).expect(&format!(
+        "Could not convert JSON in {:?} to Service",
+        input_path,
+    ));
+
+    for (shape_name, ref mut shape) in &mut service.shapes {
+        if shape.location_name.is_none() {
+            for (_, shape2) in &service2.shapes {
+                if shape2.members.is_none(){continue;}
+                for (_, ref member) in shape2.members.as_ref().unwrap() {
+                    if &member.shape == shape_name{
+                        shape.location_name = member.location_name.clone();
+                    }
+                }
+            }
+        }
+    }
 
     match generate_source(&service, output_path) {
         Ok(()) => {},
